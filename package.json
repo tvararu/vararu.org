@@ -43,7 +43,7 @@
     "husky": "^0.13.3",
     "lint-staged": "^3.4.0",
     "npm-run-all": "^4.0.2",
-    "prettier-eslint-cli": "^3.4.2",
+    "prettier-eslint-cli": "^4.0.0",
     "webpack-visualizer-plugin": "^0.1.11"
   },
   "lint-staged": {
