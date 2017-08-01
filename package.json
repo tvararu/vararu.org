@@ -4,7 +4,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "build": "next build",
+    "build": "next build && next export",
     "dev": "next",
     "eslint": "eslint '*.js' 'pages/**/*.js' 'components/**/*.js'",
     "flow-coverage": "flow-coverage-report -i 'pages/**/*.js' -i 'components/**/*.js' -t html -o coverage/flow-coverage-report",
@@ -13,7 +13,7 @@
     "lint": "run-p eslint 'flow -- check'",
     "precommit": "npm run lint-staged",
     "prettier-eslint": "prettier-eslint --write 'pages/**/*.js' 'components/**/*.js'",
-    "start": "next start --port=$PORT",
+    "start": "serve out --open --port=$PORT",
     "test": "npm run lint"
   },
   "dependencies": {
