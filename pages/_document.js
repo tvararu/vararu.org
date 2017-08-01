@@ -49,20 +49,6 @@ export default class MyDocument extends Document {
     return (
       <html lang='en'>
         <CustomHead />
-        <style jsx>{`
-          body {
-            color: #111;
-            font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue',
-              helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
-            margin: 0;
-          }
-
-          @media print {
-            body {
-              font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
-            }
-          }
-        `}</style>
         <body>
           <Main />
           <NextScript />

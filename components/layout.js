@@ -10,6 +10,20 @@ type props = {
 
 export default ({children, wide}: props) => (
   <div className={cs('container', {wide, slim: !wide})}>
+    <style jsx global>{`
+      body {
+        color: #111;
+        font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue',
+          helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+        margin: 0;
+      }
+
+      @media print {
+        body {
+          font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+        }
+      }
+    `}</style>
     <Header />
     <main>
       {children}
