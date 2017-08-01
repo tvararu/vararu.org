@@ -4,7 +4,7 @@ import Document, {Head, Main, NextScript} from 'next/document'
 import flush from 'styled-jsx/server'
 
 type ctx = {
-  renderPage: () => {html: Object, head: Object}
+  renderPage: () => {html: Object, head: Object, errorHtml: Object, chunks: []}
 }
 
 const CustomHead = () => (
@@ -40,9 +40,9 @@ const CustomHead = () => (
 
 export default class MyDocument extends Document {
   static getInitialProps ({renderPage}: ctx) {
-    const {html, head} = renderPage()
+    const {html, head, errorHtml, chunks} = renderPage()
     const styles = flush()
-    return {html, head, styles}
+    return {html, head, errorHtml, chunks, styles}
   }
 
   render () {
