@@ -10,7 +10,7 @@ export default () => (
       <ul>
         <li>Email: <a href='mailto:theo@vararu.org'>theo@vararu.org</a></li>
         <li>Blog: <a href='https://blog.vararu.org'>blog.vararu.org</a></li>
-        <li>Résumé: <Link href='/cv/'><a>vararu.org/cv/</a></Link></li>
+        <li>Résumé: <Link prefetch href='/cv/'><a>vararu.org/cv/</a></Link></li>
         <li>GitHub: <a href='https://github.com/tvararu'>github.com/tvararu</a></li>
         <li>Twitter: <a href='https://twitter.com/tvararu'>twitter.com/tvararu</a></li>
       </ul>
