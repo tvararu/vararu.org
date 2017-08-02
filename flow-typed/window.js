@@ -1,7 +1,8 @@
 declare type Window = {
   addEventListener: (type: string, listener: (evt: any) => void) => void,
   removeEventListener: (type: string, listener: (evt: any) => void) => void,
-  requestAnimationFrame: Function
+  requestAnimationFrame: Function,
+  location: string
 }
 
 declare var window: Window

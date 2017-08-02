@@ -22,7 +22,6 @@
     "babel-preset-flow": "^6.23.0",
     "classnames": "^2.2.5",
     "next": "3.0.1-beta.20",
-    "next-redirect": "^1.0.1",
     "raf-throttle": "^2.0.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",

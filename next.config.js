@@ -1,7 +1,10 @@
 module.exports = {
   exportPathMap: () => ({
     '/': {page: '/'},
-    '/cv/': {page: '/cv/'}
+    '/commas/': {page: '/commas/'},
+    '/cv/': {page: '/cv/'},
+    '/pug/': {page: '/pug/'},
+    '/the-last-question/': {page: '/the-last-question/'}
   }),
   webpack: (config, {dev}) => {
     if (dev) {
