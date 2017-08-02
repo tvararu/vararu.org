@@ -30,6 +30,12 @@ yarn flow-coverage
 open coverage/flow-coverage-report/index.html
 ```
 
+Deploy:
+
+```bash
+yarn deploy
+```
+
 ## License
 
 [MIT](LICENSE.txt).
