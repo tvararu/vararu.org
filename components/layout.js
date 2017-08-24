@@ -4,8 +4,8 @@ import cs from 'classnames'
 import Header from './header'
 
 type props = {
-  children?: React$Element<*>,
-  wide?: Boolean
+  children?: React.Node,
+  wide?: boolean
 }
 
 export default ({children, wide}: props) => (
