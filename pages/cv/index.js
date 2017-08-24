@@ -2,7 +2,7 @@
 import React from 'react'
 import Layout from '../../components/layout'
 
-type statelessTypes = {children?: React$Element<*>}
+type statelessTypes = {children?: React.Node}
 
 const B = ({children}: statelessTypes) => <strong>{children}</strong>
 const Ul = ({children}: statelessTypes) => (
