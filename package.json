@@ -7,8 +7,7 @@
     "build": "next build && next export",
     "deploy": "./deploy.sh",
     "dev": "next",
-    "flow-coverage":
-      "flow-coverage-report -i 'pages/**/*.js' -i 'components/**/*.js' -t html -o coverage/flow-coverage-report",
+    "flow-coverage": "flow-coverage-report -i 'pages/**/*.js' -i 'components/**/*.js' -t html -o coverage/flow-coverage-report",
     "flow": "flow",
     "lint-staged": "lint-staged",
     "lint": "flow check",
@@ -19,10 +18,10 @@
   "dependencies": {
     "babel-preset-flow": "^6.23.0",
     "classnames": "^2.2.5",
-    "next": "3.0.6",
+    "next": "^4.0.3",
     "raf-throttle": "^2.0.2",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "react-motion": "^0.5.0",
     "react-no-ssr": "^1.1.0",
     "serve": "^6.0.4"
