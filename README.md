@@ -17,7 +17,7 @@ yarn build
 yarn start
 ```
 
-Run eslint and flow:
+Run flow:
 
 ```bash
 yarn test

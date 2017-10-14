@@ -7,14 +7,12 @@
     "build": "next build && next export",
     "deploy": "./deploy.sh",
     "dev": "next",
-    "eslint": "eslint '*.js' 'pages/**/*.js' 'components/**/*.js'",
-    "flow-coverage": "flow-coverage-report -i 'pages/**/*.js' -i 'components/**/*.js' -t html -o coverage/flow-coverage-report",
+    "flow-coverage":
+      "flow-coverage-report -i 'pages/**/*.js' -i 'components/**/*.js' -t html -o coverage/flow-coverage-report",
     "flow": "flow",
     "lint-staged": "lint-staged",
-    "lint": "run-p eslint 'flow -- check'",
-    "precommit": "npm run lint-staged",
+    "lint": "flow check",
     "predeploy": "npm run build",
-    "prettier-eslint": "prettier-eslint --write 'pages/**/*.js' 'components/**/*.js'",
     "start": "serve out --open --port=$PORT",
     "test": "npm run lint"
   },
@@ -30,32 +28,11 @@
     "serve": "^6.0.4"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
-    "eslint": "^4.1.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-config-standard-react": "^5.0.0",
-    "eslint-plugin-flowtype": "^2.32.1",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-node": "^5.0.0",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-react": "^7.0.0",
-    "eslint-plugin-standard": "^3.0.1",
     "flow-bin": "^0.52.0",
     "flow-coverage-report": "^0.3.0",
     "husky": "^0.14.0",
-    "lint-staged": "^4.0.0",
     "npm-run-all": "^4.0.2",
-    "prettier-eslint-cli": "^4.0.0",
+    "prettier": "^1.7.4",
     "webpack-visualizer-plugin": "^0.1.11"
-  },
-  "lint-staged": {
-    "linters": {
-      "components/**/*.js": [
-        "prettier-eslint --write"
-      ],
-      "pages/**/*.js": [
-        "prettier-eslint --write"
-      ]
-    }
   }
 }
