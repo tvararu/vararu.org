@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "flow-bin": "^0.52.0",
-    "flow-coverage-report": "^0.3.0",
+    "flow-coverage-report": "^0.4.0",
     "husky": "^0.14.0",
     "npm-run-all": "^4.0.2",
     "prettier": "^1.7.4",
