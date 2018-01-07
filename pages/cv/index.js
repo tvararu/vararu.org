@@ -162,6 +162,92 @@ const Job = ({ employer, period, title }: { employer: string, period: string, ti
   </H3>
 )
 
+const GraphitCom = () => (
+  <a href="https://graphit.com" target="_blank">
+    Graphit.com
+  </a>
+)
+
+const Tachyons = () => (
+  <a href="http://tachyons.io" target="_blank">
+    Tachyons.io
+  </a>
+)
+
+const Cypress = () => (
+  <a href="https://www.cypress.io" target="_blank">
+    Cypress.io
+  </a>
+)
+
+const Jest = () => (
+  <a href="https://facebook.github.io/jest/" target="_blank">
+    Jest.js
+  </a>
+)
+
+const Sentry = () => (
+  <a href="https://sentry.io/for/javascript/" target="_blank">
+    Sentry.js
+  </a>
+)
+
+const Babel = () => (
+  <a href="https://babeljs.io" target="_blank">
+    Babel.js
+  </a>
+)
+
+const ReactNative = () => (
+  <a href="https://facebook.github.io/react-native/" target="_blank">
+    React Native
+  </a>
+)
+
+const Expo = () => (
+  <a href="https://expo.io" target="_blank">
+    Expo.io
+  </a>
+)
+
+const NativeARApp = () => (
+  <a href="https://expo.io/@tvararu/graphit-ar" target="_blank">
+    native AR application
+  </a>
+)
+
+const Graphit = () => (
+  <section>
+    <Job employer="Graphit Systems (Contract)" period="Aug 2017 - Present" title="JavaScript Developer" />
+    <p>
+      <GraphitCom /> is an online app for configuring and buying modular manufacturing solutions.
+    </p>
+    <Ul>
+      <Li>
+        Build user-facing features for the online 3D configurator. Features shipped include a redesign, online payment
+        with <B>Stripe</B>, fixes for <B>legacy browsers</B> and <B>performance</B> issues while building on top of the
+        previous developer's work without handover. <B>React.js</B>, <B>Three.js</B>, <B>webpack</B>, <B>Redux.js</B>.
+      </Li>
+      <Li>
+        Collaborate with the designer to create a revised <B>styleguide</B>, consolidating rhythm and colours throughout
+        the app, backed by a <Tachyons />-inspired atomic CSS <B>design system</B>.
+      </Li>
+      <Li>
+        Champion <B>user research</B> based decision-making, highlight and fix <B>accessibility</B> pitfalls, and
+        provide input into design discussions to reach solutions that are <B>mobile-first</B> and <B>performant</B>.
+      </Li>
+      <Li>
+        Improve product quality by implementing <B>end to end testing</B> using <Cypress />, <Jest /> component tests,{' '}
+        <Sentry /> error tracking, and a bespoke gettext and <Babel /> <B>internationalisation</B> pipeline.
+      </Li>
+      <Li>
+        Deliver a proof of concept <ReactNative /> and <Expo /> <NativeARApp /> (link is iOS only) in only 3 days by
+        reusing and adapting existing 3D code from the main codebase.
+      </Li>
+    </Ul>
+  </section>
+)
+
 const GDS = () => (
   <section>
     <Job employer="Government Digital Service" period="Mar 2016 - Aug 2017" title="Developer / Senior Developer" />
@@ -338,6 +424,7 @@ export default () => (
       <section>
         <h2>Experience</h2>
 
+        <Graphit />
         <GDS />
         <Timecounts />
         <Workangel />
