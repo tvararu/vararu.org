@@ -218,7 +218,7 @@ const NativeARApp = () => (
 
 const Graphit = () => (
   <section>
-    <Job employer="Graphit Systems (Contract)" period="Aug 2017 - Present" title="JavaScript Developer" />
+    <Job employer="Graphit Systems (Contract)" period="Aug 2017 - Feb 2018" title="JavaScript Developer" />
     <p>
       <GraphitCom /> is an online app for configuring and buying modular manufacturing solutions.
     </p>
