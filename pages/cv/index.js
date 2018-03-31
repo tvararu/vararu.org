@@ -162,6 +162,12 @@ const Job = ({ employer, period, title }: { employer: string, period: string, ti
   </H3>
 )
 
+const GamesysCom = () => (
+  <a href="http://www.gamesyscorporate.com" target="_blank">
+    Gamesys
+  </a>
+)
+
 const GraphitCom = () => (
   <a href="https://graphit.com" target="_blank">
     Graphit.com
@@ -214,6 +220,25 @@ const NativeARApp = () => (
   <a href="https://expo.io/@tvararu/graphit-ar" target="_blank">
     native AR application
   </a>
+)
+
+const Gamesys = () => (
+  <section>
+    <Job employer="Gamesys (Contract)" period="Mar 2018 - Present" title="Senior Frontend Developer" />
+    <p>
+      <GamesysCom /> is an award-winning social and real money gaming company.
+    </p>
+    <Ul>
+      <Li>
+        Develop user-facing features on the <B>React.js</B> and <B>Flux</B>-based single page application frontend.
+      </Li>
+      <Li>
+        Work on optimising the <B>frontend performance</B>. Remove the project's dependency on <B>moment.js</B>,
+        resulting in savings of <B>20%</B> on the bundle size.
+      </Li>
+      <Li>Provide mentoring to team members, contribute to bug triage and planning meetings, write documentation.</Li>
+    </Ul>
+  </section>
 )
 
 const Graphit = () => (
@@ -424,6 +449,7 @@ export default () => (
       <section>
         <h2>Experience</h2>
 
+        <Gamesys />
         <Graphit />
         <GDS />
         <Timecounts />
