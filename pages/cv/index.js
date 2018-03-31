@@ -432,17 +432,6 @@ export default () => (
       </section>
 
       <section>
-        <h2>Education</h2>
-
-        <p>
-          <B>London South Bank University</B>, Hons BEng Computer Systems and Networks, graduated, 2014 - 2016.
-        </p>
-        <p>
-          <B>University of Bucharest</B>, BSc Computer Science, transferred to LSBU, 2012 - 2014.
-        </p>
-      </section>
-
-      <section>
         <h2>Projects</h2>
 
         <p>
