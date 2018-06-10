@@ -23,13 +23,6 @@ Run flow:
 yarn test
 ```
 
-Run flow coverage:
-
-```bash
-yarn flow-coverage
-open coverage/flow-coverage-report/index.html
-```
-
 Deploy:
 
 ```bash
