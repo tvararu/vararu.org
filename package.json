@@ -7,9 +7,6 @@
     "build": "next build && next export",
     "deploy": "./deploy.sh",
     "dev": "next",
-    "flow-coverage":
-      "flow-coverage-report -i 'pages/**/*.js' -i 'components/**/*.js' -t html -o coverage/flow-coverage-report",
-    "flow": "flow",
     "lint-staged": "lint-staged",
     "lint": "echo \"Forget about flow for now.\"",
     "predeploy": "npm run build",
@@ -28,8 +25,6 @@
     "serve": "^6.0.4"
   },
   "devDependencies": {
-    "flow-bin": "^0.52.0",
-    "flow-coverage-report": "^0.3.0",
     "husky": "^0.14.0",
     "npm-run-all": "^4.0.2",
     "prettier": "^1.7.4",
