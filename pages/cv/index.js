@@ -230,13 +230,19 @@ const Gamesys = () => (
     </p>
     <Ul>
       <Li>
-        Develop user-facing features on the <B>React.js</B> and <B>Flux</B>-based single page application frontend.
+        Develop user-facing features on the <B>React.js</B>, <B>Node.js</B>, and <B>Flux</B>-based single page
+        application frontend, focused on addressing user experience issues, industry-specific regulatory requirements,
+        and troubleshooting issues with the Selenium-based tests.
       </Li>
       <Li>
-        Work on optimising the <B>frontend performance</B>. Remove the project's dependency on <B>moment.js</B>,
-        resulting in savings of <B>20%</B> on the bundle size.
+        Work on optimising the <B>frontend performance</B>. Remove the project's dependency on <B>moment.js</B>, and
+        trim down the dependency on <B>lodash</B>, resulting in total savings of <B>33%</B> on the bundle size.
       </Li>
-      <Li>Provide mentoring to team members, contribute to bug triage and planning meetings, write documentation.</Li>
+      <Li>
+        Provide <B>mentoring</B> to team members and an apprentice, focusing on a pragmatic but <B>users first</B>{' '}
+        approach to software engineering. Facilitate agile ceremonies, and interviews for frontend Node.js as well as
+        backend Ruby candidates. Write documentation about <B>frontend performance</B>.
+      </Li>
     </Ul>
   </section>
 )
@@ -486,8 +492,8 @@ export default () => (
         <h2>Technologies</h2>
 
         <p>
-          I build products with <B>JavaScript</B> and <B>Node.js</B>, using <B>functional programming</B>
-          , <B>linting</B>, <B>testing</B>, <B>CI / CD</B>.
+          I build products with <B>JavaScript</B> and <B>Node.js</B>, using <B>linting</B>, <B>testing</B>,{' '}
+          <B>CI / CD</B>.
         </p>
         <p>
           I develop exclusively on macOS/UNIXlike operating systems, using <B>git</B> and modern tools.
@@ -502,8 +508,9 @@ export default () => (
         <h2>Hobbies</h2>
 
         <p>
-          I spend a lot of time reading books, about half of the programming variety. I love mentoring and teaching
-          others to learn to code. I practice guitar if I ever remember to, and go to lots of concerts and gigs.
+          I spend a lot of time reading books, about half of the programming variety, half about personal finance. I
+          love mentoring and teaching others to learn to code. I practice guitar, work on my old car, and travel as much
+          as I can.
         </p>
       </section>
     </article>
