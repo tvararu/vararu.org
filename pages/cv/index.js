@@ -235,13 +235,20 @@ const Gamesys = () => (
         and troubleshooting issues with the Selenium-based tests.
       </Li>
       <Li>
+        Build an internal tool for managing web chat emoji packs, using <B>Next.js</B> (static mode with server-side
+        rendering), <Cypress />, <Tachyons />. Leverage client-side JavaScript to cut/stitch PNG assets and package into
+        .zips, without needing a server. MVP was delivered in record time to a high standard, with very satisfied
+        stakeholders.
+      </Li>
+      <Li>
         Work on optimising the <B>frontend performance</B>. Remove the project's dependency on <B>moment.js</B>, and
-        trim down the dependency on <B>lodash</B>, resulting in total savings of <B>33%</B> on the bundle size.
+        trim down the dependency on <B>lodash</B>, resulting in total savings of <B>33%</B> on the bundle size. Write
+        performance <B>documentation</B> to aid with future work.
       </Li>
       <Li>
         Provide <B>mentoring</B> to team members and an apprentice, focusing on a pragmatic but <B>users first</B>{' '}
         approach to software engineering. Facilitate agile ceremonies, and interviews for frontend Node.js as well as
-        backend Ruby candidates. Write documentation about <B>frontend performance</B>.
+        backend Ruby candidates.
       </Li>
     </Ul>
   </section>
