@@ -22,7 +22,7 @@
     "react-dom": "^16.0.0",
     "react-motion": "^0.5.0",
     "react-no-ssr": "^1.1.0",
-    "serve": "^9.0.0"
+    "serve": "^10.0.0"
   },
   "devDependencies": {
     "husky": "^0.14.0",
