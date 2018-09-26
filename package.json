@@ -25,7 +25,7 @@
     "serve": "^10.0.0"
   },
   "devDependencies": {
-    "husky": "^0.14.0",
+    "husky": "^1.0.0",
     "npm-run-all": "^4.0.2",
     "prettier": "^1.7.4",
     "webpack-visualizer-plugin": "^0.1.11"
