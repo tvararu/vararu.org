@@ -18,7 +18,7 @@
     "classnames": "^2.2.5",
     "next": "^4.0.3",
     "raf-throttle": "^2.0.2",
-    "react": "^16.0.0",
+    "react": "^16.8.0",
     "react-dom": "^16.0.0",
     "react-motion": "^0.5.0",
     "react-no-ssr": "^1.1.0",
