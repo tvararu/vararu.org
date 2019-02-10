@@ -16,7 +16,7 @@
   "dependencies": {
     "babel-preset-flow": "^6.23.0",
     "classnames": "^2.2.5",
-    "next": "^4.0.3",
+    "next": "^7.0.3",
     "raf-throttle": "^2.0.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
