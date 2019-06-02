@@ -1,5 +1,4 @@
-import Document, { Head, Main, NextScript } from "next/document";
-import flush from "styled-jsx/server";
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 const CustomHead = () => (
   <Head>
@@ -100,26 +99,24 @@ const CustomHead = () => (
       name="msapplication-square310x310logo"
       content="/static/favicon/mstile-310x310.png"
     />
-    <title>theodor vararu.</title>
   </Head>
 );
 
 export default class MyDocument extends Document {
-  static getInitialProps({ renderPage }) {
-    const { html, head, errorHtml, chunks } = renderPage();
-    const styles = flush();
-    return { html, head, errorHtml, chunks, styles };
+  static async getInitialProps(ctx) {
+    const initialProps = await Document.getInitialProps(ctx);
+    return { ...initialProps };
   }
 
   render() {
     return (
-      <html lang="en">
+      <Html lang="en">
         <CustomHead />
         <body>
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }

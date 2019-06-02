@@ -1,8 +1,13 @@
 import Link from "next/link";
 import Layout from "../components/layout";
+import Head from "next/head";
 
 export default () => (
   <Layout>
+    <Head>
+      <title>theodor vararu.</title>
+    </Head>
+
     <article>
       <h1>
         Theo is a JavaScript developer interested in accessibility, Node.js, and

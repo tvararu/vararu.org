@@ -1,4 +1,5 @@
 import Layout from "../../components/layout";
+import Head from "next/head";
 
 const B = ({ children }) => <strong>{children}</strong>;
 const Ul = ({ children }) => (
@@ -538,6 +539,10 @@ const N7m = () => (
 
 export default () => (
   <Layout wide>
+    <Head>
+      <title>cv - theodor vararu.</title>
+    </Head>
+
     <article>
       <h1 className="visuallyhidden">Theodor Vararu's Résumé</h1>
 
