@@ -1,7 +1,4 @@
-# vararu.org
-
-[![Build Status](https://travis-ci.org/tvararu/vararu.org.svg?branch=master)](https://travis-ci.org/tvararu/vararu.org)
-[![Greenkeeper badge](https://badges.greenkeeper.io/tvararu/vararu.org.svg)](https://greenkeeper.io/)
+# vararu.org [![Build Status](https://travis-ci.org/tvararu/vararu.org.svg?branch=master)](https://travis-ci.org/tvararu/vararu.org)
 
 Run in development mode:
 
