@@ -1,16 +1,25 @@
-import React from 'react'
-import Link from 'next/link'
-import Logo from './logo'
-import NoSSR from 'react-no-ssr'
+import React from "react";
+import Link from "next/link";
+import Logo from "./logo";
+import NoSSR from "react-no-ssr";
 
 export default () => (
   <header>
-    <p>theodor<br /><Link href='/' prefetch><a>vararu.org</a></Link></p>
+    <p>
+      theodor
+      <br />
+      <Link href="/" prefetch>
+        <a>vararu.org</a>
+      </Link>
+    </p>
     <NoSSR>
-      <div className='logo'><Logo /></div>
+      <div className="logo">
+        <Logo />
+      </div>
     </NoSSR>
     <style jsx>{`
-      header, .logo {
+      header,
+      .logo {
         height: 4rem;
         font-weight: bold;
       }
@@ -22,7 +31,8 @@ export default () => (
         margin: 2rem 0;
       }
 
-      p, a {
+      p,
+      a {
         color: currentColor;
         font-size: 1.25rem;
       }
@@ -34,11 +44,13 @@ export default () => (
       }
 
       @media (min-width: 30rem) {
-        header, .logo {
+        header,
+        .logo {
           height: 5rem;
         }
 
-        p, a {
+        p,
+        a {
           font-size: 1.5rem;
         }
 
@@ -54,4 +66,4 @@ export default () => (
       }
     `}</style>
   </header>
-)
+);

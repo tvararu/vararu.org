@@ -1,27 +1,27 @@
-import React from 'react'
-import cs from 'classnames'
-import Header from './header'
+import React from "react";
+import cs from "classnames";
+import Header from "./header";
 
-export default ({children, wide}) => (
-  <div className={cs('container', {wide, slim: !wide})}>
+export default ({ children, wide }) => (
+  <div className={cs("container", { wide, slim: !wide })}>
     <style jsx global>{`
       body {
         color: #111;
-        font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue',
-          helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
+          "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial,
+          sans-serif;
         margin: 0;
       }
 
       @media print {
         body {
-          font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+          font-family: "helvetica neue", helvetica, ubuntu, roboto, noto,
+            "segoe ui", arial, sans-serif;
         }
       }
     `}</style>
     <Header />
-    <main>
-      {children}
-    </main>
+    <main>{children}</main>
     <style jsx>{`
       .container {
         margin: 1rem;
@@ -42,4 +42,4 @@ export default ({children, wide}) => (
       }
     `}</style>
   </div>
-)
+);
