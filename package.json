@@ -1,8 +1,14 @@
 {
+  "author": "theo@vararu.org",
+  "description": "Source code for my personal website",
+  "engines": {
+    "node": "12.3.1"
+  },
+  "license": "MIT",
   "name": "vararu.org",
+  "repository": "https://github.com/tvararu/vararu.org",
   "version": "1.0.0",
   "private": true,
-  "license": "MIT",
   "scripts": {
     "build": "next build && next export",
     "deploy": "./deploy.sh",
