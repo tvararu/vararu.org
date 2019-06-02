@@ -2,12 +2,7 @@ import React from 'react'
 import cs from 'classnames'
 import Header from './header'
 
-type props = {
-  children?: React$Element<*>,
-  wide?: Boolean
-}
-
-export default ({children, wide}: props) => (
+export default ({children, wide}) => (
   <div className={cs('container', {wide, slim: !wide})}>
     <style jsx global>{`
       body {

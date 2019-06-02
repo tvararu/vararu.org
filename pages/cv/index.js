@@ -1,10 +1,8 @@
 import React from 'react'
 import Layout from '../../components/layout'
 
-type statelessTypes = { children?: React$Element<*> }
-
-const B = ({ children }: statelessTypes) => <strong>{children}</strong>
-const Ul = ({ children }: statelessTypes) => (
+const B = ({ children }) => <strong>{children}</strong>
+const Ul = ({ children }) => (
   <ul>
     {children}
     <style jsx>{`
@@ -19,7 +17,7 @@ const Ul = ({ children }: statelessTypes) => (
     `}</style>
   </ul>
 )
-const Li = ({ children }: statelessTypes) => (
+const Li = ({ children }) => (
   <li>
     <span>{children}</span>
     <style jsx>{`
@@ -43,7 +41,7 @@ const Li = ({ children }: statelessTypes) => (
     `}</style>
   </li>
 )
-const H3 = ({ children }: statelessTypes) => (
+const H3 = ({ children }) => (
   <h3>
     {children}
     <style jsx>{`
@@ -129,7 +127,7 @@ const DAC = () => (
   </a>
 )
 
-const Job = ({ employer, period, title }: { employer: string, period: string, title: string }) => (
+const Job = ({ employer, period, title }) => (
   <H3>
     <div>
       <span className="employer">

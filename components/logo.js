@@ -11,13 +11,8 @@ export default class Logo extends Component {
     tilty: number,
     degree: number
   }
-  handleMouseMove: Function
-  handleMouseLeave: Function
-  handleDeviceOrientation: Function
-  tilt: (tiltx: number, tilty: number) => void
-  $wrapper: HTMLElement
 
-  constructor (props: Object) {
+  constructor (props) {
     super(props)
 
     this.state = {
@@ -44,7 +39,7 @@ export default class Logo extends Component {
     window.removeEventListener('deviceorientation', this.handleDeviceOrientation)
   }
 
-  handleMouseMove (event: MouseEvent) {
+  handleMouseMove (event) {
     const rect = this.$wrapper.getBoundingClientRect()
     const cx = Math.ceil(rect.width / 2.0)
     const cy = Math.ceil(rect.height / 2.0)

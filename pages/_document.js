@@ -2,10 +2,6 @@ import React from 'react'
 import Document, {Head, Main, NextScript} from 'next/document'
 import flush from 'styled-jsx/server'
 
-type ctx = {
-  renderPage: () => {html: Object, head: Object, errorHtml: Object, chunks: []}
-}
-
 const CustomHead = () => (
   <Head>
     <meta name='viewport' content='width=device-width, minimum-scale=1' />
@@ -38,7 +34,7 @@ const CustomHead = () => (
 )
 
 export default class MyDocument extends Document {
-  static getInitialProps ({renderPage}: ctx) {
+  static getInitialProps ({renderPage}) {
     const {html, head, errorHtml, chunks} = renderPage()
     const styles = flush()
     return {html, head, errorHtml, chunks, styles}
