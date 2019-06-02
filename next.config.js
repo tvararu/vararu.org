@@ -5,5 +5,6 @@ module.exports = {
     "/cv/": { page: "/cv/" },
     "/pug/": { page: "/pug/" },
     "/the-last-question/": { page: "/the-last-question/" }
-  })
+  }),
+  target: "serverless"
 };
