@@ -3,15 +3,9 @@ import throttle from "raf-throttle";
 import { Motion, spring } from "react-motion";
 import SvgLogo from "./svg-logo";
 
-const limitTo01Range = (x: number, a: number): number => x / (Math.abs(x) + a);
+const limitTo01Range = (x, a) => x / (Math.abs(x) + a);
 
 export default class Logo extends Component {
-  state: {
-    tiltx: number,
-    tilty: number,
-    degree: number
-  };
-
   constructor(props) {
     super(props);
 
@@ -60,13 +54,13 @@ export default class Logo extends Component {
     this.tilt(0, 0);
   }
 
-  handleDeviceOrientation(event: DeviceOrientationEvent) {
+  handleDeviceOrientation(event) {
     const tiltx = limitTo01Range(event.beta, 10) * -1;
     const tilty = limitTo01Range(event.gamma, 10);
     this.tilt(tiltx, tilty);
   }
 
-  tilt(tiltx: number, tilty: number) {
+  tilt(tiltx, tilty) {
     const radius = Math.sqrt(Math.pow(tiltx, 2) + Math.pow(tilty, 2));
     const degree = radius * 20;
     this.setState({ tiltx, tilty, degree });
@@ -92,16 +86,10 @@ export default class Logo extends Component {
           tilty: spring(tilty, springParams),
           foregroundTranslateZ: spring(10)
         }}
-        children={(style: {
-          tiltx: number,
-          tilty: number,
-          degree: number,
-          backgroundTransformScale: number,
-          foregroundTranslateZ: number
-        }) => (
+        children={style => (
           <div
             className="wrapper"
-            ref={(wrapper: HTMLElement) => {
+            ref={wrapper => {
               this.$wrapper = wrapper;
             }}
             role="presentation"
