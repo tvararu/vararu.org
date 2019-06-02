@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import throttle from "raf-throttle";
 import { Motion, spring } from "react-motion";
 import SvgLogo from "./svg-logo";

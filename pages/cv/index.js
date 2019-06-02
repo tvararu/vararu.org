@@ -1,4 +1,3 @@
-import React from "react";
 import Layout from "../../components/layout";
 
 const B = ({ children }) => <strong>{children}</strong>;

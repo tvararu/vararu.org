@@ -1,5 +1,3 @@
-import React from "react";
-
 export default () => (
   <svg
     version="1.1"
