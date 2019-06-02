@@ -14,12 +14,6 @@ yarn build
 yarn start
 ```
 
-Run flow:
-
-```bash
-yarn test
-```
-
 Deploy:
 
 ```bash

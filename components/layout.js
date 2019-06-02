@@ -1,4 +1,3 @@
-// @flow
 import React from 'react'
 import cs from 'classnames'
 import Header from './header'

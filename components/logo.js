@@ -1,4 +1,3 @@
-// @flow
 import React, {Component} from 'react'
 import throttle from 'raf-throttle'
 import {Motion, spring} from 'react-motion'

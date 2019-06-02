@@ -14,7 +14,6 @@
     "test": "npm run lint"
   },
   "dependencies": {
-    "babel-preset-flow": "^6.23.0",
     "classnames": "^2.2.5",
     "next": "^4.0.3",
     "raf-throttle": "^2.0.2",
