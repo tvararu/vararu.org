@@ -24,6 +24,6 @@
     "react-no-ssr": "^1.1.0"
   },
   "devDependencies": {
-    "prettier": "^1.18.0"
+    "prettier": "^1.18.2"
   }
 }
