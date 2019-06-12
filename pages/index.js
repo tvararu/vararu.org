@@ -18,7 +18,7 @@ export default () => (
           Email: <a href="mailto:theo@vararu.org">theo@vararu.org</a>
         </li>
         <li>
-          Blog: <a href="https://blog.vararu.org">blog.vararu.org</a>
+          Blog: <a href="http://blog.vararu.org">blog.vararu.org</a>
         </li>
         <li>
           Résumé:{" "}
