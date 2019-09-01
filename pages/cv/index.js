@@ -237,11 +237,66 @@ const NativeARApp = () => (
   </a>
 );
 
+const DfEDigital = () => (
+  <a href="https://dfedigital.blog.gov.uk" target="_blank">
+    DfE Digital
+  </a>
+);
+
+const FindPostgraduateTeacherTraining = () => (
+  <a
+    href="https://www.find-postgraduate-teacher-training.service.gov.uk"
+    target="_blank"
+  >
+    Find postgraduate training
+  </a>
+);
+
+const DfE = () => (
+  <section>
+    <Job
+      employer="Department for Education (Contract)"
+      period="Sep 2018 - Present"
+      title="Senior Full Stack Developer"
+    />
+    <p>
+      <DfEDigital /> builds user-centric and accessible services for teachers
+      and students.
+    </p>
+    <Ul>
+      <Li>
+        Develop full-stack features as part of the Becoming a Teacher team, in{" "}
+        <B>C#</B>, <B>Ruby on Rails</B>, <B>PostgreSQL</B>, and{" "}
+        <B>JavaScript</B> / <B>Node.js</B>, to help teachers{" "}
+        <FindPostgraduateTeacherTraining /> courses.
+      </Li>
+      <Li>
+        Improve the <B>DevOps</B> pipeline by adopting <B>Docker</B>, reducing
+        the build times, using <B>Terraform</B>, adding{" "}
+        <B>end to end smoke tests</B> using <Cypress />, on both Travis CI and
+        Microsoft Azure.
+      </Li>
+      <Li>
+        Develop prototypes using <B>Next.js</B>, <B>Now.sh</B>, and{" "}
+        <B>Apollo.js</B> to trial <B>Node.js</B>, <B>Serverless</B>, and{" "}
+        <B>GraphQL</B> for our services. Findings were presented at the
+        periodical development and architecture meeting, to favourable reception
+        from technical leaders.
+      </Li>
+      <Li>
+        Take part in <B>Agile</B> ceremonies, write specifications for
+        full-stack features, and collaborate / pair across on a number of
+        different problems across the stack.
+      </Li>
+    </Ul>
+  </section>
+);
+
 const Gamesys = () => (
   <section>
     <Job
       employer="Gamesys (Contract)"
-      period="Mar 2018 - Present"
+      period="Mar 2018 - Sep 2018"
       title="Senior Frontend Developer"
     />
     <p>
@@ -549,6 +604,7 @@ export default () => (
       <section>
         <h2>Experience</h2>
 
+        <DfE />
         <Gamesys />
         <Graphit />
         <GDS />
