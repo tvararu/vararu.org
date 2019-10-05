@@ -1,7 +1,5 @@
 {
   "version": 2,
   "name": "me",
-  "regions": ["lhr1"],
-  "alias": "vararu.org",
-  "builds": [{ "src": "next.config.js", "use": "@now/next" }]
+  "alias": "vararu.org"
 }
