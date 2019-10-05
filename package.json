@@ -10,9 +10,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "next build && next export",
-    "dev": "next",
-    "test": "echo \"Nothing to do \""
+    "build": "next build",
+    "deploy": "now",
+    "dev": "next dev",
+    "start": "next start"
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -24,6 +25,6 @@
     "react-no-ssr": "^1.1.0"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "now": "^16.3.1"
   }
 }

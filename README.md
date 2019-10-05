@@ -1,23 +1,22 @@
-# vararu.org [![Build Status](https://travis-ci.org/tvararu/vararu.org.svg?branch=master)](https://travis-ci.org/tvararu/vararu.org)
+# vararu.org
 
-Install correct version of `node` using `nvm`:
+Install the required version of `node` using `nvm`:
 
 ```bash
 nvm <.nvmrc
 ```
 
-Run in development mode:
+Install dependencies:
 
 ```bash
 yarn
-yarn dev
 ```
 
-Run in production mode:
+Run locally:
 
 ```bash
-yarn build
-yarn start
+yarn now dev
+open http://localhost:3000
 ```
 
 Deploy:
