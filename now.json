@@ -1,5 +1,22 @@
 {
   "version": 2,
   "name": "me",
-  "alias": "vararu.org"
+  "alias": "vararu.org",
+  "routes": [
+    {
+      "src": "/commas\\/?",
+      "status": 301,
+      "headers": { "Location": "https://tvararu.github.io/commas/" }
+    },
+    {
+      "src": "/pug\\/?",
+      "status": 301,
+      "headers": { "Location": "https://tvararu.github.io/pug/" }
+    },
+    {
+      "src": "/the-last-question\\/?",
+      "status": 301,
+      "headers": { "Location": "https://tvararu.github.io/the-last-question/" }
+    }
+  ]
 }
