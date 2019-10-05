@@ -7,7 +7,7 @@ export default () => (
     <p>
       theodor
       <br />
-      <Link href="/" prefetch>
+      <Link href="/">
         <a>vararu.org</a>
       </Link>
     </p>

@@ -22,7 +22,7 @@ export default () => (
         </li>
         <li>
           Résumé:{" "}
-          <Link prefetch href="/cv">
+          <Link href="/cv">
             <a>vararu.org/cv</a>
           </Link>
         </li>
