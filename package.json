@@ -27,7 +27,7 @@
     "react-no-ssr": "^1.1.0"
   },
   "devDependencies": {
-    "cypress": "^3.8.3",
+    "cypress": "^4.0.1",
     "now": "^16.7.3",
     "start-server-and-test": "^1.10.8"
   }
