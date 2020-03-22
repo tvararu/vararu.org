@@ -1,7 +1,7 @@
 import { Component } from "react";
 import SvgLogo from "./svg-logo";
 
-const Logo = () => (
+export default () => (
   <div className="wrapper" role="presentation">
     <style jsx>{`
       .wrapper {
@@ -51,5 +51,3 @@ const Logo = () => (
     </div>
   </div>
 );
-
-export default Logo;
