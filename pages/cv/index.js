@@ -145,6 +145,20 @@ const DAC = () => (
   </a>
 );
 
+const formatDate = iso =>
+  new Date(iso).toLocaleDateString("en-GB", {
+    month: "short",
+    year: "numeric"
+  });
+
+const Time = ({ iso }) => <time dateTime={iso}>{formatDate(iso)}</time>;
+
+const Period = ({ period: [from, to] }) => (
+  <>
+    {from} - {to}
+  </>
+);
+
 const Job = ({ employer, period, title }) => (
   <H3>
     <div>
@@ -152,7 +166,11 @@ const Job = ({ employer, period, title }) => (
         <B>{employer}</B>
       </span>
       <span className="title">{title}</span>
-      <span className="period">{period}</span>
+      <span className="period">
+        <Period
+          period={period.map(p => (p === null ? "Present" : <Time iso={p} />))}
+        />
+      </span>
     </div>
     <style jsx>{`
       div {
@@ -256,7 +274,7 @@ const DfE = () => (
   <section>
     <Job
       employer="Department for Education (Contract)"
-      period="Sep 2018 - Present"
+      period={["2018-09-01", null]}
       title="Senior Full Stack Developer"
     />
     <p>
@@ -296,7 +314,7 @@ const Gamesys = () => (
   <section>
     <Job
       employer="Gamesys (Contract)"
-      period="Mar 2018 - Sep 2018"
+      period={["2018-03-01", "2018-09-01"]}
       title="Senior Frontend Developer"
     />
     <p>
@@ -336,7 +354,7 @@ const Graphit = () => (
   <section>
     <Job
       employer="Graphit Systems (Contract)"
-      period="Aug 2017 - Feb 2018"
+      period={["2017-08-01", "2018-02-01"]}
       title="JavaScript Developer"
     />
     <p>
@@ -380,7 +398,7 @@ const GDS = () => (
   <section>
     <Job
       employer="Government Digital Service"
-      period="Mar 2016 - Aug 2017"
+      period={["2016-03-01", "2017-08-01"]}
       title="Developer / Senior Developer"
     />
     <p>
@@ -427,7 +445,7 @@ const Timecounts = () => (
   <section>
     <Job
       employer="Timecounts"
-      period="May 2015 - Feb 2016"
+      period={["2015-05-01", "2016-02-01"]}
       title="Senior Full Stack Developer"
     />
     <p>
@@ -459,7 +477,7 @@ const Workangel = () => (
   <section>
     <Job
       employer="Workangel"
-      period="Sep 2014 - Apr 2015"
+      period={["2014-09-01", "2015-04-01"]}
       title="Lead Front End Developer"
     />
     <p>
@@ -516,7 +534,7 @@ const ReadForward = () => (
   <section>
     <Job
       employer="ReadForward"
-      period="Mar 2013 - Sep 2014"
+      period={["2013-03-01", "2014-09-01"]}
       title="Lead Full Stack Developer"
     />
     <p>
