@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Logo from "./logo";
-import NoSSR from "react-no-ssr";
 
 export default () => (
   <header>
@@ -11,11 +10,9 @@ export default () => (
         <a>vararu.org</a>
       </Link>
     </p>
-    <NoSSR>
-      <div className="logo">
-        <Logo />
-      </div>
-    </NoSSR>
+    <div className="logo">
+      <Logo />
+    </div>
     <style jsx>{`
       header,
       .logo {
