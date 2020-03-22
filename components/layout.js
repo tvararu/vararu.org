@@ -1,8 +1,7 @@
-import cs from "classnames";
 import Header from "./header";
 
 export default ({ children, wide }) => (
-  <div className={cs("container", { wide, slim: !wide })}>
+  <div className={`container ${wide ? "wide" : "slim"}`}>
     <style jsx global>{`
       body {
         color: #111;
