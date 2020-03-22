@@ -5121,10 +5121,6 @@ pend@~1.2.0:
   resolved "https://registry.yarnpkg.com/pend/-/pend-1.2.0.tgz#7a57eb550a6783f9115331fcf4663d5c8e007a50"
   integrity sha1-elfrVQpng/kRUzH89GY9XI4AelA=
 
-performance-now@^0.2.0, performance-now@~0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-0.2.0.tgz#33ef30c5c77d4ea21c5a53869d91b56d8f2555e5"
-
 performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
@@ -5632,7 +5628,7 @@ prop-types-exact@1.2.0:
     object.assign "^4.1.0"
     reflect.ownkeys "^0.2.0"
 
-prop-types@15.7.2, prop-types@^15.5.8, prop-types@^15.6.2:
+prop-types@15.7.2, prop-types@^15.6.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -5726,17 +5722,6 @@ querystring@0.2.0, querystring@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
 
-raf-throttle@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/raf-throttle/-/raf-throttle-2.0.3.tgz#d10259094e2c6d77df225622fb847c5ea6d5a313"
-  integrity sha512-nr6F5zTqyLQ7TcAtWArQPxjwW1uTh5h2f+DxsFd2beT2p5iURAXhkx34T4pgaCgA6gjqIm0wVO94QF1zPkThug==
-
-raf@^3.1.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/raf/-/raf-3.3.0.tgz#93845eeffc773f8129039f677f80a36044eee2c3"
-  dependencies:
-    performance-now "~0.2.0"
-
 ramda@0.26.1:
   version "0.26.1"
   resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.26.1.tgz#8d41351eb8111c55353617fc3bbffad8e4d35d06"
@@ -5803,15 +5788,6 @@ react-is@^16.8.1:
   version "16.10.2"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.10.2.tgz#984120fd4d16800e9a738208ab1fba422d23b5ab"
   integrity sha512-INBT1QEgtcCCgvccr5/86CfD71fw9EPmDxgiJX4I2Ddr6ZsV6iFXsuby+qWJPtmNuMY0zByTsG4468P7nHuNWA==
-
-react-motion@^0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/react-motion/-/react-motion-0.5.2.tgz#0dd3a69e411316567927917c6626551ba0607316"
-  integrity sha512-9q3YAvHoUiWlP3cK0v+w1N5Z23HXMj4IF4YuvjvWegWqNPfLXsOBE/V7UvQGpXxHFKRQQcNcVQE31g9SB/6qgQ==
-  dependencies:
-    performance-now "^0.2.0"
-    prop-types "^15.5.8"
-    raf "^3.1.0"
 
 react@^16.13.1:
   version "16.13.1"
@@ -5968,7 +5944,7 @@ request-promise-native@^1.0.8:
     stealthy-require "^1.1.1"
     tough-cookie "^2.3.3"
 
-request@^2.88.0, "request@github:cypress-io/request#b5af0d1fa47eec97ba980cde90a13e69a2afcd16":
+request@^2.88.0, request@cypress-io/request#b5af0d1fa47eec97ba980cde90a13e69a2afcd16:
   version "2.88.1"
   resolved "https://codeload.github.com/cypress-io/request/tar.gz/b5af0d1fa47eec97ba980cde90a13e69a2afcd16"
   dependencies:

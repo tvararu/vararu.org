@@ -20,10 +20,8 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "next": "^9.3.1",
-    "raf-throttle": "^2.0.3",
     "react": "^16.13.1",
-    "react-dom": "^16.13.0",
-    "react-motion": "^0.5.2"
+    "react-dom": "^16.13.0"
   },
   "devDependencies": {
     "cypress": "^4.2.0",
