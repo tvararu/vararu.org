@@ -270,11 +270,60 @@ const FindPostgraduateTeacherTraining = () => (
   </a>
 );
 
-const DfE = () => (
+const ApplyForTeacherTraining = () => (
+  <a
+    href="https://www.apply-for-teacher-training.education.gov.uk/candidate"
+    target="_blank"
+  >
+    Apply for teacher training
+  </a>
+);
+
+const DfEApply = () => (
   <section>
     <Job
       employer="Department for Education (Contract)"
-      period={["2018-09-01", null]}
+      period={["2019-09-01", null]}
+      title="Lead Full Stack Developer"
+    />
+    <p>
+      <DfEDigital /> builds user-centric and accessible services for teachers
+      and students.
+    </p>
+    <Ul>
+      <Li>
+        Lead development of the candidate-facing side of{" "}
+        <ApplyForTeacherTraining /> in <B>Ruby on Rails</B>, <B>JavaScript</B>,
+        and <B>PostgreSQL</B>, on <B>Microsoft Azure</B>. Collaborate with
+        stakeholders, architects, and other tech leads towards an MVP public
+        beta release in November 2019, which was achieved.
+      </Li>
+      <Li>
+        Work in an <B>agile</B> team, <B>unblocking</B>, <B>pairing</B> with,
+        and <B>mentoring</B> 3-5 developers of varying seniority levels. Drive
+        conversations with the <B>Find</B> team to <B>collaborate</B> on shared
+        features.
+      </Li>
+      <Li>
+        Encourage team participation in the <B>design</B> and{" "}
+        <B>user research</B> process, improve the pull-request <B>process</B> by
+        introducing review apps, and handle support requests and production
+        incidents.
+      </Li>
+      <Li>
+        Champion <B>accessibility</B>, frontend <B>performance</B>, and{" "}
+        <B>automated testing</B> by prioritising related improvements into our{" "}
+        <B>sprints</B>.
+      </Li>
+    </Ul>
+  </section>
+);
+
+const DfEFind = () => (
+  <section>
+    <Job
+      employer="Department for Education (Contract)"
+      period={["2018-09-01", "2019-09-01"]}
       title="Senior Full Stack Developer"
     />
     <p>
@@ -292,7 +341,7 @@ const DfE = () => (
         Improve the <B>DevOps</B> pipeline by adopting <B>Docker</B>, reducing
         the build times, using <B>Terraform</B>, adding{" "}
         <B>end to end smoke tests</B> using <Cypress />, on both Travis CI and
-        Microsoft Azure.
+        <B>Microsoft Azure</B>.
       </Li>
       <Li>
         Develop prototypes using <B>Next.js</B>, <B>Now.sh</B>, and{" "}
@@ -355,7 +404,7 @@ const Graphit = () => (
     <Job
       employer="Graphit Systems (Contract)"
       period={["2017-08-01", "2018-02-01"]}
-      title="JavaScript Developer"
+      title="Senior JavaScript Developer"
     />
     <p>
       <GraphitCom /> is an online app for configuring and buying modular
@@ -622,7 +671,8 @@ export default () => (
       <section>
         <h2>Experience</h2>
 
-        <DfE />
+        <DfEApply />
+        <DfEFind />
         <Gamesys />
         <Graphit />
         <GDS />
