@@ -2,7 +2,7 @@
   "author": "theo@vararu.org",
   "description": "Source code for my personal website",
   "engines": {
-    "node": "10.20.0"
+    "node": ">=10 <11"
   },
   "license": "MIT",
   "name": "vararu.org",
