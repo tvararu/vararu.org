@@ -340,8 +340,7 @@ const DfEFind = () => (
       <Li>
         Improve the <B>DevOps</B> pipeline by adopting <B>Docker</B>, reducing
         the build times, using <B>Terraform</B>, adding{" "}
-        <B>end to end smoke tests</B> using <Cypress />, on both Travis CI and
-        <B>Microsoft Azure</B>.
+        <B>end to end smoke tests</B> using <Cypress />, on both Travis CI and <B>Microsoft Azure</B>.
       </Li>
       <Li>
         Develop prototypes using <B>Next.js</B>, <B>Now.sh</B>, and{" "}
