@@ -25,6 +25,6 @@
   "devDependencies": {
     "cypress": "^4.10.0",
     "now": "^19.1.1",
-    "start-server-and-test": "^1.11.0"
+    "start-server-and-test": "^1.11.1"
   }
 }
