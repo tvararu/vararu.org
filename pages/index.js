@@ -21,12 +21,6 @@ export default () => (
           Blog: <a href="http://blog.vararu.org">blog.vararu.org</a>
         </li>
         <li>
-          Résumé:{" "}
-          <Link href="/cv">
-            <a>vararu.org/cv</a>
-          </Link>
-        </li>
-        <li>
           GitHub: <a href="https://github.com/tvararu">github.com/tvararu</a>
         </li>
         <li>
