@@ -1,4 +1,4 @@
-export default () => (
+const SvgLogo = () => (
   <svg
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
@@ -13,3 +13,5 @@ export default () => (
     </g>
   </svg>
 );
+
+export default SvgLogo;

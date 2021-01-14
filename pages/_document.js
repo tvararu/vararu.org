@@ -2,7 +2,6 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 
 const CustomHead = () => (
   <Head>
-    <meta name="viewport" content="width=device-width, minimum-scale=1" />
     <meta name="description" content="Theodor Vararu's website." />
     <meta property="og:title" content="vararu.org" />
     <meta property="og:type" content="website" />
