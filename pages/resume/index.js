@@ -35,7 +35,7 @@ const Li = ({ children }) => (
       }
       @media print {
         li {
-          margin: 0.25rem 0;
+          margin: 0.25rem 0 0.25rem 0.3rem;
         }
       }
     `}</style>
@@ -84,9 +84,9 @@ const MigrationProgramme = () => (
 );
 const GOVUKExperience = () => (
   <Li>
-    Rebuild GOV.UK formats as part of the <MigrationProgramme /> team, moving
-    from the legacy monolith publisher to a <B>microservices</B> pipeline.{" "}
-    <B>Ruby on Rails</B>, <B>TDD</B>, <B>Agile</B>.
+    Rebuild GOV.UK formats as part of the <B>Migration Programme</B> team,
+    moving from the legacy monolith publisher to a <B>microservices</B>{" "}
+    pipeline. <B>Ruby on Rails</B>, <B>TDD</B>, <B>Agile</B>.
   </Li>
 );
 const WebchatAlpha = () => (
@@ -319,12 +319,12 @@ const DfEFind = () => (
         <B>PostgreSQL</B>, and <B>Node.js</B>, to help teachers{" "}
         <FindPostgraduateTeacherTraining /> courses. Improve the <B>DevOps</B>{" "}
         pipeline by adopting <B>Docker</B>, reducing build times, using{" "}
-        <B>Terraform</B>, adding <B>smoke tests</B> using <Cypress />.
+        <B>Terraform</B>, adding <B>smoke tests</B> using <B>Cypress.io</B>.
       </Li>
       <Li>
         Develop prototypes using <B>Next.js</B>, <B>Now.sh</B>, and{" "}
         <B>Apollo.js</B> to trial <B>Node.js</B>, <B>Serverless</B>, and{" "}
-        <B>GraphQL</B> for our services. Present findings to wider technical
+        <B>GraphQL</B> for our services. Present findings to the wider technical
         community to <B>build engagement and awareness</B> of cutting edge
         technologies.
       </Li>
@@ -346,7 +346,7 @@ const Gamesys = () => (
         satisfied stakeholders.
       </Li>
       <Li>
-        Optimise <B>frontend performance</B> of main site by removing{" "}
+        Optimise main site <B>frontend performance</B> by removing{" "}
         <B>moment.js</B> and <B>lodash</B>, resulting in total savings of{" "}
         <B>33%</B> on the bundle size. Provide <B>mentoring</B> to team members
         and apprentices, focusing on a pragmatic but <B>users first</B> approach
@@ -365,7 +365,7 @@ const Graphit = () => (
     />
     <Ul>
       <Li>
-        Ship a full redesign, online payments with <B>Stripe</B>, fixes for{" "}
+        Ship a complete redesign, online payments with <B>Stripe</B>, fixes for{" "}
         <B>legacy browsers</B> and <B>performance</B> issues while building on
         top of the previous developer's work without handover. <B>React.js</B>,{" "}
         <B>Three.js</B>, <B>webpack</B>, <B>Redux.js</B>.
@@ -394,10 +394,11 @@ const GDS = () => (
         ⭐️ Lead development of an <OpenSourceCountryPicker />. Talk to service
         teams to learn about their needs, build an <AccessibleAutocomplete />{" "}
         (400+ GitHub stars) using <B>JavaScript</B> and{" "}
-        <B>progressive enhancement</B>. Extensive user research, with abled
-        users and with users with access needs, and to an accessibility audit
-        from the <B>Digital Accessibility Centre</B>.{" "}
-        <a href="https://www.youtube.com/watch?v=gRVgWT3glII">
+        <B>progressive enhancement</B>. Extensive user research, collaborate
+        with industry-leading accessibility experts, leverage <B>WCAG</B>, and
+        attend a professional audit from the <B>Digital Accessibility Centre</B>
+        .{" "}
+        <a href="https://www.youtube.com/watch?v=gRVgWT3glII" target="_blank">
           Present it at the London Accessibility Meetup
         </a>
         .
@@ -448,7 +449,7 @@ const Workangel = () => (
       </Li>
       <Li>
         Dramatically improve the build process by{" "}
-        <B>optimising the performance</B> of tasks and embracing modern best
+        <B>optimising the performance</B> of builds and embracing modern best
         practices: template minification, linting, unit and Selenium integration
         testing, continuous integration, load testing.
       </Li>
@@ -490,7 +491,7 @@ const ReadForward = () => (
         frontend pattern library. Onboard and train junior developers in its use
         that produced our digital textbook offerings for primary education,
         which became the company's bread and butter product. <B>Node.js</B>,{" "}
-        <B>Backbone.js</B>, <B>pattern libraries</B>,{" "}
+        <B>Backbone.js</B>, <B>design systems</B>,{" "}
         <B>visual regression testing</B>.
       </Li>
       <Li>
@@ -517,7 +518,7 @@ const TheLastQuestion = () => (
 );
 const Dotfiles = () => (
   <a href="https://github.com/tvararu/.dotfiles" target="_blank">
-    My dotfiles
+    dotfiles
   </a>
 );
 const NEBUL4 = () => (
@@ -539,7 +540,7 @@ const N7m = () => (
 export default () => (
   <Layout wide>
     <Head>
-      <title>résumé - theodor vararu.</title>
+      <title>résumé - theodor vararu</title>
     </Head>
 
     <article>
@@ -549,6 +550,23 @@ export default () => (
           theo@vararu.org
         </a>
       </h1>
+
+      <section>
+        <h2>Summary</h2>
+
+        <p>
+          👋 I'm a full stack engineer with 8 years of experience and a passion
+          for inclusive design. User needs, design systems, performance, and
+          accessibility are my jam.
+        </p>
+
+        <p>
+          I have lead teams, and I don't mind getting my hands dirty across the
+          whole stack. I like the Lean Startup method, being an active
+          participant in the design and research process, and the Retrospective
+          Prime Directive.
+        </p>
+      </section>
 
       <section>
         <h2>Experience</h2>
@@ -569,7 +587,10 @@ export default () => (
         <Ul>
           <Li>
             A widely-used{" "}
-            <a href="https://github.com/alphagov/accessible-autocomplete">
+            <a
+              href="https://github.com/alphagov/accessible-autocomplete"
+              target="_blank"
+            >
               accessible autocomplete component
             </a>
             ;
@@ -578,7 +599,10 @@ export default () => (
             A reimagined presentation of <TheLastQuestion />;
           </Li>
           <Li>
-            <Dotfiles /> and configuration scripts.
+            <a href="https://github.com/tvararu/dotfiles" target="_blank">
+              Older dotfiles
+            </a>
+            , and newer <Dotfiles /> and configuration scripts.
           </Li>
         </Ul>
       </section>
