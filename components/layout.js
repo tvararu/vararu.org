@@ -35,7 +35,7 @@ export default ({ children, wide }) => (
       @media (min-width: 45rem) {
         .wide {
           margin: 3rem auto;
-          max-width: 45rem;
+          max-width: 42rem;
         }
       }
     `}</style>
