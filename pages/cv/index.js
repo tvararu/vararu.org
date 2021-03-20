@@ -662,6 +662,7 @@ export default () => (
   <Layout wide>
     <Head>
       <title>cv - theodor vararu.</title>
+      <meta name="robots" content="noindex,nofollow" />
     </Head>
 
     <article>
