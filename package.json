@@ -25,6 +25,7 @@
   "devDependencies": {
     "cypress": "^8.1.0",
     "now": "^21.0.1",
+    "prettier": "^2.3.2",
     "start-server-and-test": "^1.13.1"
   }
 }
