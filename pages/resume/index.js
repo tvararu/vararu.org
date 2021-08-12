@@ -281,6 +281,29 @@ const ApplyForTeacherTraining = () => (
   </a>
 );
 
+const Facebook = () => (
+  <section>
+    <Job
+      employer="Facebook"
+      period={["2021-01-25", "2021-07-09"]}
+      title="Software Engineer"
+    />
+    <Ul>
+      <Li>
+        Work on the <B>Workplace</B> product as part of the <B>Web Core</B>{" "}
+        team, in the <B>Accessibility</B> squad. Triage, identify, and fix
+        accessibility issues in the push towards full <B>WCAG 2.2</B>{" "}
+        compliance.
+      </Li>
+      <Li>
+        Help the team refine their strategy and roadmap, by writing an{" "}
+        <B>accessibility statement</B>, gathering information from previous
+        audits, and organising existing tasks and work streams.
+      </Li>
+    </Ul>
+  </section>
+);
+
 const DfEApply = () => (
   <section>
     <Job
@@ -572,6 +595,7 @@ export default () => (
       <section>
         <h2>Experience</h2>
 
+        <Facebook />
         <DfEApply />
         <DfEFind />
         <Gamesys />

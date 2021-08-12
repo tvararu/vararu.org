@@ -145,10 +145,10 @@ const DAC = () => (
   </a>
 );
 
-const formatDate = iso =>
+const formatDate = (iso) =>
   new Date(iso).toLocaleDateString("en-GB", {
     month: "short",
-    year: "numeric"
+    year: "numeric",
   });
 
 const Time = ({ iso }) => <time dateTime={iso}>{formatDate(iso)}</time>;
@@ -168,7 +168,9 @@ const Job = ({ employer, period, title }) => (
       <span className="title">{title}</span>
       <span className="period">
         <Period
-          period={period.map(p => (p === null ? "Present" : <Time iso={p} />))}
+          period={period.map((p) =>
+            p === null ? "Present" : <Time iso={p} />
+          )}
         />
       </span>
     </div>
@@ -279,6 +281,29 @@ const ApplyForTeacherTraining = () => (
   </a>
 );
 
+const Facebook = () => (
+  <section>
+    <Job
+      employer="Facebook"
+      period={["2021-01-25", "2021-07-09"]}
+      title="Software Engineer"
+    />
+    <Ul>
+      <Li>
+        Work on the <B>Workplace</B> product as part of the <B>Web Core</B>{" "}
+        team, in the <B>Accessibility</B> squad. Triage, identify, and fix
+        accessibility issues in the push towards full <B>WCAG 2.2</B>{" "}
+        compliance.
+      </Li>
+      <Li>
+        Help the team refine their strategy and roadmap, by writing an{" "}
+        <B>accessibility statement</B>, gathering information from previous
+        audits, and organising existing tasks and work streams.
+      </Li>
+    </Ul>
+  </section>
+);
+
 const DfEApply = () => (
   <section>
     <Job
@@ -340,7 +365,8 @@ const DfEFind = () => (
       <Li>
         Improve the <B>DevOps</B> pipeline by adopting <B>Docker</B>, reducing
         the build times, using <B>Terraform</B>, adding{" "}
-        <B>end to end smoke tests</B> using <Cypress />, on both Travis CI and <B>Microsoft Azure</B>.
+        <B>end to end smoke tests</B> using <Cypress />, on both Travis CI and{" "}
+        <B>Microsoft Azure</B>.
       </Li>
       <Li>
         Develop prototypes using <B>Next.js</B>, <B>Now.sh</B>, and{" "}
@@ -671,6 +697,7 @@ export default () => (
       <section>
         <h2>Experience</h2>
 
+        <Facebook />
         <DfEApply />
         <DfEFind />
         <Gamesys />
