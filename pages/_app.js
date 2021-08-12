@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
   return (
     <>
       <Head>

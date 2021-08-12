@@ -1,6 +1,6 @@
 import Header from "./header";
 
-export default ({ children, wide }) => (
+const Layout = ({ children, wide }) => (
   <div className={`container ${wide ? "wide" : "slim"}`}>
     <style jsx global>{`
       body {
@@ -41,3 +41,5 @@ export default ({ children, wide }) => (
     `}</style>
   </div>
 );
+
+export default Layout;
