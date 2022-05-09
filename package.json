@@ -23,7 +23,7 @@
     "react-dom": "^18.1.0"
   },
   "devDependencies": {
-    "cypress": "^9.6.0",
+    "cypress": "^9.6.1",
     "now": "^21.0.1",
     "prettier": "^2.6.2",
     "start-server-and-test": "^1.14.0"
