@@ -24,7 +24,9 @@ export default () => (
           GitHub: <a href="https://github.com/tvararu">github.com/tvararu</a>
         </li>
         <li>
-          Twitter: <a href="https://twitter.com/tvararu">twitter.com/tvararu</a>
+          X: <a href="https://x.com/nihil_sine_theo">
+            x.com/nihil_sine_theo
+          </a>
         </li>
       </ul>
     </article>
