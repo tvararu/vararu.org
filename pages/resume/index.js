@@ -57,7 +57,7 @@ const H3 = ({ children }) => (
       }
       @media print {
         h3 {
-          margin: 1rem 0 0.5rem;
+          margin: 0rem;
         }
       }
     `}</style>
@@ -272,13 +272,49 @@ const FindPostgraduateTeacherTraining = () => (
   </a>
 );
 
-const ApplyForTeacherTraining = () => (
-  <a
-    href="https://www.apply-for-teacher-training.education.gov.uk/candidate"
-    target="_blank"
-  >
-    Apply for teacher training
-  </a>
+const NHS = () => (
+  <section>
+    <Job
+      employer="NHS"
+      period={["2023-01-01", null]}
+      title="Tech Lead (Contract)"
+    />
+    <p>
+      Lead development of the <B>Manage vaccinations in schools</B> (Mavis)
+      service, a national service used by nurses to record consent and
+      vaccinations.
+    </p>
+  </section>
+);
+
+const DfETRA = () => (
+  <section>
+    <Job
+      employer="Department for Education"
+      period={["2022-01-01", "2022-12-31"]}
+      title="Tech Lead (Contract)"
+    />
+    <p>
+      Lead development of 4 projects across the{" "}
+      <B>Teaching Regulation Authority</B> platform, such as a teacher OIDC
+      provider, and a service to manage serious misconduct.
+    </p>
+  </section>
+);
+
+const MoJ = () => (
+  <section>
+    <Job
+      employer="Ministry of Justice"
+      period={["2021-09-01", "2021-12-01"]}
+      title="Senior Developer (Contract)"
+    />
+    <p>
+      Brought in to facilitate an <B>accessibility audit</B> of the{" "}
+      <B>Manage Supervisions</B> service within the HMPPS platform. Carry on
+      further improvements and fix accessibility issues.
+    </p>
+  </section>
 );
 
 const Facebook = () => (
@@ -288,19 +324,11 @@ const Facebook = () => (
       period={["2021-01-25", "2021-07-09"]}
       title="Software Engineer"
     />
-    <Ul>
-      <Li>
-        Work on the <B>Workplace</B> product as part of the <B>Web Core</B>{" "}
-        team, in the <B>Accessibility</B> squad. Triage, identify, and fix
-        accessibility issues in the push towards full <B>WCAG 2.2</B>{" "}
-        compliance.
-      </Li>
-      <Li>
-        Help the team refine their strategy and roadmap, by writing an{" "}
-        <B>accessibility statement</B>, gathering information from previous
-        audits, and organising existing tasks and work streams.
-      </Li>
-    </Ul>
+    <p>
+      Work on the <B>Workplace</B> product as part of the <B>Web Core</B> team,
+      in the <B>Accessibility</B> squad. Triage, identify, and fix accessibility
+      issues in the push towards full <B>WCAG 2.2</B> compliance.
+    </p>
   </section>
 );
 
@@ -308,50 +336,16 @@ const DfEApply = () => (
   <section>
     <Job
       employer="Department for Education"
-      period={["2019-09-01", "2020-11-13"]}
+      period={["2018-09-01", "2020-11-13"]}
       title="Tech Lead (Contract)"
     />
-    <Ul>
-      <Li>
-        ⭐️ Lead development of the candidate-facing side of{" "}
-        <ApplyForTeacherTraining /> in <B>Ruby on Rails</B> and{" "}
-        <B>JavaScript</B> on <B>Azure</B>. Collaborate with stakeholders,
-        architects, and other tech leads to ship MVP in Nov 2019. Iterate in
-        2020 to <B>100k+</B> teacher training applications.
-      </Li>
-      <Li>
-        <B>Unblock</B>, <B>pair</B> with, and <B>mentor</B> 6 developers.
-        Champion <B>accessibility</B>, frontend <B>performance</B>, and{" "}
-        <B>automated testing</B> by prioritising improvements into{" "}
-        <B>agile sprints</B>.
-      </Li>
-    </Ul>
-  </section>
-);
-
-const DfEFind = () => (
-  <section>
-    <Job
-      employer="Department for Education"
-      period={["2018-09-01", "2019-09-01"]}
-      title="Senior Developer (Contract)"
-    />
-    <Ul>
-      <Li>
-        Develop full-stack features in <B>C#</B>, <B>Ruby on Rails</B>,{" "}
-        <B>PostgreSQL</B>, and <B>Node.js</B>, to help teachers{" "}
-        <FindPostgraduateTeacherTraining /> courses. Improve the <B>DevOps</B>{" "}
-        pipeline by adopting <B>Docker</B>, reducing build times, using{" "}
-        <B>Terraform</B>, adding <B>smoke tests</B> using <B>Cypress.io</B>.
-      </Li>
-      <Li>
-        Develop prototypes using <B>Next.js</B>, <B>Now.sh</B>, and{" "}
-        <B>Apollo.js</B> to trial <B>Node.js</B>, <B>Serverless</B>, and{" "}
-        <B>GraphQL</B> for our services. Present findings to the wider technical
-        community to <B>build engagement and awareness</B> of cutting edge
-        technologies.
-      </Li>
-    </Ul>
+    <p>
+      Lead development of the candidate-facing side of{" "}
+      <B>Apply for teacher training</B> in <B>Ruby on Rails</B> and{" "}
+      <B>JavaScript</B> on <B>Azure</B>. Collaborate with stakeholders,
+      architects, and other tech leads to ship MVP in Nov 2019. Iterate in 2020
+      to <B>100k+</B> teacher training applications.
+    </p>
   </section>
 );
 
@@ -362,20 +356,9 @@ const Gamesys = () => (
       period={["2018-03-01", "2018-09-01"]}
       title="Senior Developer (Contract)"
     />
-    <Ul>
-      <Li>
-        Build a tool for managing web chat emoji using <B>Next.js</B>, in record
-        time and to a high standard, well tested and documented, with very
-        satisfied stakeholders.
-      </Li>
-      <Li>
-        Optimise main site <B>frontend performance</B> by removing{" "}
-        <B>moment.js</B> and <B>lodash</B>, resulting in total savings of{" "}
-        <B>33%</B> on the bundle size. Provide <B>mentoring</B> to team members
-        and apprentices, focusing on a pragmatic but <B>users first</B> approach
-        to software engineering.
-      </Li>
-    </Ul>
+    <p>
+      Improve performance and tooling on <B>React</B> and flux-based frontends.
+    </p>
   </section>
 );
 
@@ -386,22 +369,12 @@ const Graphit = () => (
       period={["2017-08-01", "2018-02-01"]}
       title="Senior Developer (Contract)"
     />
-    <Ul>
-      <Li>
-        Ship a complete redesign, online payments with <B>Stripe</B>, fixes for{" "}
-        <B>legacy browsers</B> and <B>performance</B> issues while building on
-        top of the previous developer's work without handover. <B>React.js</B>,{" "}
-        <B>Three.js</B>, <B>webpack</B>, <B>Redux.js</B>.
-      </Li>
-      <Li>
-        Collaborate with the designer to create a revised <B>styleguide</B>,
-        consolidating rhythm and colours throughout the app, backed by an atomic
-        CSS <B>design system</B>. Champion <B>user research</B> based
-        decision-making, highlight and fix <B>accessibility</B> pitfalls, and
-        provide input into discussions to reach solutions that are{" "}
-        <B>mobile-first</B> and <B>performant</B>.
-      </Li>
-    </Ul>
+    <p>
+      Ship a complete redesign, online payments with <B>Stripe</B>, fixes for{" "}
+      <B>legacy browsers</B> and <B>performance</B> issues while building on top
+      of the previous developer's work without handover. <B>React.js</B>,{" "}
+      <B>Three.js</B>, <B>webpack</B>, <B>Redux.js</B>.
+    </p>
   </section>
 );
 
@@ -412,29 +385,6 @@ const GDS = () => (
       period={["2016-03-01", "2017-08-01"]}
       title="Senior Developer"
     />
-    <Ul>
-      <Li>
-        ⭐️ Lead development of an <OpenSourceCountryPicker />. Talk to service
-        teams to learn about their needs, build an <AccessibleAutocomplete />{" "}
-        (400+ GitHub stars) using <B>JavaScript</B> and{" "}
-        <B>progressive enhancement</B>. Extensive user research, collaborate
-        with industry-leading accessibility experts, leverage <B>WCAG</B>, and
-        attend a professional audit from the <B>Digital Accessibility Centre</B>
-        .{" "}
-        <a href="https://www.youtube.com/watch?v=gRVgWT3glII" target="_blank">
-          Present it at the London Accessibility Meetup
-        </a>
-        .
-      </Li>
-      <Li>
-        Sole developer on the <B>Webchat</B> project, building user research
-        prototypes and testing with users. Focus on <B>accessibility</B> of
-        webchat interfaces. Attend user research, conduct on-site interviews
-        with departments using webchat. Did internal presentations,{" "}
-        <WroteAWebchatBlogPost />.
-      </Li>
-      <GOVUKExperience />
-    </Ul>
   </section>
 );
 
@@ -445,15 +395,6 @@ const Timecounts = () => (
       period={["2015-05-01", "2016-02-01"]}
       title="Senior Full Stack Developer"
     />
-    <Ul>
-      <Li>
-        Ship major features in <B>React</B> and <B>Rails</B> including a
-        calendar view and date picker component, landing and marketing pages,
-        improvements to the build pipeline, support fixes. Refine the team's{" "}
-        <B>Agile</B> processes, implement code review and issue tracking
-        methods.
-      </Li>
-    </Ul>
   </section>
 );
 
@@ -464,19 +405,6 @@ const Workangel = () => (
       period={["2014-09-01", "2015-04-01"]}
       title="Lead Front End Developer"
     />
-    <Ul>
-      <Li>
-        Ship a <B>mobile-first design</B> rebuild and <B>animations</B> for
-        inter-page transitions and more, both not scoped or factored into
-        estimations but delivered to extremely favourable reception.
-      </Li>
-      <Li>
-        Dramatically improve the build process by{" "}
-        <B>optimising the performance</B> of builds and embracing modern best
-        practices: template minification, linting, unit and Selenium integration
-        testing, continuous integration, load testing.
-      </Li>
-    </Ul>
   </section>
 );
 
@@ -485,19 +413,9 @@ const LFA = () => (
     digital textbook authoring tool
   </a>
 );
-const DeltaApp = () => (
-  <a href="https://github.com/readfwd/delta-app" target="_blank">
-    tour guide app for the Danube Delta
-  </a>
-);
 const GeorgeEnescuFestival = () => (
-  <a href="http://festivalenescu.ro/en/" target="_blank">
+  <a href="http://festivalenescu.ro/" target="_blank">
     George Enescu festival website
-  </a>
-);
-const MonicaMacovei = () => (
-  <a href="https://github.com/readfwd/macovei" target="_blank">
-    Monica Macovei's 2014 presidential campaign
   </a>
 );
 
@@ -508,24 +426,6 @@ const ReadForward = () => (
       period={["2013-03-01", "2014-09-01"]}
       title="Lead Full Stack Developer"
     />
-    <Ul>
-      <Li>
-        Lead development of an open source <LFA />. Build the pipeline and the
-        frontend pattern library. Onboard and train junior developers in its use
-        that produced our digital textbook offerings for primary education,
-        which became the company's bread and butter product. <B>Node.js</B>,{" "}
-        <B>Backbone.js</B>, <B>design systems</B>,{" "}
-        <B>visual regression testing</B>.
-      </Li>
-      <Li>
-        Lead development of a <B>Ruby on Rails</B> holistic rewrite of the{" "}
-        <GeorgeEnescuFestival />. Write scraping / data remodelling scripts to
-        import old pages from the legacy PHP backend, add new capabilities like{" "}
-        <B>full text search</B> and relationships between models. Build a{" "}
-        <B>RESTful JSON API</B> for native mobile app integrations. Successfully
-        served <B>100k+</B> hits per month.
-      </Li>
-    </Ul>
   </section>
 );
 
@@ -576,10 +476,8 @@ export default () => (
       </h1>
 
       <section>
-        <h2>Summary</h2>
-
         <p>
-          👋 I'm a full stack engineer with 8 years of experience and a passion
+          👋 I'm a full stack engineer with 11 years of experience and a passion
           for inclusive design. User needs, design systems, performance, and
           accessibility are my jam.
         </p>
@@ -588,64 +486,24 @@ export default () => (
           I have lead teams, and I don't mind getting my hands dirty across the
           whole stack. I like the Lean Startup method, being an active
           participant in the design and research process, and the Retrospective
-          Prime Directive.
+          Prime Directive. I have a Bachelor's degree in Engineering.
         </p>
       </section>
 
       <section>
         <h2>Experience</h2>
 
+        <NHS />
+        <DfETRA />
+        <MoJ />
         <Facebook />
         <DfEApply />
-        <DfEFind />
         <Gamesys />
         <Graphit />
         <GDS />
         <Timecounts />
         <Workangel />
         <ReadForward />
-      </section>
-
-      <section>
-        <h2>Notable open source contributions</h2>
-
-        <Ul>
-          <Li>
-            A widely-used{" "}
-            <a
-              href="https://github.com/alphagov/accessible-autocomplete"
-              target="_blank"
-            >
-              accessible autocomplete component
-            </a>
-            ;
-          </Li>
-          <Li>
-            A reimagined presentation of <TheLastQuestion />;
-          </Li>
-          <Li>
-            <a href="https://github.com/tvararu/dotfiles" target="_blank">
-              Older dotfiles
-            </a>
-            , and newer <Dotfiles /> and configuration scripts.
-          </Li>
-        </Ul>
-      </section>
-
-      <section>
-        <h2>Everything else</h2>
-
-        <Ul>
-          <Li>Undergraduate Computer Science / Computer Networks Degree</Li>
-          <Li>
-            I manage 5 home Ubuntu/Arch Linux servers and my own personal cloud
-            server;
-          </Li>
-          <Li>
-            I foster cats for Battersea Dogs & Cats Home; on my 10th cat as of
-            writing!
-          </Li>
-        </Ul>
       </section>
     </article>
     <style jsx>{`
