@@ -477,7 +477,7 @@ export default () => (
 
       <section>
         <p>
-          👋 I'm a full stack engineer with 11 years of experience and a passion
+          👋 I'm a full stack engineer with 12 years of experience and a passion
           for inclusive design. User needs, design systems, performance, and
           accessibility are my jam.
         </p>
