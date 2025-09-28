@@ -5,14 +5,10 @@ import Head from "next/head";
 export default () => (
   <Layout>
     <Head>
-      <title>theodor vararu.</title>
+      <title>Theo Vararu’s website</title>
     </Head>
 
     <article>
-      <h1>
-        Theo is a JavaScript developer interested in accessibility, Node.js, and
-        React.js.
-      </h1>
       <ul>
         <li>
           Email: <a href="mailto:theo@vararu.org">theo@vararu.org</a>
@@ -21,11 +17,11 @@ export default () => (
           Blog: <a href="http://blog.vararu.org">blog.vararu.org</a>
         </li>
         <li>
-          GitHub: <a href="https://github.com/tvararu">github.com/tvararu</a>
+          GitHub: <a href="https://github.com/tvararu">@tvararu</a>
         </li>
         <li>
           X: <a href="https://x.com/nihil_sine_theo">
-            x.com/nihil_sine_theo
+            @NihilSinetheo
           </a>
         </li>
       </ul>
