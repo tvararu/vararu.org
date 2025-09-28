@@ -20,7 +20,7 @@ export default () => (
           GitHub: <a href="https://github.com/tvararu">@tvararu</a>
         </li>
         <li>
-          X: <a href="https://x.com/nihil_sine_theo">
+          X: <a href="https://x.com/NihilSineTheo">
             @NihilSinetheo
           </a>
         </li>
