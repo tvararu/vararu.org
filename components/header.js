@@ -4,7 +4,7 @@ import Logo from "./logo";
 export default () => (
   <header>
     <p>
-      theodor
+      theo
       <br />
       <Link href="/">
         <a>vararu.org</a>
