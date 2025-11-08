@@ -9,9 +9,25 @@ run = "npm install"
 description = "Start the development server"
 run = "npm run dev"
 
-[tasks.lint]
+[tasks.eslint]
 description = "Run ESLint"
-run = "npm run lint"
+run = "npm run eslint"
+
+[tasks."eslint:fix"]
+description = "Fix ESLint issues"
+run = "npm run eslint -- --fix"
+
+[tasks.prettier]
+description = "Check code formatting with Prettier"
+run = "npm run prettier"
+
+[tasks."prettier:fix"]
+description = "Fix code formatting with Prettier"
+run = "npm run prettier -- --write"
+
+[tasks.ci]
+description = "Run all checks in parallel"
+run = "mise eslint ::: tsc ::: prettier"
 
 [tasks.start]
 description = "Start the production server"
