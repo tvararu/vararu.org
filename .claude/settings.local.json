@@ -3,25 +3,20 @@
     "allow": [
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(mise tasks:*)",
-      "Bash(npm run build:*)",
-      "mcp__playwright__browser_navigate",
-      "mcp__playwright__browser_take_screenshot",
-      "mcp__playwright__browser_resize",
-      "mcp__playwright__browser_close",
-      "Bash(mise lint:*)",
-      "Bash(mise tsc:*)",
       "Bash(mise eslint:*)",
-      "WebSearch"
+      "Bash(mise lint:*)",
+      "Bash(mise tasks:*)",
+      "Bash(mise tsc:*)",
+      "Bash(npm run build:*)",
+      "WebSearch",
+      "mcp__playwright__browser_close",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_resize",
+      "mcp__playwright__browser_take_screenshot"
     ],
     "deny": [],
     "ask": []
   },
-  "enabledMcpjsonServers": [
-    "playwright",
-    "context7"
-  ],
-  "disabledMcpjsonServers": [
-    "sentry"
-  ]
+  "enabledMcpjsonServers": ["playwright", "context7"],
+  "disabledMcpjsonServers": ["sentry"]
 }
