@@ -5,6 +5,8 @@
       "Bash(git commit:*)",
       "Bash(mise eslint:*)",
       "Bash(mise lint:*)",
+      "Bash(mise prettier:*)",
+      "Bash(mise prettier:fix:*)",
       "Bash(mise tasks:*)",
       "Bash(mise tsc:*)",
       "Bash(npm run build:*)",

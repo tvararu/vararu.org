@@ -3,10 +3,7 @@ import Logo from "@/components/logo";
 
 export default function Header() {
   return (
-    <header
-      className="h-16 sm:h-20 font-bold flex items-center justify-between
-                 my-8 print:hidden"
-    >
+    <header className="my-8 flex h-16 items-center justify-between font-bold sm:h-20 print:hidden">
       <p className="text-xl sm:text-2xl">
         theo
         <br />
@@ -14,10 +11,7 @@ export default function Header() {
           vararu.org
         </Link>
       </p>
-      <div
-        className="h-16 sm:h-20 w-32 sm:w-40 perspective-[512px]
-                   perspective-origin-[50%_50%]"
-      >
+      <div className="h-16 w-32 perspective-[512px] perspective-origin-[50%_50%] sm:h-20 sm:w-40">
         <Logo />
       </div>
     </header>

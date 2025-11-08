@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <article>
-      <ul className="text-xl sm:text-2xl list-none p-0">
+      <ul className="list-none p-0 text-xl sm:text-2xl">
         <li className="my-4">
           Email:{" "}
           <a href="mailto:theo@vararu.org" className="underline">
