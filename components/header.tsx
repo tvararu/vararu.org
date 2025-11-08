@@ -3,63 +3,15 @@ import Logo from "@/components/logo";
 
 export default function Header() {
   return (
-    <header>
-      <p>
+    <header className="h-16 sm:h-20 font-bold flex items-center justify-between my-8 print:hidden">
+      <p className="text-xl sm:text-2xl">
         theo
         <br />
-        <Link href="/">vararu.org</Link>
+        <Link href="/" className="underline">vararu.org</Link>
       </p>
-      <div className="logo">
+      <div className="h-16 sm:h-20 w-32 sm:w-40 perspective-[512px] perspective-origin-[50%_50%]">
         <Logo />
       </div>
-      <style jsx>{`
-        header,
-        .logo {
-          height: 4rem;
-          font-weight: bold;
-        }
-
-        header {
-          align-items: center;
-          display: flex;
-          justify-content: space-between;
-          margin: 2rem 0;
-        }
-
-        p,
-        a {
-          color: currentColor;
-          font-size: 1.25rem;
-        }
-
-        .logo {
-          perspective-origin: 50% 50%;
-          perspective: 512px;
-          width: 8rem;
-        }
-
-        @media (min-width: 30rem) {
-          header,
-          .logo {
-            height: 5rem;
-          }
-
-          p,
-          a {
-            font-size: 1.5rem;
-          }
-
-          .logo {
-            width: 10rem;
-          }
-        }
-
-        @media print {
-          header {
-            display: none;
-          }
-        }
-      `}</style>
     </header>
   );
 }

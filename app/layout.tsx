@@ -1,4 +1,6 @@
 import type { Metadata, Viewport } from "next";
+import Header from "@/components/header";
+import "./globals.css";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -23,7 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="m-4 sm:mx-auto sm:my-12 sm:max-w-120">
+        <Header />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
