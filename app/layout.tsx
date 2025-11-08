@@ -1,9 +1,11 @@
-export const viewport = {
+import type { Metadata, Viewport } from "next";
+
+export const viewport: Viewport = {
   width: "device-width",
   minimumScale: 1,
 };
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Theo Vararu's website",
   description: "Theodor Vararu's website.",
   applicationName: "vararu.org",
@@ -41,7 +43,11 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
       <body>{children}</body>

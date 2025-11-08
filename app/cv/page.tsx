@@ -3,8 +3,12 @@
 import Layout from "../../components/layout";
 import { useEffect } from "react";
 
-const B = ({ children }) => <strong>{children}</strong>;
-const Ul = ({ children }) => (
+interface ChildrenProps {
+  children: React.ReactNode;
+}
+
+const B = ({ children }: ChildrenProps) => <strong>{children}</strong>;
+const Ul = ({ children }: ChildrenProps) => (
   <ul>
     {children}
     <style jsx>{`
@@ -19,7 +23,7 @@ const Ul = ({ children }) => (
     `}</style>
   </ul>
 );
-const Li = ({ children }) => (
+const Li = ({ children }: ChildrenProps) => (
   <li>
     <span>{children}</span>
     <style jsx>{`
@@ -43,7 +47,7 @@ const Li = ({ children }) => (
     `}</style>
   </li>
 );
-const H3 = ({ children }) => (
+const H3 = ({ children }: ChildrenProps) => (
   <h3>
     {children}
     <style jsx>{`
@@ -147,21 +151,35 @@ const DAC = () => (
   </a>
 );
 
-const formatDate = (iso) =>
+const formatDate = (iso: string): string =>
   new Date(iso).toLocaleDateString("en-GB", {
     month: "short",
     year: "numeric",
   });
 
-const Time = ({ iso }) => <time dateTime={iso}>{formatDate(iso)}</time>;
+interface TimeProps {
+  iso: string;
+}
 
-const Period = ({ period: [from, to] }) => (
+const Time = ({ iso }: TimeProps) => <time dateTime={iso}>{formatDate(iso)}</time>;
+
+interface PeriodProps {
+  period: [React.ReactNode, React.ReactNode];
+}
+
+const Period = ({ period: [from, to] }: PeriodProps) => (
   <>
     {from} - {to}
   </>
 );
 
-const Job = ({ employer, period, title }) => (
+interface JobProps {
+  employer: string;
+  period: [string | null, string | null];
+  title: string;
+}
+
+const Job = ({ employer, period, title }: JobProps) => (
   <H3>
     <div>
       <span className="employer">
