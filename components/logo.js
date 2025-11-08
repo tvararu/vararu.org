@@ -1,4 +1,5 @@
-import { Component } from "react";
+"use client";
+
 import SvgLogo from "./svg-logo";
 
 export default () => (

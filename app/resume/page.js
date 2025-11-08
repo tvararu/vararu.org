@@ -1,5 +1,7 @@
+"use client";
+
 import Layout from "../../components/layout";
-import Head from "next/head";
+import { useEffect } from "react";
 
 const B = ({ children }) => <strong>{children}</strong>;
 const Ul = ({ children }) => (
@@ -460,86 +462,87 @@ const N7m = () => (
   </a>
 );
 
-export default () => (
-  <Layout wide>
-    <Head>
-      <title>résumé - theodor vararu</title>
-      <meta name="robots" content="noindex,nofollow" />
-    </Head>
+export default function Resume() {
+  useEffect(() => {
+    document.title = "résumé - theodor vararu";
+  }, []);
 
-    <article>
-      <h1 className="visuallyhidden">
-        Theodor Vararu's Résumé{" "}
-        <a href="mailto:theo@vararu.org" style={{ float: "right" }}>
-          theo@vararu.org
-        </a>
-      </h1>
+  return (
+    <Layout wide>
+      <article>
+        <h1 className="visuallyhidden">
+          Theodor Vararu's Résumé{" "}
+          <a href="mailto:theo@vararu.org" style={{ float: "right" }}>
+            theo@vararu.org
+          </a>
+        </h1>
 
-      <section>
-        <p>
-          👋 I'm a full stack engineer with 12 years of experience and a passion
-          for inclusive design. User needs, design systems, performance, and
-          accessibility are my jam.
-        </p>
+        <section>
+          <p>
+            👋 I'm a full stack engineer with 12 years of experience and a passion
+            for inclusive design. User needs, design systems, performance, and
+            accessibility are my jam.
+          </p>
 
-        <p>
-          I have lead teams, and I don't mind getting my hands dirty across the
-          whole stack. I like the Lean Startup method, being an active
-          participant in the design and research process, and the Retrospective
-          Prime Directive. I have a Bachelor's degree in Engineering.
-        </p>
-      </section>
+          <p>
+            I have lead teams, and I don't mind getting my hands dirty across the
+            whole stack. I like the Lean Startup method, being an active
+            participant in the design and research process, and the Retrospective
+            Prime Directive. I have a Bachelor's degree in Engineering.
+          </p>
+        </section>
 
-      <section>
-        <h2>Experience</h2>
+        <section>
+          <h2>Experience</h2>
 
-        <NHS />
-        <DfETRA />
-        <MoJ />
-        <Facebook />
-        <DfEApply />
-        <Gamesys />
-        <Graphit />
-        <GDS />
-        <Timecounts />
-        <Workangel />
-        <ReadForward />
-      </section>
-    </article>
-    <style jsx>{`
-      h1,
-      h2 {
-        font-size: 1.25rem;
-        margin: 1.5rem 0;
-      }
-
-      @media (min-width: 45rem) {
-        h1,
-        h2 {
-          font-size: 1.5rem;
-          margin: 2rem 0 1.5rem;
-        }
-      }
-
-      @media print {
+          <NHS />
+          <DfETRA />
+          <MoJ />
+          <Facebook />
+          <DfEApply />
+          <Gamesys />
+          <Graphit />
+          <GDS />
+          <Timecounts />
+          <Workangel />
+          <ReadForward />
+        </section>
+      </article>
+      <style jsx>{`
         h1,
         h2 {
           font-size: 1.25rem;
-          margin: 1rem 0 0.5rem;
+          margin: 1.5rem 0;
         }
-      }
 
-      @media screen {
-        .visuallyhidden {
-          border: 0;
-          clip: rect(1px, 1px, 1px, 1px);
-          height: 1px;
-          overflow: hidden;
-          padding: 0;
-          position: absolute;
-          width: 1px;
+        @media (min-width: 45rem) {
+          h1,
+          h2 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1.5rem;
+          }
         }
-      }
-    `}</style>
-  </Layout>
-);
+
+        @media print {
+          h1,
+          h2 {
+            font-size: 1.25rem;
+            margin: 1rem 0 0.5rem;
+          }
+        }
+
+        @media screen {
+          .visuallyhidden {
+            border: 0;
+            clip: rect(1px, 1px, 1px, 1px);
+            height: 1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+          }
+        }
+      `}</style>
+    </Layout>
+  );
+}

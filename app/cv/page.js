@@ -1,5 +1,7 @@
+"use client";
+
 import Layout from "../../components/layout";
-import Head from "next/head";
+import { useEffect } from "react";
 
 const B = ({ children }) => <strong>{children}</strong>;
 const Ul = ({ children }) => (
@@ -684,120 +686,121 @@ const N7m = () => (
   </a>
 );
 
-export default () => (
-  <Layout wide>
-    <Head>
-      <title>cv - theodor vararu.</title>
-      <meta name="robots" content="noindex,nofollow" />
-    </Head>
+export default function CV() {
+  useEffect(() => {
+    document.title = "cv - theodor vararu.";
+  }, []);
 
-    <article>
-      <h1 className="visuallyhidden">Theodor Vararu's Résumé</h1>
+  return (
+    <Layout wide>
+      <article>
+        <h1 className="visuallyhidden">Theodor Vararu's Résumé</h1>
 
-      <section>
-        <h2>Experience</h2>
+        <section>
+          <h2>Experience</h2>
 
-        <Facebook />
-        <DfEApply />
-        <DfEFind />
-        <Gamesys />
-        <Graphit />
-        <GDS />
-        <Timecounts />
-        <Workangel />
-        <ReadForward />
-      </section>
+          <Facebook />
+          <DfEApply />
+          <DfEFind />
+          <Gamesys />
+          <Graphit />
+          <GDS />
+          <Timecounts />
+          <Workangel />
+          <ReadForward />
+        </section>
 
-      <section>
-        <h2>Projects</h2>
+        <section>
+          <h2>Projects</h2>
 
-        <p>
-          Please peruse my <GitHub /> for nearly all of my side projects.
-          Notable highlights:
-        </p>
-        <Ul>
-          <Li>
-            a reimagined presentation of <TheLastQuestion />;
-          </Li>
-          <Li>
-            the source code for my <B>Next.js</B> and <B>React.js</B>{" "}
-            <Vararuorg />;
-          </Li>
-          <Li>
-            a <N7m /> built using <B>Serverless</B> and <B>AWS Lambda</B>;
-          </Li>
-          <Li>
-            <Dotfiles /> and macOS configuration scripts;
-          </Li>
-          <Li>
-            a <B>Meteor.js</B> and <B>Three.js</B> <NEBUL4 />.
-          </Li>
-        </Ul>
-      </section>
+          <p>
+            Please peruse my <GitHub /> for nearly all of my side projects.
+            Notable highlights:
+          </p>
+          <Ul>
+            <Li>
+              a reimagined presentation of <TheLastQuestion />;
+            </Li>
+            <Li>
+              the source code for my <B>Next.js</B> and <B>React.js</B>{" "}
+              <Vararuorg />;
+            </Li>
+            <Li>
+              a <N7m /> built using <B>Serverless</B> and <B>AWS Lambda</B>;
+            </Li>
+            <Li>
+              <Dotfiles /> and macOS configuration scripts;
+            </Li>
+            <Li>
+              a <B>Meteor.js</B> and <B>Three.js</B> <NEBUL4 />.
+            </Li>
+          </Ul>
+        </section>
 
-      <section>
-        <h2>Technologies</h2>
+        <section>
+          <h2>Technologies</h2>
 
-        <p>
-          I build products with <B>JavaScript</B> and <B>Node.js</B>, using{" "}
-          <B>linting</B>, <B>testing</B>, <B>CI / CD</B>.
-        </p>
-        <p>
-          I develop exclusively on macOS/UNIXlike operating systems, using{" "}
-          <B>git</B> and modern tools.
-        </p>
-        <p>
-          I admin my own DigitalOcean server, but also deploy to <B>Heroku</B>,{" "}
-          <B>AWS Lambda</B>, static websites, and other solutions depending on
-          the need.
-        </p>
-      </section>
+          <p>
+            I build products with <B>JavaScript</B> and <B>Node.js</B>, using{" "}
+            <B>linting</B>, <B>testing</B>, <B>CI / CD</B>.
+          </p>
+          <p>
+            I develop exclusively on macOS/UNIXlike operating systems, using{" "}
+            <B>git</B> and modern tools.
+          </p>
+          <p>
+            I admin my own DigitalOcean server, but also deploy to <B>Heroku</B>,{" "}
+            <B>AWS Lambda</B>, static websites, and other solutions depending on
+            the need.
+          </p>
+        </section>
 
-      <section>
-        <h2>Hobbies</h2>
+        <section>
+          <h2>Hobbies</h2>
 
-        <p>
-          I spend a lot of time reading books, about half of the programming
-          variety, half about personal finance. I love mentoring and teaching
-          others to learn to code. I practice guitar, work on my old car, and
-          travel as much as I can.
-        </p>
-      </section>
-    </article>
-    <style jsx>{`
-      h1,
-      h2 {
-        font-size: 1.25rem;
-        margin: 1.5rem 0;
-      }
-
-      @media (min-width: 45rem) {
-        h1,
-        h2 {
-          font-size: 1.5rem;
-          margin: 2rem 0 1.5rem;
-        }
-      }
-
-      @media print {
+          <p>
+            I spend a lot of time reading books, about half of the programming
+            variety, half about personal finance. I love mentoring and teaching
+            others to learn to code. I practice guitar, work on my old car, and
+            travel as much as I can.
+          </p>
+        </section>
+      </article>
+      <style jsx>{`
         h1,
         h2 {
           font-size: 1.25rem;
-          margin: 1rem 0 0.5rem;
+          margin: 1.5rem 0;
         }
-      }
 
-      @media screen {
-        .visuallyhidden {
-          border: 0;
-          clip: rect(1px, 1px, 1px, 1px);
-          height: 1px;
-          overflow: hidden;
-          padding: 0;
-          position: absolute;
-          width: 1px;
+        @media (min-width: 45rem) {
+          h1,
+          h2 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1.5rem;
+          }
         }
-      }
-    `}</style>
-  </Layout>
-);
+
+        @media print {
+          h1,
+          h2 {
+            font-size: 1.25rem;
+            margin: 1rem 0 0.5rem;
+          }
+        }
+
+        @media screen {
+          .visuallyhidden {
+            border: 0;
+            clip: rect(1px, 1px, 1px, 1px);
+            height: 1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+          }
+        }
+      `}</style>
+    </Layout>
+  );
+}
