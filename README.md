@@ -35,4 +35,4 @@ yarn cypress run # Headless
 
 ## License
 
-[MIT](LICENSE.txt).
+[MIT](LICENSE).
