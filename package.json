@@ -1,21 +1,11 @@
 {
-  "author": "theo@vararu.org",
-  "description": "Source code for my personal website",
-  "engines": {
-    "node": ">=24 <25"
-  },
-  "license": "MIT",
   "name": "vararu.org",
-  "repository": "https://github.com/tvararu/vararu.org",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "next build",
-    "ci": "server-test 3000",
-    "deploy": "now",
     "dev": "next dev",
-    "start": "next start",
-    "test": "cypress run"
+    "start": "next start"
   },
   "dependencies": {
     "next": "^12.2.4",
