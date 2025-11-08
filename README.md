@@ -1,36 +1,10 @@
 # vararu.org
 
-Install the required version of `node` using `nvm`:
+Source code for my personal website.
 
-```bash
-nvm <.nvmrc
-```
-
-Install dependencies:
-
-```bash
-yarn
-```
-
-Run locally:
-
-```bash
-yarn now dev
-open http://localhost:3000
-```
-
-Deploy:
-
-```bash
-yarn deploy
-```
-
-Run cypress end to end tests:
-
-```bash
-yarn cypress open # Interactive test runner
-# or
-yarn cypress run # Headless
+```sh
+mise bundle
+mise dev
 ```
 
 ## License
