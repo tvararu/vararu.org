@@ -1,2 +1,14 @@
 [tools]
 node = "22"
+
+[tasks.bundle]
+description = "Install dependencies"
+run = "npm install"
+
+[tasks.dev]
+description = "Start the development server"
+run = "npm run dev"
+
+[tasks.start]
+description = "Start the production server"
+run = "npm start"
