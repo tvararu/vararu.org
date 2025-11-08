@@ -1,6 +1,6 @@
 "use client";
 
-import Layout from "../components/layout";
+import Layout from "@/components/layout";
 import { useEffect } from "react";
 
 export default function Home() {

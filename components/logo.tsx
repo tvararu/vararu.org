@@ -1,6 +1,6 @@
 "use client";
 
-import SvgLogo from "./svg-logo";
+import SvgLogo from "@/components/svg-logo";
 
 export default function Logo() {
   return (
