@@ -3,6 +3,7 @@
     "allow": [
       "Bash(git add:*)",
       "Bash(git commit:*)",
+      "Bash(mise ci:*)",
       "Bash(mise eslint:*)",
       "Bash(mise lint:*)",
       "Bash(mise prettier:*)",
