@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Logo() {
   return (
     <div
@@ -5,10 +7,20 @@ export default function Logo() {
       role="presentation"
     >
       <div className="h-full w-full absolute scale-[0.99]">
-        <img src="/icon.svg" alt="vararu.org logo" className="w-full h-auto" />
+        <Image
+          src="/icon.svg"
+          alt="vararu.org logo"
+          fill
+          className="object-contain"
+        />
       </div>
       <div className="h-full w-full absolute transform-[translateZ(10px)]">
-        <img src="/icon.svg" alt="vararu.org logo" className="w-full h-auto brightness-0 invert" />
+        <Image
+          src="/icon.svg"
+          alt="vararu.org logo"
+          fill
+          className="object-contain brightness-0 invert"
+        />
       </div>
     </div>
   );

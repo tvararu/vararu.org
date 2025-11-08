@@ -10,7 +10,8 @@
       "mcp__playwright__browser_resize",
       "mcp__playwright__browser_close",
       "Bash(mise lint:*)",
-      "Bash(mise tsc:*)"
+      "Bash(mise tsc:*)",
+      "Bash(mise eslint:*)"
     ],
     "deny": [],
     "ask": []
