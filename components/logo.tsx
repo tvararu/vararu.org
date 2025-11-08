@@ -1,7 +1,5 @@
 "use client";
 
-import SvgLogo from "@/components/svg-logo";
-
 export default function Logo() {
   return (
     <div className="wrapper" role="presentation">
@@ -25,15 +23,23 @@ export default function Logo() {
         }
 
         .foreground {
-          color: #fff;
           transform: translateZ(10px);
+        }
+
+        .foreground img {
+          filter: brightness(0) invert(1);
+        }
+
+        img {
+          width: 100%;
+          height: auto;
         }
       `}</style>
       <div className="background">
-        <SvgLogo />
+        <img src="/icon.svg" alt="vararu.org logo" />
       </div>
       <div className="foreground">
-        <SvgLogo />
+        <img src="/icon.svg" alt="vararu.org logo" />
       </div>
     </div>
   );
