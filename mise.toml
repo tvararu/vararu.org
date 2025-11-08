@@ -9,6 +9,14 @@ run = "npm install"
 description = "Start the development server"
 run = "npm run dev"
 
+[tasks.lint]
+description = "Run ESLint"
+run = "npm run lint"
+
 [tasks.start]
 description = "Start the production server"
 run = "npm start"
+
+[tasks.tsc]
+description = "Run TypeScript type checking"
+run = "npm run tsc"
