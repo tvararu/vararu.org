@@ -6,9 +6,7 @@ export default () => (
     <p>
       theo
       <br />
-      <Link href="/">
-        <a>vararu.org</a>
-      </Link>
+      <Link href="/">vararu.org</Link>
     </p>
     <div className="logo">
       <Logo />
