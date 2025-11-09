@@ -3,7 +3,8 @@ import Image from "next/image";
 export default function Logo() {
   return (
     <div
-      className="h-full w-full transform-[rotate3d(-0.4,-1,0,25deg)] transform-3d"
+      className="h-full w-full transform-[rotate3d(-0.4,-1,0,25deg)]
+        transform-3d"
       role="presentation"
     >
       <div className="absolute h-full w-full scale-[0.99]">
