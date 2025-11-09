@@ -22,8 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="m-4 bg-white text-black sm:mx-auto sm:my-12 sm:max-w-120
-          dark:bg-black dark:text-white"
+        className="m-4 bg-white font-serif text-xl text-black sm:mx-auto
+          sm:my-12 sm:max-w-2xl dark:bg-black dark:text-white"
       >
         <Header />
         <main>{children}</main>
