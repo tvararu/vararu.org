@@ -14,14 +14,21 @@ export default function Header() {
         </p>
         <div className="flex gap-3">
           <SocialIcon
+            href="mailto:theo@vararu.org"
+            icon="/envelope.svg"
+            label="Send me an email"
+          />
+          <SocialIcon
             href="https://github.com/tvararu"
             icon="/github-dark.svg"
             label="GitHub profile"
+            invert={true}
           />
           <SocialIcon
             href="https://x.com/tvararu"
             icon="/x-dark.svg"
             label="X profile"
+            invert={true}
           />
         </div>
       </div>
