@@ -10,14 +10,15 @@ export default function Logo() {
       <Image
         src="/icon.svg"
         alt="Logo, outline of a pair of glasses between curly braces"
-        className="absolute h-full w-full"
+        className="absolute h-full w-full dark:translate-z-2.5"
         fill
         loading="eager"
       />
       <Image
         src="/icon.svg"
         alt=""
-        className="absolute h-full w-full translate-z-2.5 invert"
+        className="absolute h-full w-full translate-z-2.5 invert
+          dark:translate-z-0"
         fill
         loading="eager"
       />

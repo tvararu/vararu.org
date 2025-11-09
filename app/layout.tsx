@@ -21,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="m-4 sm:mx-auto sm:my-12 sm:max-w-120">
+      <body
+        className="m-4 bg-white text-black sm:mx-auto sm:my-12 sm:max-w-120
+          dark:bg-black dark:text-white"
+      >
         <Header />
         <main>{children}</main>
         <Analytics />
