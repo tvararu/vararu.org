@@ -4,13 +4,35 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Header from "@/components/header";
 import "./globals.css";
 
+const SITE_TITLE = "Theo Vararu";
+const SITE_DESCRIPTION =
+  "Software engineer specialising in full-stack web applications, accessibility, and progressive enhancement.";
+
 export const metadata: Metadata = {
-  title: "vararu.org",
-  description: "Theo Vararu's website",
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  metadataBase: new URL("https://vararu.org"),
+  authors: [{ name: SITE_TITLE }],
   openGraph: {
-    title: "vararu.org",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     type: "website",
     url: "https://vararu.org",
+    siteName: "vararu.org",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Theo Vararu's website",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    images: ["/og-image.png"],
   },
 };
 
