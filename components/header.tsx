@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Logo from "@/components/logo";
 import SocialIcon from "@/components/social-icon";
-import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function Header() {
   return (

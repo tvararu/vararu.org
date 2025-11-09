@@ -11,7 +11,7 @@ export default function Home() {
       </p>
       <p className="my-5">
         I like computers, metal, philosophy, minimalism, and road trips. I
-        maintain a home lab, GPU rig, and several scattered pet servers.
+        maintain a home lab, SFF GPU rig, and a smattering of pet servers.
       </p>
     </article>
   );
