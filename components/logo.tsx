@@ -12,6 +12,7 @@ export default function Logo() {
           alt="vararu.org logo"
           fill
           className="object-contain"
+          loading="eager"
         />
       </div>
       <div className="absolute h-full w-full transform-[translateZ(10px)]">
@@ -20,6 +21,7 @@ export default function Logo() {
           alt="vararu.org logo"
           fill
           className="object-contain brightness-0 invert"
+          loading="eager"
         />
       </div>
     </div>
