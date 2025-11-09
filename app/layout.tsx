@@ -11,7 +11,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: "Theo Vararu's website",
-  description: "Theodor Vararu's website.",
+  description: "Theo Vararu's website.",
   applicationName: "vararu.org",
   openGraph: {
     title: "vararu.org",

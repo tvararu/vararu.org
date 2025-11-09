@@ -3,28 +3,24 @@ import Image from "next/image";
 export default function Logo() {
   return (
     <div
-      className="h-full w-full transform-[rotate3d(-0.4,-1,0,25deg)]
-        transform-3d"
+      className="h-16 w-32 transform-[rotate3d(-0.4,-1,0,25deg)]
+        perspective-normal transform-3d"
       role="presentation"
     >
-      <div className="absolute h-full w-full scale-[0.99]">
-        <Image
-          src="/icon.svg"
-          alt="vararu.org logo"
-          fill
-          className="object-contain"
-          loading="eager"
-        />
-      </div>
-      <div className="absolute h-full w-full transform-[translateZ(10px)]">
-        <Image
-          src="/icon.svg"
-          alt="vararu.org logo"
-          fill
-          className="object-contain brightness-0 invert"
-          loading="eager"
-        />
-      </div>
+      <Image
+        src="/icon.svg"
+        alt="Logo, outline of a pair of glasses between curly braces"
+        className="absolute h-full w-full"
+        fill
+        loading="eager"
+      />
+      <Image
+        src="/icon.svg"
+        alt=""
+        className="absolute h-full w-full translate-z-2.5 invert"
+        fill
+        loading="eager"
+      />
     </div>
   );
 }
