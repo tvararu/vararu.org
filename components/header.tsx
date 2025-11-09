@@ -20,15 +20,13 @@ export default function Header() {
           />
           <SocialIcon
             href="https://github.com/tvararu"
-            icon="/github-dark.svg"
+            icon="/github.svg"
             label="GitHub profile"
-            invert={true}
           />
           <SocialIcon
             href="https://x.com/tvararu"
-            icon="/x-dark.svg"
+            icon="/x.svg"
             label="X profile"
-            invert={true}
           />
         </div>
       </div>

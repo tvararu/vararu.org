@@ -6,7 +6,6 @@ interface SocialIconProps {
   icon: string;
   label: string;
   className?: string;
-  invert?: boolean;
 }
 
 export default function SocialIcon({
@@ -14,25 +13,17 @@ export default function SocialIcon({
   icon,
   label,
   className = "h-5 w-5",
-  invert = false,
 }: SocialIconProps) {
-  const invertClasses = invert ? "invert dark:invert-0" : "";
   return (
     <Link
       href={href}
-      className={`relative ${invertClasses} ${className}`}
+      className={`relative dark:invert ${className}`}
       aria-label={label}
       title={label}
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Image
-        src={icon}
-        alt=""
-        fill
-        className="object-contain"
-        loading="eager"
-      />
+      <Image src={icon} alt="" fill loading="eager" />
     </Link>
   );
 }
