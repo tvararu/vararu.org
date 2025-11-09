@@ -6,12 +6,12 @@ export default function Header() {
   return (
     <header className="my-8 flex h-16 items-center justify-between sm:h-20">
       <div className="flex flex-col gap-4">
-        <p className="text-xl font-bold sm:text-2xl">
+        <h1 className="text-xl font-bold sm:text-2xl">
           theo@
           <Link href="/" className="underline">
             vararu.org
           </Link>
-        </p>
+        </h1>
         <div className="flex gap-4">
           <SocialIcon
             href="mailto:theo@vararu.org"
