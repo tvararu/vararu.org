@@ -39,7 +39,7 @@ export default function ProjectCard({
         </div>
       </div>
 
-      <div className="p-4 text-sm leading-relaxed sm:text-base">{children}</div>
+      <p className="p-4 text-sm leading-relaxed sm:text-base">{children}</p>
     </div>
   );
 }

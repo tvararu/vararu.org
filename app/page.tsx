@@ -88,12 +88,12 @@ export default function Home() {
 
       <h2 className="mt-10 text-xl font-semibold">Miscellanea</h2>
 
-      <h3 className="mt-5 mb-3">
+      <h3 className="mt-5 mb-3 font-semibold">
         <Link href="https://github.com/alphagov/accessible-autocomplete">
           Accessible autocomplete
         </Link>
       </h3>
-      <p>
+      <p className="leading-relaxed">
         I developed the most widely used combobox component in the UK public
         sector, based on extensive user and browser testing. We coined
         “accessibility acceptance criteria,”{" "}
@@ -107,31 +107,31 @@ export default function Home() {
         .
       </p>
 
-      <h3 className="mt-5 mb-3">
+      <h3 className="mt-5 mb-3 font-semibold">
         <Link href="https://github.com/tvararu/the-last-question">
           The Last Question
         </Link>
       </h3>
-      <p>
+      <p className="leading-relaxed">
         Back in early 2013, Isaac Asimov’s famous short story resurfaced to the
         top of Hacker News and I read it for the first time. I loved it, and
         spent the following days hacking on a reimagined version. I guess I
         haven’t really stopped thinking about interactive fiction since.
       </p>
 
-      <h3 className="mt-5 mb-3">
+      <h3 className="mt-5 mb-3 font-semibold">
         <Link href="https://art.vararu.org">Art</Link>,{" "}
         <Link href="https://quotes.vararu.org">Quotes</Link>, and{" "}
         <Link href="https://hours.vararu.org">Hours</Link>
       </h3>
-      <p>
+      <p className="leading-relaxed">
         I sometimes make small, single-serving websites. Among the surviving
         ones are an art gallery, a collection of quotes I like, and a countdown
         of how many productive hours are likely left in my life.
       </p>
 
-      <h3 className="mt-5 mb-3">Grade tracker</h3>
-      <p>
+      <h3 className="mt-5 mb-3 font-semibold">Grade tracker</h3>
+      <p className="leading-relaxed">
         In high school I developed an online grade tracker in vanilla PHP and
         jQuery, using the{" "}
         <Link href="https://en.wikipedia.org/wiki/Metro_(design_language)">
@@ -143,8 +143,8 @@ export default function Home() {
         engineer.
       </p>
 
-      <h3 className="mt-5 mb-3">Ret paladin</h3>
-      <p>
+      <h3 className="mt-5 mb-3 font-semibold">Ret paladin</h3>
+      <p className="leading-relaxed">
         I was a competitive raider in the original Wrath of the Lich King,
         playing through the entire expansion from launch to the release of
         Icecrown Citadel on my Ret paladin main. I earned the rare “The Undying”
