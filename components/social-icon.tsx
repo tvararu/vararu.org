@@ -26,7 +26,13 @@ export default function SocialIcon({
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Image src={icon} alt="" fill className="object-contain" />
+      <Image
+        src={icon}
+        alt=""
+        fill
+        className="object-contain"
+        loading="eager"
+      />
     </Link>
   );
 }
