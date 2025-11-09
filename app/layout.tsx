@@ -1,18 +1,12 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Header from "@/components/header";
 import "./globals.css";
 
-export const viewport: Viewport = {
-  width: "device-width",
-  minimumScale: 1,
-};
-
 export const metadata: Metadata = {
-  title: "Theo Vararu's website",
-  description: "Theo Vararu's website.",
-  applicationName: "vararu.org",
+  title: "vararu.org",
+  description: "Theo Vararu's website",
   openGraph: {
     title: "vararu.org",
     type: "website",
