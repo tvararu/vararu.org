@@ -127,7 +127,7 @@ export default function Home() {
       <p>
         I sometimes make small, single-serving websites. Among the surviving
         ones are an art gallery, a collection of quotes I like, and a countdown
-        of how many hours are likely left in my life.
+        of how many productive hours are likely left in my life.
       </p>
 
       <h3 className="mt-5 mb-3">Grade tracker</h3>
