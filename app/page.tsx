@@ -113,10 +113,10 @@ export default function Home() {
         </Link>
       </h3>
       <p>
-        Back in early 2013, Isaac Asimov’s famous short story resurfaced back to
-        the top of Hacker News and I read it for the first time. I loved it, and
-        spent the next days hacking on a reimagined version. I guess I haven’t
-        really stopped thinking about interactive fiction since.
+        Back in early 2013, Isaac Asimov’s famous short story resurfaced to the
+        top of Hacker News and I read it for the first time. I loved it, and
+        spent the following days hacking on a reimagined version. I guess I
+        haven’t really stopped thinking about interactive fiction since.
       </p>
 
       <h3 className="mt-5 mb-3">
@@ -132,14 +132,14 @@ export default function Home() {
 
       <h3 className="mt-5 mb-3">Grade tracker</h3>
       <p>
-        In high school I developed an online grade tracker in raw PHP and
+        In high school I developed an online grade tracker in vanilla PHP and
         jQuery, using the{" "}
         <Link href="https://en.wikipedia.org/wiki/Metro_(design_language)">
           Metro design language
         </Link>
         , which won first place in an IT competition run by a state university.
-        The prize, an 11” MacBook Air, lead me to adopt macOS, learn about the
-        UNIX philosophy, and significantly influence my trajectory as a software
+        The prize, an 11” MacBook Air, led me to adopt macOS, learn about the
+        UNIX philosophy, and significantly shaped my trajectory as a software
         engineer.
       </p>
 
@@ -149,7 +149,7 @@ export default function Home() {
         playing through the entire expansion from launch to the release of
         Icecrown Citadel on my Ret paladin main. I earned the rare “The Undying”
         title from clearing Naxxramas without anyone in the group dying, and
-        ranked as officer in our guild.
+        ranked as an officer in our guild.
       </p>
     </article>
   );
