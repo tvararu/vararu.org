@@ -1,10 +1,18 @@
 import ProjectCard from "@/components/project-card";
 import StyledLink from "@/components/styled-link";
 
-function Link({ href, children }: { href: string; children: React.ReactNode }) {
+function InlineLink({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
   return (
     <a
       href={href}
+      target="_blank"
+      rel="noopener noreferrer"
       className="-mx-1 bg-blue-600/5 p-1 text-blue-600 hover:bg-blue-600
         hover:text-white dark:bg-blue-600/15 dark:text-blue-400
         dark:hover:bg-blue-600"
@@ -95,28 +103,28 @@ export default function Home() {
       <h2 className="mt-10 text-xl font-semibold">Miscellanea</h2>
 
       <h3 className="mt-5 mb-3 font-semibold">
-        <Link href="https://github.com/alphagov/accessible-autocomplete">
+        <InlineLink href="https://github.com/alphagov/accessible-autocomplete">
           Accessible autocomplete
-        </Link>
+        </InlineLink>
       </h3>
       <p className="leading-relaxed">
         I developed the most widely used combobox component in the UK public
         sector, based on extensive user and browser testing. We coined
         “accessibility acceptance criteria,”{" "}
-        <Link href="https://accessibility.blog.gov.uk/2018/05/15/what-we-learned-from-getting-our-autocomplete-tested-for-accessibility/">
+        <InlineLink href="https://accessibility.blog.gov.uk/2018/05/15/what-we-learned-from-getting-our-autocomplete-tested-for-accessibility/">
           blogged about our user research
-        </Link>
+        </InlineLink>
         , and{" "}
-        <Link href="https://www.youtube.com/watch?v=gRVgWT3glII">
+        <InlineLink href="https://www.youtube.com/watch?v=gRVgWT3glII">
           gave a conference talk about it
-        </Link>
+        </InlineLink>
         .
       </p>
 
       <h3 className="mt-5 mb-3 font-semibold">
-        <Link href="https://github.com/tvararu/the-last-question">
+        <InlineLink href="https://github.com/tvararu/the-last-question">
           The Last Question
-        </Link>
+        </InlineLink>
       </h3>
       <p className="leading-relaxed">
         Back in early 2013, Isaac Asimov’s famous short story resurfaced to the
@@ -126,9 +134,9 @@ export default function Home() {
       </p>
 
       <h3 className="mt-5 mb-3 font-semibold">
-        <Link href="https://art.vararu.org">Art</Link>,{" "}
-        <Link href="https://quotes.vararu.org">Quotes</Link>, and{" "}
-        <Link href="https://hours.vararu.org">Hours</Link>
+        <InlineLink href="https://art.vararu.org">Art</InlineLink>,{" "}
+        <InlineLink href="https://quotes.vararu.org">Quotes</InlineLink>, and{" "}
+        <InlineLink href="https://hours.vararu.org">Hours</InlineLink>
       </h3>
       <p className="leading-relaxed">
         I sometimes make small, single-serving websites. Among the surviving
@@ -140,9 +148,9 @@ export default function Home() {
       <p className="leading-relaxed">
         In high school I developed an online grade tracker in vanilla PHP and
         jQuery, using the{" "}
-        <Link href="https://en.wikipedia.org/wiki/Metro_(design_language)">
+        <InlineLink href="https://en.wikipedia.org/wiki/Metro_(design_language)">
           Metro design language
-        </Link>
+        </InlineLink>
         , which won first place in an IT competition run by a state university.
         The prize, an 11” MacBook Air, led me to adopt macOS, learn about the
         UNIX philosophy, and significantly shaped my trajectory as a software

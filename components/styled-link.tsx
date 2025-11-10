@@ -14,6 +14,8 @@ export default function StyledLink({ href, children, icon }: StyledLinkProps) {
     >
       <a
         href={href}
+        target="_blank"
+        rel="noopener noreferrer"
         className="-mt-px flex items-center justify-between p-4 text-blue-600
           hover:bg-blue-600 hover:text-white dark:text-blue-400
           dark:hover:bg-blue-600"
