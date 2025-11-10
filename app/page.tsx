@@ -1,5 +1,5 @@
 import ProjectCard from "@/components/project-card";
-import OrganizationLink from "@/components/organization-link";
+import StyledLink from "@/components/styled-link";
 
 function Link({ href, children }: { href: string; children: React.ReactNode }) {
   return (
@@ -59,40 +59,36 @@ export default function Home() {
       <h2 className="mt-10 text-xl font-semibold">Worked with</h2>
       <section className="my-5 grid grid-cols-1 gap-x-4 sm:grid-cols-2">
         <ul>
-          <OrganizationLink href="https://www.nhs.uk">
+          <StyledLink href="https://www.nhs.uk">
             <span className="font-mono">NHS</span>{" "}
             <span className="ml-2 text-sm uppercase">
               National Health Service
             </span>
-          </OrganizationLink>
-          <OrganizationLink href="https://www.gov.uk/government/organisations/government-digital-service">
+          </StyledLink>
+          <StyledLink href="https://www.gov.uk/government/organisations/government-digital-service">
             <span className="font-mono">GDS</span>{" "}
             <span className="ml-2 text-sm uppercase">
               Government Digital Service
             </span>
-          </OrganizationLink>
-          <OrganizationLink href="https://www.gov.uk/government/organisations/department-for-education">
+          </StyledLink>
+          <StyledLink href="https://www.gov.uk/government/organisations/department-for-education">
             <span className="font-mono">DfE</span>{" "}
             <span className="ml-2 text-sm uppercase">
               Department for Education
             </span>
-          </OrganizationLink>
-          <OrganizationLink href="https://www.gov.uk/government/organisations/ministry-of-justice">
+          </StyledLink>
+          <StyledLink href="https://www.gov.uk/government/organisations/ministry-of-justice">
             <span className="font-mono">MoJ</span>{" "}
             <span className="ml-2 text-sm uppercase">Ministry of Justice</span>
-          </OrganizationLink>
+          </StyledLink>
         </ul>
         <ul>
-          <OrganizationLink href="https://www.meta.com">Meta</OrganizationLink>
-          <OrganizationLink href="https://www.gamesysgroup.com">
-            Gamesys
-          </OrganizationLink>
-          <OrganizationLink href="https://www.goodmachine.team">
+          <StyledLink href="https://www.meta.com">Meta</StyledLink>
+          <StyledLink href="https://www.gamesysgroup.com">Gamesys</StyledLink>
+          <StyledLink href="https://www.goodmachine.team">
             Good Machine
-          </OrganizationLink>
-          <OrganizationLink href="https://hypersay.com">
-            Hypersay
-          </OrganizationLink>
+          </StyledLink>
+          <StyledLink href="https://hypersay.com">Hypersay</StyledLink>
         </ul>
       </section>
 
@@ -161,6 +157,31 @@ export default function Home() {
         title from clearing Naxxramas without anyone in the group dying, and
         ranked as an officer in our guild.
       </p>
+
+      <h2 className="mt-10 text-xl font-semibold">Contact</h2>
+      <ul className="my-5">
+        <StyledLink href="mailto:theo@vararu.org" icon="at">
+          Email me at theo@vararu.org
+        </StyledLink>
+        <StyledLink href="https://github.com/tvararu" icon="github">
+          Read my code on GitHub
+        </StyledLink>
+        <StyledLink href="https://x.com/tvararu" icon="x">
+          Follow me on X
+        </StyledLink>
+        <StyledLink
+          href="https://www.instagram.com/nihil.sine.theo/"
+          icon="instagram"
+        >
+          Follow me on Instagram
+        </StyledLink>
+        <StyledLink
+          href="https://www.linkedin.com/in/theodor-vararu/"
+          icon="linkedin"
+        >
+          Connect on LinkedIn
+        </StyledLink>
+      </ul>
     </article>
   );
 }

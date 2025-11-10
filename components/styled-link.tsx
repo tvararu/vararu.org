@@ -1,12 +1,12 @@
-interface OrganizationLinkProps {
+import Icon from "@/components/icon";
+
+interface StyledLinkProps {
   href: string;
   children: React.ReactNode;
+  icon?: "at" | "x" | "github" | "linkedin" | "instagram";
 }
 
-export default function OrganizationLink({
-  href,
-  children,
-}: OrganizationLinkProps) {
+export default function StyledLink({ href, children, icon }: StyledLinkProps) {
   return (
     <li
       className="border-b border-gray-200 font-sans text-base font-semibold
@@ -18,7 +18,10 @@ export default function OrganizationLink({
           hover:bg-blue-600 hover:text-white dark:text-blue-400
           dark:hover:bg-blue-600"
       >
-        <span>{children}</span>
+        <span className="flex items-center gap-3">
+          {icon && <Icon name={icon} />}
+          {children}
+        </span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"

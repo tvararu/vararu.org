@@ -14,14 +14,10 @@ export default function Header() {
         <div className="flex gap-4">
           <SocialIcon
             href="https://github.com/tvararu"
-            icon="/github.svg"
+            icon="github"
             label="GitHub profile"
           />
-          <SocialIcon
-            href="https://x.com/tvararu"
-            icon="/x.svg"
-            label="X profile"
-          />
+          <SocialIcon href="https://x.com/tvararu" icon="x" label="X profile" />
         </div>
       </div>
       <Logo />

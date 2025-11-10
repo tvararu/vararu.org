@@ -1,9 +1,9 @@
 import Link from "next/link";
-import Image from "next/image";
+import Icon from "@/components/icon";
 
 interface SocialIconProps {
   href: string;
-  icon: string;
+  icon: "at" | "x" | "github" | "linkedin" | "instagram";
   label: string;
   className?: string;
 }
@@ -17,13 +17,12 @@ export default function SocialIcon({
   return (
     <Link
       href={href}
-      className={`relative dark:invert ${className}`}
       aria-label={label}
       title={label}
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Image src={icon} alt="" fill loading="eager" />
+      <Icon name={icon} className={className} />
     </Link>
   );
 }
