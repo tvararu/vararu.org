@@ -9,8 +9,8 @@ export default function OrganizationLink({
 }: OrganizationLinkProps) {
   return (
     <li
-      className="border-b border-gray-200 dark:border-blue-400
-        dark:hover:border-blue-600"
+      className="border-b border-gray-200 font-sans text-base font-semibold
+        dark:border-blue-400 dark:hover:border-blue-600"
     >
       <a
         href={href}

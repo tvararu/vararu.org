@@ -60,16 +60,26 @@ export default function Home() {
       <section className="my-5 grid grid-cols-1 gap-x-4 sm:grid-cols-2">
         <ul>
           <OrganizationLink href="https://www.nhs.uk">
-            National Health Service
+            <span className="font-mono">NHS</span>{" "}
+            <span className="ml-2 text-sm uppercase">
+              National Health Service
+            </span>
           </OrganizationLink>
           <OrganizationLink href="https://www.gov.uk/government/organisations/government-digital-service">
-            Government Digital Service
+            <span className="font-mono">GDS</span>{" "}
+            <span className="ml-2 text-sm uppercase">
+              Government Digital Service
+            </span>
           </OrganizationLink>
           <OrganizationLink href="https://www.gov.uk/government/organisations/department-for-education">
-            Department for Education
+            <span className="font-mono">DfE</span>{" "}
+            <span className="ml-2 text-sm uppercase">
+              Department for Education
+            </span>
           </OrganizationLink>
           <OrganizationLink href="https://www.gov.uk/government/organisations/ministry-of-justice">
-            Ministry of Justice
+            <span className="font-mono">MoJ</span>{" "}
+            <span className="ml-2 text-sm uppercase">Ministry of Justice</span>
           </OrganizationLink>
         </ul>
         <ul>
