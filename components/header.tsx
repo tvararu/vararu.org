@@ -17,7 +17,11 @@ export default function Header() {
             icon="github"
             label="GitHub profile"
           />
-          <SocialIcon href="https://x.com/tvararu" icon="x" label="X profile" />
+          <SocialIcon
+            href="https://x.com/NihilSineTheo"
+            icon="x"
+            label="X profile"
+          />
         </div>
       </div>
       <Logo />

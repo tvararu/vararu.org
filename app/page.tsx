@@ -166,7 +166,7 @@ export default function Home() {
         <StyledLink href="https://github.com/tvararu" icon="github">
           Read my code on GitHub
         </StyledLink>
-        <StyledLink href="https://x.com/tvararu" icon="x">
+        <StyledLink href="https://x.com/NihilSineTheo" icon="x">
           Follow me on X
         </StyledLink>
         <StyledLink
