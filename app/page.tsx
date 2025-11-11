@@ -22,13 +22,33 @@ function InlineLink({
   );
 }
 
+function H1({ children }: { children: React.ReactNode }) {
+  return (
+    <h1
+      className="mt-20 mb-5 text-2xl leading-relaxed font-semibold sm:text-3xl"
+    >
+      {children}
+    </h1>
+  );
+}
+
+function H2({ children }: { children: React.ReactNode }) {
+  return (
+    <h2 className="mt-10 text-xl font-semibold sm:text-2xl">{children}</h2>
+  );
+}
+
+function H3({ children }: { children: React.ReactNode }) {
+  return <h3 className="mt-5 mb-3 font-semibold">{children}</h3>;
+}
+
 export default function Home() {
   return (
     <article>
-      <h1 className="mt-20 mb-5 text-2xl leading-relaxed sm:text-3xl">
+      <H1>
         I’m Theo, a software engineer with a passion for accessibility and
         progressive enhancement.
-      </h1>
+      </H1>
       <p className="my-5 leading-relaxed">
         I specialise in shipping full-stack web applications, and love to dabble
         in design, local ML, AI-assisted development, Linux, and
@@ -40,7 +60,7 @@ export default function Home() {
         maintain a menagerie of pet servers, including my home lab and SFF rig.
       </p>
 
-      <h2 className="mt-10 text-xl font-semibold">Currently exploring</h2>
+      <H2>Currently exploring</H2>
       <section className="mt-5 columns-1 gap-4 sm:columns-2">
         <ProjectCard title="untitled.ink" video="/untitled-ink.mp4">
           An interactive fiction platform, featuring a Claude Code-style agentic
@@ -64,7 +84,7 @@ export default function Home() {
         </ProjectCard>
       </section>
 
-      <h2 className="mt-10 text-xl font-semibold">Worked with</h2>
+      <H2>Worked with</H2>
       <section className="my-5 grid grid-cols-1 gap-x-4 sm:grid-cols-2">
         <ul>
           <StyledLink href="https://www.nhs.uk">
@@ -100,13 +120,13 @@ export default function Home() {
         </ul>
       </section>
 
-      <h2 className="mt-10 text-xl font-semibold">Miscellanea</h2>
+      <H2>Miscellanea</H2>
 
-      <h3 className="mt-5 mb-3 font-semibold">
+      <H3>
         <InlineLink href="https://github.com/alphagov/accessible-autocomplete">
           Accessible autocomplete
         </InlineLink>
-      </h3>
+      </H3>
       <p className="leading-relaxed">
         I developed the most widely used combobox component in the UK public
         sector, based on extensive user and browser testing. We coined
@@ -121,11 +141,11 @@ export default function Home() {
         .
       </p>
 
-      <h3 className="mt-5 mb-3 font-semibold">
+      <H3>
         <InlineLink href="https://github.com/tvararu/the-last-question">
           The Last Question
         </InlineLink>
-      </h3>
+      </H3>
       <p className="leading-relaxed">
         Back in early 2013, Isaac Asimov’s famous short story resurfaced to the
         top of Hacker News and I read it for the first time. I loved it, and
@@ -133,18 +153,18 @@ export default function Home() {
         haven’t really stopped thinking about interactive fiction since.
       </p>
 
-      <h3 className="mt-5 mb-3 font-semibold">
+      <H3>
         <InlineLink href="https://art.vararu.org">Art</InlineLink>,{" "}
         <InlineLink href="https://quotes.vararu.org">Quotes</InlineLink>, and{" "}
         <InlineLink href="https://hours.vararu.org">Hours</InlineLink>
-      </h3>
+      </H3>
       <p className="leading-relaxed">
         I sometimes make small, single-serving websites. Among the surviving
         ones are an art gallery, a collection of quotes I like, and a countdown
         of how many productive hours are likely left in my life.
       </p>
 
-      <h3 className="mt-5 mb-3 font-semibold">Grade tracker</h3>
+      <H3>Grade tracker</H3>
       <p className="leading-relaxed">
         In high school I developed an online grade tracker in vanilla PHP and
         jQuery, using the{" "}
@@ -157,7 +177,7 @@ export default function Home() {
         engineer.
       </p>
 
-      <h3 className="mt-5 mb-3 font-semibold">Ret paladin</h3>
+      <H3>Ret paladin</H3>
       <p className="leading-relaxed">
         I was a competitive raider in the original Wrath of the Lich King,
         playing through the entire expansion from launch to the release of
@@ -166,7 +186,7 @@ export default function Home() {
         ranked as an officer in our guild.
       </p>
 
-      <h2 className="mt-10 text-xl font-semibold">Contact</h2>
+      <H2>Contact</H2>
       <ul className="my-5">
         <StyledLink href="mailto:theo@vararu.org" icon="at">
           Email me at theo@vararu.org

@@ -67,3 +67,4 @@ Run `mise ci` to validate all checks in parallel.
 ## Memories
 
 - Don't run `mise dev`, the user is running it in the background
+- Never replace ’ or other smart quotes
