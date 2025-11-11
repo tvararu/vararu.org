@@ -25,10 +25,10 @@ function InlineLink({
 export default function Home() {
   return (
     <article>
-      <p className="my-5 leading-relaxed">
-        I’m Theo, a software engineer with a penchant for accessibility and
+      <h1 className="mt-20 mb-5 text-2xl leading-relaxed sm:text-3xl">
+        I’m Theo, a software engineer with a passion for accessibility and
         progressive enhancement.
-      </p>
+      </h1>
       <p className="my-5 leading-relaxed">
         I specialise in shipping full-stack web applications, and love to dabble
         in design, local ML, AI-assisted development, Linux, and
