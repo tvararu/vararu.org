@@ -19,7 +19,5 @@
     ],
     "deny": [],
     "ask": []
-  },
-  "enabledMcpjsonServers": ["playwright", "context7"],
-  "disabledMcpjsonServers": ["sentry"]
+  }
 }
