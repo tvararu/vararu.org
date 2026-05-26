@@ -1,9 +1,8 @@
-import Link from "next/link";
-import Icon from "@/components/icon";
+import Icon, { type IconName } from "@/components/icon";
 
 interface SocialIconProps {
   href: string;
-  icon: "at" | "x" | "github" | "linkedin" | "instagram";
+  icon: IconName;
   label: string;
   className?: string;
 }
@@ -15,7 +14,7 @@ export default function SocialIcon({
   className = "h-5 w-5",
 }: SocialIconProps) {
   return (
-    <Link
+    <a
       href={href}
       aria-label={label}
       title={label}
@@ -23,6 +22,6 @@ export default function SocialIcon({
       rel="noopener noreferrer"
     >
       <Icon name={icon} className={className} />
-    </Link>
+    </a>
   );
 }

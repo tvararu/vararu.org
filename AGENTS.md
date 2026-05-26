@@ -41,10 +41,13 @@ mise bundle           # Install dependencies
 3. **Image Optimization**: Use Next.js `<Image />` component, not `<img>` tags
 4. **Metadata**: Use Next.js metadata API in layout.tsx, not `<Head>` component
 5. **3D Effects**: Logo uses Tailwind's CSS-based 3D transforms
+6. **External Links**: Use plain `<a>` for external URLs; reserve `next/link`
+   for internal navigation
 
 ### Tooling Configuration
 
-- **TypeScript**: Strict mode enabled
+- **TypeScript**: Strict mode enabled, ES2022 target
+- **Tailwind CSS v4**: CSS-first configuration, no plugins
 - **Bun**: Used for package management and script execution (managed by mise in
   mise.toml)
 

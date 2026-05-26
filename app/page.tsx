@@ -1,46 +1,7 @@
+import { H1, H2, H3 } from "@/components/headings";
+import InlineLink from "@/components/inline-link";
 import ProjectCard from "@/components/project-card";
 import StyledLink from "@/components/styled-link";
-
-function InlineLink({
-  href,
-  children,
-}: {
-  href: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="-mx-1 bg-blue-600/5 p-1 text-blue-600 hover:bg-blue-600
-        hover:text-white dark:bg-blue-600/15 dark:text-blue-400
-        dark:hover:bg-blue-600"
-    >
-      {children}
-    </a>
-  );
-}
-
-function H1({ children }: { children: React.ReactNode }) {
-  return (
-    <h1
-      className="mt-20 mb-5 text-2xl leading-relaxed font-semibold sm:text-3xl"
-    >
-      {children}
-    </h1>
-  );
-}
-
-function H2({ children }: { children: React.ReactNode }) {
-  return (
-    <h2 className="mt-10 text-xl font-semibold sm:text-2xl">{children}</h2>
-  );
-}
-
-function H3({ children }: { children: React.ReactNode }) {
-  return <h3 className="mt-5 mb-3 font-semibold">{children}</h3>;
-}
 
 export default function Home() {
   return (

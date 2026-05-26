@@ -7,8 +7,7 @@ export default function Logo() {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
 
-  const handleMouseEnter = () =>
-    requestAnimationFrame(() => setIsHovering(true));
+  const handleMouseEnter = () => setIsHovering(true);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();

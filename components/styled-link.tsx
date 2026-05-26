@@ -1,9 +1,9 @@
-import Icon from "@/components/icon";
+import Icon, { type IconName } from "@/components/icon";
 
 interface StyledLinkProps {
   href: string;
   children: React.ReactNode;
-  icon?: "at" | "x" | "github" | "linkedin" | "instagram";
+  icon?: IconName;
 }
 
 export default function StyledLink({ href, children, icon }: StyledLinkProps) {
