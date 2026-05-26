@@ -97,8 +97,16 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\Large Theodor Vararu} & Email: theo@vararu.org \\
-  https://github.com/tvararu & Phone: +44 74 8484 2838 \\
+  vararu.org | github.com/tvararu | linkedin.com/in/theodor-vararu & Phone: +44
+  74 8484 2838 \\
 \end{tabular*}
+
+\vspace{10pt}
+
+I'm Theo, a software engineer with a passion for accessibility and progressive
+enhancement. I specialise in shipping full-stack web applications, and love to
+dabble in design, local ML, AI-assisted development, Linux, and
+entrepreneurship.
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
@@ -108,44 +116,51 @@
 {National Health Service}{London, UK}
 {Tech Lead (Contract)}{Jan 2023 -- Apr 2026}
 \resumeItemListStart
+
 \resumeItem{Manage vaccinations in schools}
-{A national service that records consent and vaccinations. I was the tech lead
-  from initial commit, to public launch, to millions of patients.
-  Later, I drove a
-migration to Python for the Reporting functionality.}
+{Mavis is a national service that records consent and vaccinations. I was the
+tech lead from initial setup of the Ruby on Rails monolith, to public launch, to
+scaling up to millions of patients.}
+
+\resumeItem{Mavis reporting}
+{Drove the implementation of a Python Flask microservice to expose tabular data and
+CSV exports for Mavis users, with heavy emphasis on materialised views, caching,
+queues, and PostgreSQL performance optimisation.}
+
 \resumeItem{Gromit}
-{Single-handedly built a RAG-based Slack agent that reads code, history,
-documents, and answers team questions.}
+{Built a RAG-based agent that reads code and chat history to answer questions
+inside Slack. The bot handles hundreds of messages per day, helps with
+onboarding, and is being spun out into a standalone SaaS product.}
+
 \resumeItemListEnd
 
 \resumeSubheading
 {Department for Education}{London, UK}
 {Tech Lead (Contract)}{Jan 2022 -- Dec 2022}
 \resumeItemListStart
+
 \resumeItem{Find a Lost TRN}
 {Helps teachers recover their Teacher Reference Number. Built and scaled the
-project and the team.}
-\resumeItem{Get an Identity}
-{Helps teachers log in using OIDC SSO. Led the architecture spike and built
-the first client.}
-\resumeItem{Apply for Qualified Teacher Status}
-{A service for international teachers to apply for QTS in England. Bootstrapped
-  the service from scratch, set up the deploy pipeline and CI, wrote early ADRs,
-and coordinated the team through the backlog.}
-\resumeItem{Refer Serious Misconduct}
-{A service to report serious misconduct by a teacher. Set up the service, wrote
-  ADRs for the Referral model and email-OTP auth, system diagrams, and
-accessibility audit fixes.}
+project and the team to go live, then led the architecture spike and built the
+OIDC SSO client component as part of the Get an Identity service.}
+
+\resumeItem{Teaching Regulation Authority}
+{Bootstrapped two national services: Apply for Qualified Teacher Status, and
+Refer Serious Misconduct. Interviewed developers, scaffolded out the apps,
+deploy pipeline and CI, path to live, wrote ADRs.}
+
 \resumeItemListEnd
 
 \resumeSubheading
 {Ministry of Justice}{London, UK}
 {Senior Developer (Contract)}{Sep 2021 -- Dec 2021}
 \resumeItemListStart
+
 \resumeItem{Manage Supervisions (HMPPS)}
-{Carried out an accessibility audit and handled the fixes over 2 weeks, as a
-  sub-contractor for a friend. The team was very satisfied and retained me for 3
-months to deliver on their roadmap.}
+{Carried out an accessibility audit and handled the fixes over 2 weeks. The team
+was very satisfied and retained me for 3 months to help them deliver on their
+roadmap.}
+
 \resumeItemListEnd
 
 \resumeSubheading
@@ -165,14 +180,12 @@ technology interactions.}
 {Department for Education}{London, UK}
 {Tech Lead / Senior Developer (Contract)}{Sep 2018 -- Nov 2020}
 \resumeItemListStart
-\resumeItem{Apply for Teacher Training}
-{The national service for applying to teacher training in England. Led the
-  candidate-facing side to public beta in Nov 2019; iterated through 2020 to
-100k+ applications per cycle. Mentored 5 developers.}
-\resumeItem{Find Postgraduate Teacher Training}
-{The national service for finding postgraduate teacher training courses.
-  Shipped features across both the candidate-facing search and the publisher
-admin tools; modernised the build pipeline.}
+
+\resumeItem{Find and Apply for Teacher Training}
+{A national service for teachers in England. Led the candidate-facing side to
+public beta in Nov 2019; iterated through 2020 to 100k+ applications per cycle.
+Mentored 5 developers.}
+
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -181,56 +194,65 @@ admin tools; modernised the build pipeline.}
 \section{Past Experience}
 \small \textbf{Gamesys} (2018),
 \textbf{Graphit Systems} (2017--18), \textbf{Government Digital
-Service} (2016--17), \textbf{Timecounts} (2015--16),
+Service} (SC Security Clearance, 2016--17), \textbf{Timecounts} (2015--16),
 \textbf{Workangel} (2014--15), \textbf{ReadForward} (2013--14)
 
 %-----------EDUCATION-----------------
 \section{Education}
 \resumeSubHeadingListStart
+
 \resumeSubheading
 {London South Bank University}{London, UK}
-{Bachelor of Engineering, Computer Systems and Networks}{2014 -- 2016}
-\resumeSubheading
-{University of Bucharest}{Bucharest, Romania}
-{Bachelor of Science, Computer Science}{2012 -- 2014}
+{Bachelor of Engineering, Computer Systems and Networks, Transferred from
+UniBuc}{2014 -- 2016}
+
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Projects}
 \resumeSubHeadingListStart
-\resumeItem{keepthingsopen.com}
-{I wrote an open letter to NHS technical leadership, asking them to keep their
-  code open. It received over 2200 signatures from notable industry
-  leaders: Matt
+
+\resumeItem{keepthingsopen.com (2026)}
+{I co-wrote an open letter to NHS leadership, asking them to keep their code
+open. It received over 2200 signatures from notable industry leaders: Matt
 Hancock, Cory Doctorow, Dan Abramov, Rich Harris, and many others.}
-\resumeItem{untitled.ink}
+
+\resumeItem{tuicraft.vararu.org (2026)}
+{A WoW chat client for the terminal, designed to be used by OpenClaw and other
+AI agents to play the popular MMO. Built with Bun, full test coverage, while
+leveraging heavily AI code generation. Open source, AGPLv3.}
+
+\resumeItem{zp-voicemod (2026)}
+{I reverse engineered the ZERO PARADES game and wrote a pipeline that trains a
+voice model (hubert-bsqvae-small) on a target voice and patches every sound file
+in the game with your desired voice. Open source, GPLv3.}
+
+\resumeItem{untitled.ink (2025)}
 {An interactive fiction platform, featuring a Claude Code-style agentic editor,
-  the Ink markup language, a hot-reloading preview, and image generation \&
-editing on Replicate.}
-\resumeItem{Condolist}
-{A property listing aggregator, leveraging openai/CLIP on Replicate to find
-  duplicate listings, search by a particular niche feature, and
-  reduce the time it
-takes to find a nice condo.}
-\resumeItem{hasteOS}
-{A native Swift app that parses the currently focussed window and asks an LLM to
-suggest the next action, using Ollama and a variety of local models.}
+the Ink markup language, a hot-reloading preview, and video/image generation \&
+editing on Replicate or ComfyUI. Not yet released.}
+
 \resumeSubHeadingListEnd
 
 %--------SKILLS------------
 \section{Skills}
 \resumeSubHeadingListStart
-\item{\textbf{Languages}{: TypeScript, JavaScript, Ruby, Python, Rust, Swift,
-C\#}}
-\item{\textbf{Tools}{: Bun, React.js, Next.js, Node.js, Astro.js, Ruby on Rails,
-Hotwire, Tailwind, PostgreSQL, SQLite}}
+
+\item{\textbf{Languages}{: TypeScript, JavaScript, Ruby, Python, Rust, C\#}}
+
+\item{\textbf{Tools}{: Bun, React.js, Next.js, Node.js, Astro.js, Flask, Ruby on
+Rails, Hotwire, Tailwind, PostgreSQL, SQLite}}
+
 \item{\textbf{Infrastructure}{: AWS, Azure, Docker, Terraform, GitHub Actions,
-Kamal, DigitalOcean, Vultr, macOS, Linux, self-hosting}}
+Kamal, DigitalOcean, Vultr, CI, CD}}
+
 \item{\textbf{Specialties}{: Accessibility (WCAG, ARIA), testing (Playwright,
 RSpec, Jest, TDD), security, performance, design systems}}
-\item{\textbf{AI / ML}{: RAG, ComfyUI, agentic workflows, local LLMs (Ollama),
-embeddings, Replicate, Claude Agent SDK, Claude Code, Codex, MCP, pgvector,
-voice conversion (VC)}}
+
+\item{\textbf{AI / ML}{: RAG, ComfyUI, agentic workflows, LlamaIndex, local LLMs
+(Ollama), embeddings, Replicate, Claude Agent SDK, Claude Code, Codex, OpenCode,
+MCP, pgvector, voice conversion (VC), OpenClaw}}
+
 \resumeSubHeadingListEnd
 
 \end{document}
