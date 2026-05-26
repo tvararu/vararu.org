@@ -1,0 +1,236 @@
+\documentclass{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+\hypersetup{pdftitle = {Theodor Vararu - Resume}, pdfauthor = {Theodor Vararu}}
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+\item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+  \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}
+\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small #1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeItemPlain}[1]{
+\item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{
+\begin{itemize}[leftmargin=*]}
+    \newcommand{\resumeSubHeadingListEnd}{
+\end{itemize}}
+\newcommand{\resumeItemListStart}{
+\begin{itemize}}
+    \newcommand{\resumeItemListEnd}{
+\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Theodor Vararu} & Email: theo@vararu.org \\
+  https://github.com/tvararu & Phone: +44 74 8484 2838 \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{National Health Service}{London, UK}
+{Tech Lead (Contract)}{Jan 2023 -- Apr 2026}
+\resumeItemListStart
+\resumeItem{Manage vaccinations in schools}
+{A national service that records consent and vaccinations. I was the tech lead
+  from initial commit, to public launch, to millions of patients.
+  Later, I drove a
+migration to Python for the Reporting functionality.}
+\resumeItem{Gromit}
+{Single-handedly built a RAG-based Slack agent that reads code, history,
+documents, and answers team questions.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Department for Education}{London, UK}
+{Tech Lead (Contract)}{Jan 2022 -- Dec 2022}
+\resumeItemListStart
+\resumeItem{Find a Lost TRN}
+{Helps teachers recover their Teacher Reference Number. Built and scaled the
+project and the team.}
+\resumeItem{Get an Identity}
+{Helps teachers log in using OIDC SSO. Led the architecture spike and built
+the first client.}
+\resumeItem{Apply for Qualified Teacher Status}
+{A service for international teachers to apply for QTS in England. Bootstrapped
+  the service from scratch, set up the deploy pipeline and CI, wrote early ADRs,
+and coordinated the team through the backlog.}
+\resumeItem{Refer Serious Misconduct}
+{A service to report serious misconduct by a teacher. Set up the service, wrote
+  ADRs for the Referral model and email-OTP auth, system diagrams, and
+accessibility audit fixes.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Ministry of Justice}{London, UK}
+{Senior Developer (Contract)}{Sep 2021 -- Dec 2021}
+\resumeItemListStart
+\resumeItem{Manage Supervisions (HMPPS)}
+{Carried out an accessibility audit and handled the fixes over 2 weeks, as a
+  sub-contractor for a friend. The team was very satisfied and retained me for 3
+months to deliver on their roadmap.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Meta}{London, UK}
+{Software Engineer}{Jan 2021 -- Jul 2021}
+\resumeItemListStart
+\resumeItem{Workplace}
+{Accessibility squad. Fixed accessibility issues toward WCAG 2.2, wrote the
+team's accessibility statement.}
+\resumeItem{Empathy Lab}
+{Wrote a design doc and prototypes for an accessibility testing tool, designed
+  as a browser extension that simulates disabilities and common assistive
+technology interactions.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Department for Education}{London, UK}
+{Tech Lead / Senior Developer (Contract)}{Sep 2018 -- Nov 2020}
+\resumeItemListStart
+\resumeItem{Apply for Teacher Training}
+{The national service for applying to teacher training in England. Led the
+  candidate-facing side to public beta in Nov 2019; iterated through 2020 to
+100k+ applications per cycle. Mentored 5 developers.}
+\resumeItem{Find Postgraduate Teacher Training}
+{The national service for finding postgraduate teacher training courses.
+  Shipped features across both the candidate-facing search and the publisher
+admin tools; modernised the build pipeline.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EARLIER EXPERIENCE-----------------
+\section{Past Experience}
+\small \textbf{Gamesys} (2018),
+\textbf{Graphit Systems} (2017--18), \textbf{Government Digital
+Service} (2016--17), \textbf{Timecounts} (2015--16),
+\textbf{Workangel} (2014--15), \textbf{ReadForward} (2013--14)
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{London South Bank University}{London, UK}
+{Bachelor of Engineering, Computer Systems and Networks}{2014 -- 2016}
+\resumeSubheading
+{University of Bucharest}{Bucharest, Romania}
+{Bachelor of Science, Computer Science}{2012 -- 2014}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeItem{keepthingsopen.com}
+{I wrote an open letter to NHS technical leadership, asking them to keep their
+  code open. It received over 2200 signatures from notable industry
+  leaders: Matt
+Hancock, Cory Doctorow, Dan Abramov, Rich Harris, and many others.}
+\resumeItem{untitled.ink}
+{An interactive fiction platform, featuring a Claude Code-style agentic editor,
+  the Ink markup language, a hot-reloading preview, and image generation \&
+editing on Replicate.}
+\resumeItem{Condolist}
+{A property listing aggregator, leveraging openai/CLIP on Replicate to find
+  duplicate listings, search by a particular niche feature, and
+  reduce the time it
+takes to find a nice condo.}
+\resumeItem{hasteOS}
+{A native Swift app that parses the currently focussed window and asks an LLM to
+suggest the next action, using Ollama and a variety of local models.}
+\resumeSubHeadingListEnd
+
+%--------SKILLS------------
+\section{Skills}
+\resumeSubHeadingListStart
+\item{\textbf{Languages}{: TypeScript, JavaScript, Ruby, Python, Rust, Swift,
+C\#}}
+\item{\textbf{Tools}{: Bun, React.js, Next.js, Node.js, Astro.js, Ruby on Rails,
+Hotwire, Tailwind, PostgreSQL, SQLite}}
+\item{\textbf{Infrastructure}{: AWS, Azure, Docker, Terraform, GitHub Actions,
+Kamal, DigitalOcean, Vultr, macOS, Linux, self-hosting}}
+\item{\textbf{Specialties}{: Accessibility (WCAG, ARIA), testing (Playwright,
+RSpec, Jest, TDD), security, performance, design systems}}
+\item{\textbf{AI / ML}{: RAG, ComfyUI, agentic workflows, local LLMs (Ollama),
+embeddings, Replicate, Claude Agent SDK, Claude Code, Codex, MCP, pgvector,
+voice conversion (VC)}}
+\resumeSubHeadingListEnd
+
+\end{document}

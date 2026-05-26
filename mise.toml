@@ -3,6 +3,7 @@ bun = "latest"
 hk = "latest"
 pkl = "latest"
 tinytex = "latest"
+"github:WGUNDERWOOD/tex-fmt" = "latest"
 
 [env]
 _.path = ["./node_modules/.bin"]
@@ -32,6 +33,21 @@ description = "Build the CV PDF"
 dir = "cv"
 run = "latexmk -pdf cv.tex"
 
+[tasks.resume]
+description = "Build the resume PDF"
+dir = "cv"
+run = "latexmk -pdf resume.tex"
+
+[tasks."resume:watch"]
+description = "Watch and rebuild the resume PDF"
+dir = "cv"
+run = "latexmk -pdf -pvc resume.tex"
+
+[tasks."resume:clean"]
+description = "Remove resume build artifacts"
+dir = "cv"
+run = "latexmk -C"
+
 [tasks."cv:watch"]
 description = "Watch and rebuild the CV PDF"
 dir = "cv"
@@ -41,3 +57,13 @@ run = "latexmk -pdf -pvc cv.tex"
 description = "Remove CV build artifacts"
 dir = "cv"
 run = "latexmk -C"
+
+[tasks.fmt]
+description = "Format LaTeX files"
+dir = "cv"
+run = "tex-fmt *.tex"
+
+[tasks."fmt:check"]
+description = "Check LaTeX formatting"
+dir = "cv"
+run = "tex-fmt --check *.tex"
