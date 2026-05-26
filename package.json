@@ -5,8 +5,6 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "eslint": "eslint",
-    "prettier": "prettier --check .",
     "start": "next start",
     "tsc": "tsc --noEmit"
   },
@@ -22,12 +20,6 @@
     "@types/node": "^25.9.1",
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
-    "eslint": "^10.4.0",
-    "eslint-config-next": "^16.2.6",
-    "prettier": "^3.8.3",
-    "prettier-plugin-classnames": "^0.10.1",
-    "prettier-plugin-merge": "^0.10.1",
-    "prettier-plugin-tailwindcss": "^0.8.0",
     "tailwindcss": "^4.2.1",
     "typescript": "^6.0.3"
   }
