@@ -1,5 +1,7 @@
 [tools]
 bun = "latest"
+hk = "latest"
+pkl = "latest"
 
 [env]
 _.path = ["./node_modules/.bin"]
