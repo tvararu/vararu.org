@@ -19,6 +19,9 @@ mise dev              # Start development server (localhost:3000)
 mise ci               # Run all checks in parallel
 mise tsc              # Run TypeScript type checking
 mise bundle           # Install dependencies
+mise cv               # Build cv/cv.pdf from cv/cv.tex
+mise cv:watch         # Rebuild the CV on save (latexmk -pvc)
+mise cv:clean         # Remove CV build artifacts
 ```
 
 ## Architecture
@@ -31,6 +34,7 @@ mise bundle           # Install dependencies
   links)
 - **`components/`**: Reusable React components (Header, Logo)
 - **`app/globals.css`**: Tailwind CSS v4 imports (CSS-first configuration)
+- **`cv/cv.tex`**: LaTeX source for the CV; built to `cv/cv.pdf` via `mise cv` (pdflatex + Latin Modern, no system fonts required)
 
 ### Key Patterns
 
@@ -50,6 +54,7 @@ mise bundle           # Install dependencies
 - **Tailwind CSS v4**: CSS-first configuration, no plugins
 - **Bun**: Used for package management and script execution (managed by mise in
   mise.toml)
+- **TinyTeX**: LaTeX distribution for building the CV (managed by mise)
 
 ## Code Quality
 

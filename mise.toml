@@ -2,6 +2,7 @@
 bun = "latest"
 hk = "latest"
 pkl = "latest"
+tinytex = "latest"
 
 [env]
 _.path = ["./node_modules/.bin"]
@@ -25,3 +26,18 @@ run = "bun run start"
 [tasks.tsc]
 description = "Run TypeScript type checking"
 run = "bun run tsc"
+
+[tasks.cv]
+description = "Build the CV PDF"
+dir = "cv"
+run = "latexmk -pdf cv.tex"
+
+[tasks."cv:watch"]
+description = "Watch and rebuild the CV PDF"
+dir = "cv"
+run = "latexmk -pdf -pvc cv.tex"
+
+[tasks."cv:clean"]
+description = "Remove CV build artifacts"
+dir = "cv"
+run = "latexmk -C"
