@@ -4,7 +4,9 @@
 \usepackage{titlesec}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage[colorlinks=true, urlcolor=black]{hyperref}
+\let\OldHref\href
+\renewcommand{\href}[2]{\OldHref{#1}{\underline{#2}}}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
@@ -116,32 +118,6 @@ infrastructure and full-stack web applications. I'm passionate about
 accessibility \& good design, and love to dabble with local ML, Linux, and indie
 SaaS.
 
-%--------SKILLS------------
-\section{Skills}
-\resumeSubHeadingListStart
-
-\resumeItem{Languages}
-{TypeScript, JavaScript, Ruby, Python, Rust, C\#}
-
-\resumeItem{Tools}
-{Bun, React.js, Next.js, Node.js, Astro.js, Flask, Ruby on Rails, Hotwire,
-Tailwind, PostgreSQL, SQLite}
-
-\resumeItem{Infrastructure}
-{AWS, Azure, Docker, Terraform, GitHub Actions, Kamal, DigitalOcean, Vultr, CI,
-CD}
-
-\resumeItem{Expertise}
-{Accessibility (WCAG), testing (Playwright, RSpec, Jest, TDD), security,
-performance, design systems}
-
-\resumeItem{AI / ML}
-{RAG, ComfyUI, agentic workflows, LlamaIndex, local LLMs (Ollama), embeddings,
-Replicate, Claude Agent SDK, Claude Code, Codex, OpenCode, MCP, pgvector, voice
-conversion (VC), OpenClaw}
-
-\resumeSubHeadingListEnd
-
 %-----------EXPERIENCE-----------------
 \section{Experience}
 \vspace{-\baselineskip}
@@ -149,7 +125,8 @@ conversion (VC), OpenClaw}
 \resumeSubHeadingListStart
 
 \resumeItem{Manage vaccinations in schools}
-{Mavis is the national service replacing paper consent forms and recording
+{\href{https://digital.nhs.uk/blog/transformation-blog/2025/an-easier-way-to-manage-vaccinations-in-schools}{Mavis
+is the national service} replacing paper consent forms and recording
 school-age vaccinations (HPV, flu, MenACWY, Td/IPV 3-in-1). I was the hands-on
 tech lead from the early Ruby on Rails monolith through to public launch and
 rollout to 9 immunisation teams, 5,700+ schools, and 1M+ patient records. Built
@@ -181,9 +158,10 @@ team members, and being spun out as a SaaS product.}
 {Self-service for 500k teachers in England to recover their TRN, the unique
 number used to apply for jobs or claim pension. Led 2-6 engineers from hello
 world to public beta and built the OIDC SSO client now part of Get an Identity.
-Championed and built the public /performance dashboard. Service processes 50k
-recoveries per year, with the median user getting their TRN in 38 seconds
-(before: many days).}
+Championed and built the public
+\href{https://find-a-lost-trn.education.gov.uk/performance}{/performance}
+dashboard. The service processes 50k recoveries per year, with the median user
+getting their TRN in 38 seconds (before: many days).}
 
 \resumeItem{Teaching Regulation Authority}
 {Bootstrapped two national services: Apply for Qualified Teacher Status, and
@@ -242,11 +220,6 @@ Node.js + GraphQL alternatives presented to the architecture group.}
 moment.js and trimming lodash. Wrote performance documentation to guide future
 work.}
 
-\resumeItem{Web chat emoji tool}
-{Quickly built a Next.js tool to manage emoji packs, using client-side JS to
-cut, stitch, and zip PNG assets in-browser with no server. Saved the support
-teams hours of manual asset handling per week.}
-
 \resumeSubHeadingListEnd
 
 \resumeRole{Graphit Systems}{Senior Developer (Contract)}{Aug 2017 -- Feb 2018}
@@ -257,10 +230,6 @@ teams hours of manual asset handling per week.}
 handover. Got up to speed fast and shipped a redesign, Stripe payments, and
 legacy browser fixes.}
 
-\resumeItem{React Native AR}
-{Delivered a React Native + Expo augmented reality prototype in 3 days, reusing
-existing 3D code.}
-
 \resumeSubHeadingListEnd
 
 \resumeRole{Government Digital Service}{Senior Developer (SC Security Clearance)}{Mar 2016 -- Aug 2017}
@@ -268,9 +237,11 @@ existing 3D code.}
 
 \resumeItem{Accessible autocomplete}
 {Built the most widely used open-source combobox component for GOV.UK services.
-Iterated based on feedback from user research with users with disabilities, and
-an audit by the Digital Accessibility Centre. Coined “Accessibility acceptance
-criteria” and gave a public conference talk about it at Accessibility London.}
+Iterated based on feedback from research with users with disabilities, and an
+audit by the Digital Accessibility Centre. Gave a talk at Accessibility London.
+Credited in the GDS blog for
+\href{https://insidegovuk.blog.gov.uk/2018/01/24/improving-accessibility-with-accessibility-acceptance-criteria/}{defining
+“Accessibility acceptance criteria”}.}
 
 \resumeItem{Government as a Platform}
 {Worked across the programme on multiple products: a serverless JSON API to
@@ -339,13 +310,19 @@ University of Bucharest}{2014 -- 2016}
 \section{Recent Projects}
 \resumeSubHeadingListStart
 
-\resumeItem{keepthingsopen.com (2026)}
-{I co-wrote an open letter to NHS leadership, asking them to keep their code
-open. It received over 2,200 signatures from notable industry leaders: Matt
-Hancock, Cory Doctorow, Dan Abramov, Rich Harris, and others. Covered by the
-British Medical Journal, Health Service Journal, and The Register.}
+% \resumeItem{keepthingsopen.com (2026)}
+% {I co-wrote an open letter to NHS leadership, asking them to keep their code
+% open. It received over 2,200 signatures from notable industry leaders: Matt
+% Hancock, Cory Doctorow, Dan Abramov, Rich Harris, and others. Covered by the
+% British Medical Journal, Health Service Journal, and The Register.}
 
-\resumeItem{tuicraft.vararu.org (2026)}
+\resumeItem{braindance (2026)}
+{I'm building a spatial computing shell for VITURE XR glasses. It captures
+desktop screens via a zero-copy GPU pipeline and renders them as head-tracked 3D
+windows. Multi-threaded Rust + Bevy ECS, FFI bindings to the VITURE SDK, and a
+bespoke 3DoF-to-6DoF tracking pipeline (OpenCV ChArUco + PnP, IMU fusion).}
+
+\resumeItem{tuicraft (2026)}
 {I built a WoW chat client for the terminal, designed for OpenClaw and other AI
 agents to play the MMO. Built with Bun, 100\% tested, while heavily leveraging
 AI code generation. Open source, AGPLv3.}
@@ -359,6 +336,32 @@ line with your voice. Open source, GPLv3.}
 {I'm building an interactive fiction platform, featuring a Claude Code-style
 agentic editor, the Ink markup language, hot-reloading, and video/image
 generation \& editing on Replicate or ComfyUI.}
+
+\resumeSubHeadingListEnd
+
+%--------SKILLS------------
+\section{Skills}
+\resumeSubHeadingListStart
+
+\resumeItem{Languages}
+{TypeScript, JavaScript, Ruby, Python, Rust, C\#}
+
+\resumeItem{Tools}
+{Bun, React.js, Next.js, Node.js, Astro.js, Flask, Ruby on Rails, Hotwire,
+Tailwind, PostgreSQL, SQLite}
+
+\resumeItem{Infrastructure}
+{AWS, Azure, Docker, Terraform, GitHub Actions, Kamal, DigitalOcean, Vultr, CI,
+CD}
+
+\resumeItem{Expertise}
+{Accessibility (WCAG), testing (Playwright, RSpec, Jest, TDD), security,
+performance, design systems}
+
+\resumeItem{AI / ML}
+{RAG, ComfyUI, agentic workflows, LlamaIndex, local LLMs (Ollama), embeddings,
+Replicate, Claude Agent SDK, Claude Code, Codex, OpenCode, MCP, pgvector, voice
+conversion (VC), OpenClaw, OpenCV}
 
 \resumeSubHeadingListEnd
 
