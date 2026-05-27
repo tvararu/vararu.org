@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[11pt]{article}
 
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -102,10 +102,9 @@
 
 \vspace{10pt}
 
-I'm Theo, a software engineer with a passion for accessibility and progressive
-enhancement. I specialise in shipping full-stack web applications, and love to
-dabble in design, local ML, AI-assisted development, Linux, and
-entrepreneurship.
+Software engineer with a track record of shipping national infrastructure and
+full-stack web applications. I'm passionate about accessibility \& good design,
+and love to dabble in design, local ML, Linux, and indie SaaS.
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
@@ -117,19 +116,29 @@ entrepreneurship.
 \resumeItemListStart
 
 \resumeItem{Manage vaccinations in schools}
-{Mavis is a national service that records consent and vaccinations. I was the
-tech lead from initial setup of the Ruby on Rails monolith, to public launch, to
-scaling up to millions of patients.}
+{Mavis is the national digital service replacing paper consent forms and
+recording school-age vaccinations (HPV, flu, MenACWY, Td/IPV 3-in-1). I was the
+hands-on tech lead from the early Ruby on Rails monolith through to public
+launch and rollout to 9 immunisation teams, 5,700+ schools, and 1M+ patient
+records. Built and owned the NHS integrations (PDS, NHS Imms API, CIS2 SSO),
+observability stack (Splunk via custom Lambda), patient-facing consent journey,
+and offline-first PWA, across 1,700+ commits as the \#2 contributor (I
+personally sourced the engineer who would take \#1 from me). By April 2026 on
+track to be the most widely used system of its kind in England.}
 
 \resumeItem{Mavis reporting}
-{Drove the implementation of a Python Flask microservice to expose tabular data and
-CSV exports for Mavis users, with heavy emphasis on materialised views, caching,
-queues, and PostgreSQL performance optimisation.}
+{Architected and built a Python Flask microservice to expose tabular data and
+CSV exports for NHS commissioners, with heavy emphasis on materialised views,
+caching, queues, and PostgreSQL performance optimisation.}
 
 \resumeItem{Gromit}
-{Built a RAG-based agent that reads code and chat history to answer questions
-inside Slack. The bot handles hundreds of messages per day, helps with
-onboarding, and is being spun out into a standalone SaaS product.}
+{Built a multi-tenant RAG Slack agent that searches Mavis code and team chat
+history with source permalinks. Initially in Python and LlamaIndex, ported to
+Bun single-binary with native ONNX embeddings via bun:ffi, Postgres pgvector +
+ParadeDB hybrid search, and the Claude Agent SDK. The lovable dog is now a core
+member of the team, helping to draft 19+ Mavis release notes (v7.0.0
+\(\rightarrow\) v8.7.0), onboarding new team members, and being spun out as a
+SaaS product.}
 
 \resumeItemListEnd
 
@@ -139,14 +148,17 @@ onboarding, and is being spun out into a standalone SaaS product.}
 \resumeItemListStart
 
 \resumeItem{Find a Lost TRN}
-{Helps teachers recover their Teacher Reference Number. Built and scaled the
-project and the team to go live, then led the architecture spike and built the
-OIDC SSO client component as part of the Get an Identity service.}
+{Self-service for 500k teachers in England to recover their TRN, the unique
+number used to apply for jobs or claim pension. Led 2-6 engineers from hello
+world to public beta and built the OIDC SSO client now part of Get an Identity.
+Championed and built the public /performance dashboard. Service processes 50k
+recoveries per year, with the median user getting their TRN in 38 seconds
+(before: many days).}
 
 \resumeItem{Teaching Regulation Authority}
 {Bootstrapped two national services: Apply for Qualified Teacher Status, and
-Refer Serious Misconduct. Interviewed developers, scaffolded out the apps,
-deploy pipeline and CI, path to live, wrote ADRs.}
+Refer Serious Misconduct. Wrote ADRs, interviewed developers, scaffolded out the
+apps, deploy pipeline, CI, and path to live.}
 
 \resumeItemListEnd
 
@@ -156,9 +168,9 @@ deploy pipeline and CI, path to live, wrote ADRs.}
 \resumeItemListStart
 
 \resumeItem{Manage Supervisions (HMPPS)}
-{Carried out an accessibility audit and handled the fixes over 2 weeks. The team
-was very satisfied and retained me for 3 months to help them deliver on their
-roadmap.}
+{Brought in for a 2 week accessibility audit and fixes. A few days in, after
+witnessing my throughput, the delivery manager offered a 3 month retainer to
+help them deliver on their roadmap.}
 
 \resumeItemListEnd
 
@@ -166,13 +178,17 @@ roadmap.}
 {Meta}{London, UK}
 {Software Engineer}{Jan 2021 -- Jul 2021}
 \resumeItemListStart
+
 \resumeItem{Workplace}
-{Accessibility squad. Fixed accessibility issues toward WCAG 2.2, wrote the
-team's accessibility statement.}
+{Accessibility squad on Meta's enterprise comms product (7M+ paid users incl.
+Spotify, Starbucks, Nestlé). Triaged and fixed issues toward full WCAG 2.2
+compliance; wrote the team's accessibility statement.}
+
 \resumeItem{Empathy Lab}
-{Wrote a design doc and prototypes for an accessibility testing tool, designed
-  as a browser extension that simulates disabilities and common assistive
-technology interactions.}
+{Designed and built prototypes for an accessibility testing tool, a browser
+extension that simulates disabilities and common assistive technology
+interactions.}
+
 \resumeItemListEnd
 
 \resumeSubheading
@@ -180,21 +196,123 @@ technology interactions.}
 {Tech Lead / Senior Developer (Contract)}{Sep 2018 -- Nov 2020}
 \resumeItemListStart
 
-\resumeItem{Find and Apply for Teacher Training}
-{A national service for teachers in England. Led the candidate-facing side to
-public beta in Nov 2019; iterated through 2020 to 100k+ applications per cycle.
-Mentored 5 developers.}
+\resumeItem{Apply for Teacher Training}
+{Led development of the candidate-facing side of the national service handling
+the UK's entire teacher recruitment pipeline, from hello world to public beta in
+Nov 2019 (Ruby on Rails, Azure). The 2020 cycle handled over 100k applications.
+Mentored a team of 5 engineers.}
+
+\resumeItem{Find Postgraduate Teacher Training}
+{Built features on the public catalogue used by candidates to search across
+10,000+ courses from 230+ training providers in England (C\#, Ruby on Rails).
+Modernised the DevOps pipeline with Docker, Terraform, and Cypress E2E tests;
+prototyped Node.js + GraphQL alternatives presented to the architecture group.}
+
+\resumeItemListEnd
+
+\resumeSubheading
+{Gamesys}{London, UK}
+{Senior Developer (Contract)}{Mar 2018 -- Sep 2018}
+\resumeItemListStart
+
+\resumeItem{Bundle performance}
+{Cut bundle size by 33\% on a React/Node SPA serving 260k MAU by removing
+moment.js and trimming lodash. Wrote performance documentation to guide future
+work.}
+
+\resumeItem{Web chat emoji tool}
+{Quickly built a Next.js tool to manage emoji packs, using client-side JS to
+cut, stitch, and zip PNG assets in-browser with no server. Saved the support
+teams hours of manual asset handling per week.}
+
+\resumeItemListEnd
+
+\resumeSubheading
+{Graphit Systems}{London, UK}
+{Senior Developer (Contract)}{Aug 2017 -- Feb 2018}
+\resumeItemListStart
+
+\resumeItem{Online shop with 3D configurator}
+{Sole frontend engineer on an inherited React.js + Three.js codebase with no
+handover. Got up to speed fast and shipped a redesign, Stripe payments, and
+legacy browser fixes.}
+
+\resumeItem{React Native AR}
+{Delivered a React Native + Expo augmented reality prototype in 3 days by
+reusing existing 3D code.}
+
+\resumeItemListEnd
+
+\resumeSubheading
+{Government Digital Service}{London, UK}
+{Senior Developer (SC Security Clearance)}{Mar 2016 -- Aug 2017}
+\resumeItemListStart
+
+\resumeItem{Accessible autocomplete}
+{Built the most widely used open source combobox component for GOV.UK services.
+Iterated based on feedback from user research with users with disabilities, and
+an audit by the Digital Accessibility Centre. Coined “Accessibility acceptance
+criteria” and gave a public conference talk about it at Accessibility London.}
+
+\resumeItem{Government as a Platform}
+{Worked across the programme on multiple products: a serverless JSON API to
+generate country data based on the OpenRegister, accessible webchat, data
+visualisations using D3.js. Line-managed 2 developers.}
+
+\resumeItem{GOV.UK}
+{Rebuilt formats as part of the Migration programme, moving from the legacy
+publisher to a microservices pipeline. Provided oncall support during second-line
+shifts, and managed releases and deployments for national infrastructure.}
+
+\resumeItemListEnd
+
+\resumeSubheading
+{Timecounts}{London, UK}
+{Senior Developer}{May 2015 -- Feb 2016}
+\resumeItemListStart
+
+\resumeItem{Volunteer management}
+{Shipped product features (calendar, date picker, CSV import validation) on
+Node.js + React.js + Rails JSON API. Implemented code review and introduced more
+rigorous coding and linting standards.}
+
+\resumeItemListEnd
+
+\resumeSubheading
+{Workangel}{London, UK}
+{Lead Developer}{Sep 2014 -- Apr 2015}
+\resumeItemListStart
+
+\resumeItem{Employee benefits app}
+{Led the frontend on two single-page Angular.js applications. Shipped a
+mobile-first design and modernised the build pipeline with minification,
+linting, and CI. Kicked off the work on a React.js rewrite.}
+
+\resumeItemListEnd
+
+\resumeSubheading
+{ReadForward}{Bucharest, Romania}
+{Lead Developer}{Mar 2013 -- Sep 2014}
+\resumeItemListStart
+
+\resumeItem{Presidential candidate website}
+{Architected the open-source website for Monica Macovei's 2014 Romanian
+presidential campaign. Scored 100/100 on Google PageSpeed Insights via
+critical-path CSS generation and SPA prerendering.}
+
+\resumeItem{Digital textbooks}
+{Led an open-source digital textbook authoring tool (Node.js, Backbone.js,
+visual regression testing). It became the company's main product and the
+textbooks were adopted by Eton College and other prestigious schools.}
+
+\resumeItem{George Enescu festival}
+{Rewrote the festival website end-to-end (Ruby on Rails, scraped legacy PHP
+backend, full-text search, JSON API for native mobile apps). Scaled to 100k+
+unique visitors per month.}
 
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-
-%-----------EARLIER EXPERIENCE-----------------
-\section{Past Experience}
-\small \textbf{Gamesys} (2018),
-\textbf{Graphit Systems} (2017--18), \textbf{Government Digital
-Service} (SC Security Clearance, 2016--17), \textbf{Timecounts} (2015--16),
-\textbf{Workangel} (2014--15), \textbf{ReadForward} (2013--14)
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -202,34 +320,36 @@ Service} (SC Security Clearance, 2016--17), \textbf{Timecounts} (2015--16),
 
 \resumeSubheading
 {London South Bank University}{London, UK}
-{Bachelor of Engineering, Computer Systems and Networks, Transferred from
-UniBuc}{2014 -- 2016}
+{Bachelor of Engineering, Computer Systems and Networks. Transferred from
+University of Bucharest}{2014 -- 2016}
 
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
-\section{Projects}
+\section{Recent Projects}
 \resumeSubHeadingListStart
 
 \resumeItem{keepthingsopen.com (2026)}
 {I co-wrote an open letter to NHS leadership, asking them to keep their code
-open. It received over 2200 signatures from notable industry leaders: Matt
-Hancock, Cory Doctorow, Dan Abramov, Rich Harris, and many others.}
+open in the face of threats from Mythos-class models. It received over 2200
+signatures from notable industry leaders: Matt Hancock, Cory Doctorow, Dan
+Abramov, Rich Harris, and others. Covered by the British Medical Journal, Health
+Service Journal, and The Register.}
 
 \resumeItem{tuicraft.vararu.org (2026)}
-{A WoW chat client for the terminal, designed to be used by OpenClaw and other
-AI agents to play the popular MMO. Built with Bun, full test coverage, while
-heavily leveraging AI code generation. Open source, AGPLv3.}
+{I built a WoW chat client for the terminal, designed to be used by OpenClaw and
+other AI agents to play the popular MMO. Built with Bun, full test coverage,
+while heavily leveraging AI code generation. Open source, AGPLv3.}
 
 \resumeItem{zp-voicemod (2026)}
 {I reverse engineered the ZERO PARADES game and wrote a pipeline that trains a
 voice model (hubert-bsqvae-small) on a target voice and patches every sound file
 in the game with your desired voice. Open source, GPLv3.}
 
-\resumeItem{untitled.ink (2025)}
-{An interactive fiction platform, featuring a Claude Code-style agentic editor,
-the Ink markup language, a hot-reloading preview, and video/image generation \&
-editing on Replicate or ComfyUI. Not yet released.}
+\resumeItem{untitled.ink (2025 -- present)}
+{I'm building an interactive fiction platform, featuring a Claude Code-style
+agentic editor, the Ink markup language, a hot-reloading preview, and
+video/image generation \& editing on Replicate or ComfyUI.}
 
 \resumeSubHeadingListEnd
 
@@ -237,20 +357,25 @@ editing on Replicate or ComfyUI. Not yet released.}
 \section{Skills}
 \resumeSubHeadingListStart
 
-\item{\textbf{Languages}{: TypeScript, JavaScript, Ruby, Python, Rust, C\#}}
+\resumeItem{Languages}
+{TypeScript, JavaScript, Ruby, Python, Rust, C\#}
 
-\item{\textbf{Tools}{: Bun, React.js, Next.js, Node.js, Astro.js, Flask, Ruby on
-Rails, Hotwire, Tailwind, PostgreSQL, SQLite}}
+\resumeItem{Tools}
+{Bun, React.js, Next.js, Node.js, Astro.js, Flask, Ruby on Rails, Hotwire,
+Tailwind, PostgreSQL, SQLite}
 
-\item{\textbf{Infrastructure}{: AWS, Azure, Docker, Terraform, GitHub Actions,
-Kamal, DigitalOcean, Vultr, CI, CD}}
+\resumeItem{Infrastructure}
+{AWS, Azure, Docker, Terraform, GitHub Actions, Kamal, DigitalOcean, Vultr, CI,
+CD}
 
-\item{\textbf{Specialties}{: Accessibility (WCAG, ARIA), testing (Playwright,
-RSpec, Jest, TDD), security, performance, design systems}}
+\resumeItem{Specialties}
+{Accessibility (WCAG, ARIA), testing (Playwright, RSpec, Jest, TDD), security,
+performance, design systems}
 
-\item{\textbf{AI / ML}{: RAG, ComfyUI, agentic workflows, LlamaIndex, local LLMs
-(Ollama), embeddings, Replicate, Claude Agent SDK, Claude Code, Codex, OpenCode,
-MCP, pgvector, voice conversion (VC), OpenClaw}}
+\resumeItem{AI / ML}
+{RAG, ComfyUI, agentic workflows, LlamaIndex, local LLMs (Ollama), embeddings,
+Replicate, Claude Agent SDK, Claude Code, Codex, OpenCode, MCP, pgvector, voice
+conversion (VC), OpenClaw}
 
 \resumeSubHeadingListEnd
 
