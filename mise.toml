@@ -36,12 +36,12 @@ run = "latexmk -pdf cv.tex"
 [tasks.resume]
 description = "Build the resume PDF"
 dir = "cv"
-run = "latexmk -pdf resume.tex"
+run = "latexmk -pdf -auxdir=. -outdir=../public resume.tex"
 
 [tasks."resume:watch"]
 description = "Watch and rebuild the resume PDF"
 dir = "cv"
-run = "latexmk -pdf -pvc resume.tex"
+run = "latexmk -pdf -auxdir=. -outdir=../public -pvc resume.tex"
 
 [tasks."resume:clean"]
 description = "Remove resume build artifacts"
