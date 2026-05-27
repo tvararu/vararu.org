@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "cp cv/resume-*.pdf public/ && next build",
-    "dev": "cp cv/resume-*.pdf public/ && next dev",
+    "build": "cp cv/res.pdf cv/resume-*.pdf public/ && next build",
+    "dev": "cp cv/res.pdf cv/resume-*.pdf public/ && next dev",
     "start": "next start",
     "tsc": "tsc --noEmit"
   },
