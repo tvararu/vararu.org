@@ -34,14 +34,14 @@ dir = "cv"
 run = "latexmk -pdf cv.tex"
 
 [tasks.resume]
-description = "Build the resume PDF"
+description = "Build all hashed resume PDFs"
 dir = "cv"
-run = "latexmk -pdf resume.tex"
+run = "latexmk -pdf resume-*.tex"
 
 [tasks."resume:watch"]
-description = "Watch and rebuild the resume PDF"
+description = "Watch and rebuild a hashed resume PDF (e.g. mise resume:watch resume-abcd.tex)"
 dir = "cv"
-run = "latexmk -pdf -pvc resume.tex"
+run = "latexmk -pdf -pvc"
 
 [tasks."resume:clean"]
 description = "Remove resume build artifacts"

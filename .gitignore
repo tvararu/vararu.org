@@ -16,7 +16,7 @@
 # next.js
 /.next/
 /out/
-/public/resume.pdf
+/public/resume-*.pdf
 
 # production
 /build
