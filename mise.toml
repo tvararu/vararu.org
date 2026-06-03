@@ -39,10 +39,9 @@ dir = "cv"
 run = "latexmk -pdf res.tex resume-*.tex"
 
 [tasks."resume:watch"]
-description = "Watch and rebuild a hashed resume PDF (e.g. mise resume:watch resume-rtly.tex)"
+description = "Watch and rebuild all resume PDFs on .tex change"
 dir = "cv"
-usage = 'arg "<file>" help="Resume .tex file to watch (e.g., resume-rtly.tex)"'
-run = 'latexmk -pdf -pvc "$usage_file"'
+run = "ls *.tex | entr -s 'latexmk -pdf res.tex resume-*.tex'"
 
 [tasks."resume:clean"]
 description = "Remove resume build artifacts"
