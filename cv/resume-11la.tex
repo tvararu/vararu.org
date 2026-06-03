@@ -1,0 +1,367 @@
+\documentclass[11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, urlcolor=black]{hyperref}
+\let\OldHref\href
+\renewcommand{\href}[2]{\OldHref{#1}{\underline{#2}}}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+\hypersetup{pdftitle = {Theodor Vararu - Resume}, pdfauthor = {Theodor Vararu}}
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+\item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+  \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}
+\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeRole}[3]{
+  \vspace{\baselineskip}
+  \noindent\hbox to \textwidth{%
+    \makebox[0pt][l]{\textbf{#1}}%
+    \hfill\textit{\small #2}\hfill
+    \makebox[0pt][r]{\textit{\small #3}}%
+  }\vspace{-10pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small #1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeItemPlain}[1]{
+\item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=6pt, parsep=0pt]}
+    \newcommand{\resumeSubHeadingListEnd}{
+\end{itemize}}
+\newcommand{\resumeItemListStart}{
+\begin{itemize}}
+    \newcommand{\resumeItemListEnd}{
+\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Theodor Vararu} & London, UK \\
+  vararu.org | github.com/tvararu | linkedin.com/in/theodor-vararu & Email: theo@vararu.org
+\end{tabular*}
+
+\vspace{11pt}
+
+Software engineer with a 13-year track record of shipping national
+infrastructure and full-stack web applications. Always tinkering with ML,
+whether via voice conversion, image fine-tuning, or agent design.
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\vspace{-\baselineskip}
+\resumeRole{National Health Service}{Tech Lead (Contract)}{Jan 2023 -- Apr 2026}
+\resumeSubHeadingListStart
+
+\resumeItem{Manage vaccinations in schools}
+{\href{https://digital.nhs.uk/blog/transformation-blog/2025/an-easier-way-to-manage-vaccinations-in-schools}{Mavis
+is the national service} replacing paper consent forms and recording
+school-age vaccinations (HPV, flu, MenACWY, Td/IPV 3-in-1). I was the hands-on
+tech lead from the early Ruby on Rails monolith through to public launch and
+rollout to 9 immunisation teams, 5,700+ schools, and 1M+ patient records. Built
+the NHS integrations (PDS, NHS Imms API, CIS2 SSO), observability stack (Splunk
+via custom Lambda), patient-facing consent journey, and offline-first PWA,
+across 1,700+ commits as the \#2 contributor (I personally sourced the engineer
+who would take \#1 from me). By April 2026, on track to be the most widely used
+system of its kind in England.}
+
+\resumeItem{Mavis reporting}
+{Architected and built a Python Flask microservice to expose tabular data and
+CSV exports for NHS commissioners, with emphasis on materialised views, caching,
+queues, and PostgreSQL performance optimisation.}
+
+\resumeItem{Gromit}
+{Built a multi-tenant RAG Slack agent that searches Mavis code and team chat
+history with source permalinks. Initially in Python and LlamaIndex, ported to
+Bun single-binary with native ONNX embeddings via bun:ffi, Postgres pgvector +
+ParadeDB hybrid search, and Claude Agent SDK. The lovable dog is now a core
+member of the team, helping to draft 19+ Mavis release notes, onboarding new
+team members, and being spun out as a SaaS product.}
+
+\resumeSubHeadingListEnd
+
+\resumeRole{Department for Education}{Tech Lead (Contract)}{Jan 2022 -- Dec 2022}
+\resumeSubHeadingListStart
+
+\resumeItem{Find a Lost TRN}
+{Self-service for 500k teachers in England to recover their TRN, the unique
+number used to apply for jobs or claim pension. Led 2-6 engineers from hello
+world to public beta and built the OIDC SSO client now part of Get an Identity.
+Championed and built the public
+\href{https://find-a-lost-trn.education.gov.uk/performance}{/performance}
+dashboard. The service processes 50k recoveries per year, with the median user
+getting their TRN in 38 seconds (before: many days).}
+
+\resumeItem{Teaching Regulation Authority}
+{Bootstrapped two national services: Apply for Qualified Teacher Status, and
+Refer Serious Misconduct. Wrote ADRs, interviewed developers, scaffolded the
+apps, deploy pipeline, CI, and path to live.}
+
+\resumeSubHeadingListEnd
+
+\resumeRole{Ministry of Justice}{Senior Developer (Contract)}{Sep 2021 -- Dec 2021}
+\resumeSubHeadingListStart
+
+\resumeItem{Manage Supervisions (HMPPS)}
+{Brought in for a 2-week accessibility audit and fixes. A few days in, after
+witnessing my throughput, the delivery manager offered a 3-month retainer to
+help them deliver on their roadmap.}
+
+\resumeSubHeadingListEnd
+
+\resumeRole{Meta}{Software Engineer}{Jan 2021 -- Jul 2021}
+\resumeSubHeadingListStart
+
+\resumeItem{Workplace}
+{Accessibility squad on Meta's enterprise comms product (7M+ paid users incl.
+Spotify, Starbucks, Nestlé). Triaged and fixed issues toward full WCAG 2.2
+compliance; wrote the team's accessibility statement.}
+
+\resumeItem{Empathy Lab}
+{Designed and built prototypes for an accessibility testing tool, a browser
+extension that simulates disabilities and common assistive technology
+interactions.}
+
+\resumeSubHeadingListEnd
+
+\resumeRole{Department for Education}{Tech Lead / Senior Developer (Contract)}{Sep 2018 -- Nov 2020}
+\resumeSubHeadingListStart
+
+\resumeItem{Apply for Teacher Training}
+{Led development of the candidate-facing side of the national service handling
+the UK's entire teacher recruitment pipeline, from hello world to public beta in
+Nov 2019 (Ruby on Rails, Azure). The 2020 cycle handled over 100k applications.
+Mentored a team of 5 engineers.}
+
+\resumeItem{Find Postgraduate Teacher Training}
+{Built features on the public catalogue used to search across 10,000+ courses
+from 230+ training providers in England (C\#, Ruby on Rails). Modernised the
+DevOps pipeline with Docker, Terraform, and Cypress E2E tests; prototyped
+Node.js + GraphQL alternatives presented to the architecture group.}
+
+\resumeSubHeadingListEnd
+
+\resumeRole{Gamesys}{Senior Developer (Contract)}{Mar 2018 -- Sep 2018}
+\resumeSubHeadingListStart
+
+\resumeItem{Bundle performance}
+{Cut bundle size by 33\% on a React/Node SPA serving 260k MAU by removing
+moment.js and trimming lodash. Wrote performance documentation to guide future
+work.}
+
+\resumeSubHeadingListEnd
+
+\resumeRole{Graphit Systems}{Senior Developer (Contract)}{Aug 2017 -- Feb 2018}
+\resumeSubHeadingListStart
+
+\resumeItem{Online shop with 3D configurator}
+{Sole frontend engineer on an inherited React.js + Three.js codebase with no
+handover. Got up to speed fast and shipped a redesign, Stripe payments, and
+legacy browser fixes.}
+
+\resumeSubHeadingListEnd
+
+\resumeRole{Government Digital Service}{Senior Developer (SC Security Clearance)}{Mar 2016 -- Aug 2017}
+\resumeSubHeadingListStart
+
+\resumeItem{Accessible autocomplete}
+{Built the most widely used open-source combobox component for GOV.UK services.
+Iterated based on feedback from research with users with disabilities, and an
+audit by the Digital Accessibility Centre. Gave a talk at Accessibility London.
+Credited in the GDS blog for
+\href{https://insidegovuk.blog.gov.uk/2018/01/24/improving-accessibility-with-accessibility-acceptance-criteria/}{defining
+“Accessibility acceptance criteria”}.}
+
+\resumeItem{Government as a Platform}
+{Worked across the programme on multiple products: a serverless JSON API to
+generate country data based on the OpenRegister, accessible webchat, data
+visualisations using D3.js. Managed 2 engineers.}
+
+\resumeItem{GOV.UK}
+{Rebuilt formats as part of the Migration programme, moving from the legacy
+publisher to a microservices pipeline. Provided oncall support during
+second-line shifts, and managed deployments of national infrastructure.}
+
+\resumeSubHeadingListEnd
+
+\resumeRole{Timecounts}{Senior Developer}{May 2015 -- Feb 2016}
+\resumeSubHeadingListStart
+
+\resumeItem{Volunteer management}
+{Shipped product features (calendar, date picker, CSV import validation) on
+Node.js + React.js + Rails JSON API. Implemented code review and introduced more
+rigorous coding and linting standards.}
+
+\resumeSubHeadingListEnd
+
+\resumeRole{Workangel}{Lead Developer}{Sep 2014 -- Apr 2015}
+\resumeSubHeadingListStart
+
+\resumeItem{Employee benefits app}
+{Led the frontend on two single-page Angular.js applications. Shipped a
+mobile-first design and modernised the build pipeline with minification,
+linting, and CI. Kicked off the work on a React.js rewrite.}
+
+\resumeSubHeadingListEnd
+
+\resumeRole{ReadForward}{Lead Developer}{Mar 2013 -- Sep 2014}
+\resumeSubHeadingListStart
+
+\resumeItem{Presidential candidate website}
+{Built the open-source website for Monica Macovei's 2014 Romanian
+presidential campaign. Scored 100/100 on Google PageSpeed Insights via
+critical-path CSS generation and SPA prerendering.}
+
+\resumeItem{Digital textbooks}
+{Led an open-source digital textbook authoring tool (Node.js, Backbone.js,
+visual regression testing). It became the company's main product and the
+textbooks were adopted by Eton College and other prestigious schools.}
+
+\resumeItem{George Enescu festival}
+{Rewrote the festival website end-to-end (Ruby on Rails, scraped legacy PHP
+backend, full-text search, JSON API for native mobile apps). Scaled to 100k+
+unique visitors per month.}
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{London South Bank University}{London, UK}
+{Bachelor of Engineering, Computer Systems and Networks. Transferred from
+University of Bucharest}{2014 -- 2016}
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Recent Projects}
+\resumeSubHeadingListStart
+
+% \resumeItem{keepthingsopen.com (2026)}
+% {I co-wrote an open letter to NHS leadership, asking them to keep their code
+% open. It received over 2,200 signatures from notable industry leaders: Matt
+% Hancock, Cory Doctorow, Dan Abramov, Rich Harris, and others. Covered by the
+% British Medical Journal, Health Service Journal, and The Register.}
+
+\resumeItem{braindance (2026)}
+{I'm building a spatial computing shell for VITURE XR glasses. It captures
+desktop screens via a zero-copy GPU pipeline and renders them as head-tracked 3D
+windows. Multi-threaded Rust + Bevy ECS, FFI bindings to the VITURE SDK, and a
+bespoke 3DoF-to-6DoF tracking pipeline (OpenCV ChArUco + PnP, IMU fusion).}
+
+\resumeItem{tuicraft (2026)}
+{I built a WoW chat client for the terminal, designed for OpenClaw and other AI
+agents to play the MMO. Built with Bun, 100\% tested, while heavily leveraging
+AI code generation. Open source, AGPLv3.}
+
+\resumeItem{zp-voicemod (2026)}
+{I reverse engineered the ZERO PARADES game and wrote a pipeline that trains a
+voice model (hubert-bsqvae-small) on a target voice \& patches every dialogue
+line with your voice. Open source, GPLv3.}
+
+\resumeItem{untitled.ink (2025 -- 2026)}
+{I'm building an interactive fiction platform, featuring a Claude Code-style
+agentic editor, the Ink markup language, hot-reloading, and video/image
+generation \& editing on Replicate or ComfyUI.}
+
+\resumeSubHeadingListEnd
+
+%--------SKILLS------------
+\section{Skills}
+\resumeSubHeadingListStart
+
+\resumeItem{Languages}
+{TypeScript, JavaScript, Ruby, Python, Rust, C\#}
+
+\resumeItem{Tools}
+{Bun, React.js, Next.js, Node.js, Astro.js, Flask, Ruby on Rails, Hotwire,
+Tailwind, PostgreSQL, Redis, SQLite}
+
+\resumeItem{Infrastructure}
+{AWS, Azure, Docker, Terraform, GitHub Actions, Kamal, DigitalOcean, Vultr, CI,
+CD}
+
+\resumeItem{Expertise}
+{Accessibility (WCAG), testing (Playwright, RSpec, Jest, TDD), security,
+performance, design systems}
+
+\resumeItem{AI / ML}
+{RAG, ComfyUI, agentic workflows, LlamaIndex, local LLMs (Ollama), embeddings,
+Replicate, Claude Agent SDK, Claude Code, Codex, OpenCode, MCP, pgvector, voice
+conversion (VC), OpenClaw, OpenCV}
+
+\resumeSubHeadingListEnd
+
+\end{document}
