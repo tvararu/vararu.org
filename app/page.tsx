@@ -13,8 +13,7 @@ export default function Home() {
       <p className="my-5 leading-relaxed">
         I specialise in shipping full-stack web applications, and love to dabble
         in design, local ML, AI-assisted development, Linux, and
-        entrepreneurship. I’m currently working on a national vaccination
-        platform for the UK government, and building my own ideas on the side.
+        entrepreneurship.
       </p>
       <p className="my-5 leading-relaxed">
         I like computers, metal, philosophy, minimalism, and road trips. I
