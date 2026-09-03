@@ -25,6 +25,8 @@
 # misc
 .DS_Store
 *.pem
+# public key, meant to be served — Tesla Fleet API domain verification
+!/public/.well-known/appspecific/com.tesla.3p.public-key.pem
 
 # debug
 npm-debug.log*
