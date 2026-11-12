@@ -5,8 +5,9 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{enumitem}
 \usepackage[colorlinks=true, urlcolor=black]{hyperref}
+\usepackage{soul}
 \let\OldHref\href
-\renewcommand{\href}[2]{\OldHref{#1}{\underline{#2}}}
+\renewcommand{\href}[2]{\OldHref{#1}{\ul{#2}}}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
@@ -114,15 +115,34 @@
 \vspace{11pt}
 
 Software engineer with a 13-year track record of shipping national
-infrastructure and full-stack web applications. I'm passionate about
-accessibility \& good design, and love to dabble with local ML, Linux, and indie
-SaaS.
+infrastructure at NHS, DfE, MoJ, GDS. Author of
+\href{https://github.com/alphagov/accessible-autocomplete}{alphagov/accessible-autocomplete}
+(960 stars, 620k downloads per month). Credited for
+defining ``Accessibility acceptance criteria'' at the Government Digital Service.
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
 \vspace{-\baselineskip}
-\resumeRole{National Health Service}{Technical Architect (Contract)}{Jan 2023 --
-Apr 2026}
+\resumeRole{Shopify}{Senior Engineer}{Sep 2026 -- Present}
+\resumeSubHeadingListStart
+
+\resumeItem{Agentic commerce}
+{Building UCP and agentic checkout so AI agents can buy from
+millions of Shopify merchants.}
+
+\resumeSubHeadingListEnd
+
+\resumeRole{HM Revenue \& Customs}{Applied AI Architect (Contract)}{Jul 2026 -- Sep 2026}
+\resumeSubHeadingListStart
+
+\resumeItem{RIO \& AI}
+{Advised a major transformation programme on embedding AI into HMRC's
+tax compliance operations: reviewing delivery plans, accelerating a pilot, and
+shaping the technical approach for intelligence-led risk identification.}
+
+\resumeSubHeadingListEnd
+
+\resumeRole{National Health Service}{Tech Lead (Contract)}{Jan 2023 -- Apr 2026}
 \resumeSubHeadingListStart
 
 \resumeItem{Manage vaccinations in schools}
@@ -192,7 +212,7 @@ compliance; wrote the team's accessibility statement.}
 \resumeItem{Empathy Lab}
 {Designed and built prototypes for an accessibility testing tool, a browser
 extension that simulates disabilities and common assistive technology
-interactions.}
+interactions; pitched as “VoiceOver for software engineers.”}
 
 \resumeSubHeadingListEnd
 
@@ -257,44 +277,44 @@ second-line shifts, and managed deployments of national infrastructure.}
 \resumeSubHeadingListEnd
 
 \resumeRole{Timecounts}{Senior Developer}{May 2015 -- Feb 2016}
-\resumeSubHeadingListStart
+% \resumeSubHeadingListStart
 
-\resumeItem{Volunteer management}
-{Shipped product features (calendar, date picker, CSV import validation) on
-Node.js + React.js + Rails JSON API. Implemented code review and introduced more
-rigorous coding and linting standards.}
+% \resumeItem{Volunteer management}
+% {Shipped product features (calendar, date picker, CSV import validation) on
+% Node.js + React.js + Rails JSON API. Implemented code review and introduced more
+% rigorous coding and linting standards.}
 
-\resumeSubHeadingListEnd
+% \resumeSubHeadingListEnd
 
 \resumeRole{Workangel}{Lead Developer}{Sep 2014 -- Apr 2015}
-\resumeSubHeadingListStart
+% \resumeSubHeadingListStart
 
-\resumeItem{Employee benefits app}
-{Led the frontend on two single-page Angular.js applications. Shipped a
-mobile-first design and modernised the build pipeline with minification,
-linting, and CI. Kicked off the work on a React.js rewrite.}
+% \resumeItem{Employee benefits app}
+% {Led the frontend on two single-page Angular.js applications. Shipped a
+% mobile-first design and modernised the build pipeline with minification,
+% linting, and CI. Kicked off the work on a React.js rewrite.}
 
-\resumeSubHeadingListEnd
+% \resumeSubHeadingListEnd
 
 \resumeRole{ReadForward}{Lead Developer}{Mar 2013 -- Sep 2014}
-\resumeSubHeadingListStart
+% \resumeSubHeadingListStart
 
-\resumeItem{Presidential candidate website}
-{Built the open-source website for Monica Macovei's 2014 Romanian
-presidential campaign. Scored 100/100 on Google PageSpeed Insights via
-critical-path CSS generation and SPA prerendering.}
+% \resumeItem{Presidential candidate website}
+% {Built the open-source website for Monica Macovei's 2014 Romanian
+% presidential campaign. Scored 100/100 on Google PageSpeed Insights via
+% critical-path CSS generation and SPA prerendering.}
 
-\resumeItem{Digital textbooks}
-{Led an open-source digital textbook authoring tool (Node.js, Backbone.js,
-visual regression testing). It became the company's main product and the
-textbooks were adopted by Eton College and other prestigious schools.}
+% \resumeItem{Digital textbooks}
+% {Led an open-source digital textbook authoring tool (Node.js, Backbone.js,
+% visual regression testing). It became the company's main product and the
+% textbooks were adopted by Eton College and other prestigious schools.}
 
-\resumeItem{George Enescu festival}
-{Rewrote the festival website end-to-end (Ruby on Rails, scraped legacy PHP
-backend, full-text search, JSON API for native mobile apps). Scaled to 100k+
-unique visitors per month.}
+% \resumeItem{George Enescu festival}
+% {Rewrote the festival website end-to-end (Ruby on Rails, scraped legacy PHP
+% backend, full-text search, JSON API for native mobile apps). Scaled to 100k+
+% unique visitors per month.}
 
-\resumeSubHeadingListEnd
+% \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -311,11 +331,25 @@ University of Bucharest}{2014 -- 2016}
 \section{Recent Projects}
 \resumeSubHeadingListStart
 
-% \resumeItem{keepthingsopen.com (2026)}
-% {I co-wrote an open letter to NHS leadership, asking them to keep their code
-% open. It received over 2,200 signatures from notable industry leaders: Matt
-% Hancock, Cory Doctorow, Dan Abramov, Rich Harris, and others. Covered by the
-% British Medical Journal, Health Service Journal, and The Register.}
+\resumeItem{keepthingsopen.com (2026)}
+{I co-wrote an open letter to NHS leadership, asking them to keep their code
+open. It received over 2,200 signatures from GDS founders (James Stewart, Dafydd
+Vaughan), notable public figures (Matt Hancock, Cory Doctorow), and many doctors
+and technologists in government.
+\href{https://www.gov.uk/guidance/ai-open-code-and-vulnerability-risk-in-the-public-sector}{DSIT
+released a statement} taking the same position, and the letter has been covered
+by
+\href{https://www.theregister.com/software/2026/05/07/nhs-code-clampdown-draws-open-source-backlash/5234541}{The Register},
+\href{https://www.hsj.co.uk/technology-and-innovation/nhse-locks-down-open-source-code-over-mythos-ai-fears/7041649.article}{Health
+Service Journal}, and
+\href{https://www.newscientist.com/article/2525315-backlash-builds-over-nhs-plan-to-hide-source-code-from-ai-hacking-risk/}{New
+Scientist}.}
+
+\resumeItem{hasteOS (2025 -- 2026)}
+{I'm building a native macOS Swift menu bar app that uses a local LLM to
+anticipate the user's next action. It interrogates the accessibility tree,
+generates a prompt with what's visible for a local and private LLM, and then
+highlights an element with a prominent border. Tab key accepts the suggestion.}
 
 \resumeItem{braindance (2026)}
 {I'm building a spatial computing shell for VITURE XR glasses. It captures
@@ -329,9 +363,9 @@ agents to play the MMO. Built with Bun, 100\% tested, while heavily leveraging
 AI code generation. Open source, AGPLv3.}
 
 \resumeItem{zp-voicemod (2026)}
-{I reverse engineered the ZERO PARADES game and wrote a pipeline that trains a
-voice model (hubert-bsqvae-small) on a target voice \& patches every dialogue
-line with your voice. Open source, GPLv3.}
+{I reverse engineered the ZERO PARADES game and wrote a Python pipeline that
+trains a voice model (hubert-bsqvae-small) on a target voice \& patches every
+dialogue line with your voice. Open source, GPLv3.}
 
 \resumeItem{untitled.ink (2025 -- 2026)}
 {I'm building an interactive fiction platform, featuring a Claude Code-style
@@ -345,7 +379,7 @@ generation \& editing on Replicate or ComfyUI.}
 \resumeSubHeadingListStart
 
 \resumeItem{Languages}
-{TypeScript, JavaScript, Ruby, Python, Rust, C\#}
+{TypeScript, JavaScript, Ruby, Python, Rust, Swift, C\#}
 
 \resumeItem{Tools}
 {Bun, React.js, Next.js, Node.js, Astro.js, Flask, Ruby on Rails, Hotwire,
@@ -360,9 +394,8 @@ CD}
 performance, design systems}
 
 \resumeItem{AI / ML}
-{RAG, ComfyUI, agentic workflows, LlamaIndex, local LLMs (Ollama), embeddings,
-Replicate, Claude Agent SDK, Claude Code, Codex, OpenCode, MCP, pgvector, voice
-conversion (VC), OpenClaw, OpenCV}
+{RAG, ComfyUI, LlamaIndex, Ollama, embeddings,
+Claude, Codex, MCP, pgvector, OpenClaw, OpenCV}
 
 \resumeSubHeadingListEnd
 
